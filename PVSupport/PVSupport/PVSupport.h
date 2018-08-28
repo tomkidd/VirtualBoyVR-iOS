@@ -20,7 +20,7 @@ FOUNDATION_EXPORT double PVSupport_FrameworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char PVSupport_FrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <PVSupport/PublicHeader.h>
-#import <PVSupport/DebugUtils.h>
+#import "DebugUtils.h"
 #import <PVSupport/TPCircularBuffer.h>
 #import <PVSupport/OERingBuffer.h>
 #import <PVSupport/PVEmulatorCore.h>

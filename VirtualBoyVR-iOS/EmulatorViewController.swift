@@ -8,12 +8,13 @@
 
 import UIKit
 import GLKit
+import PVSupport
 
 class EmulatorViewController: GLKViewController {
     
-//    weak var emulatorCore: PVEmulatorCore?
-//    var gameAudio: OEGameAudio?
-//    var controllerViewController: PVControllerViewController?
+    weak var emulatorCore: PVEmulatorCore?
+    var gameAudio: OEGameAudio?
+    var controllerViewController: PVControllerViewController?
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

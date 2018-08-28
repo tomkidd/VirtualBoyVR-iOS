@@ -7,6 +7,212 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A144FB772135F2D70013CB65 /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB762135F2D70013CB65 /* PVMednafen.framework */; };
+		A144FB792135F2D70013CB65 /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; };
+		A144FB982135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB7C2135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m */; };
+		A144FB992135F3DF0013CB65 /* PVGame+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB7F2135F3DF0013CB65 /* PVGame+Sizing.m */; };
+		A144FB9A2135F3DF0013CB65 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB812135F3DF0013CB65 /* UIDevice+Hardware.m */; };
+		A144FB9B2135F3DF0013CB65 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB822135F3DF0013CB65 /* MBProgressHUD.m */; };
+		A144FB9C2135F3DF0013CB65 /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB832135F3DF0013CB65 /* NSString+Hashing.m */; };
+		A144FB9D2135F3DF0013CB65 /* UIView+FrameAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB852135F3DF0013CB65 /* UIView+FrameAdditions.m */; };
+		A144FB9F2135F3DF0013CB65 /* NSFileManager+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB8E2135F3DF0013CB65 /* NSFileManager+Hashing.m */; };
+		A144FBA02135F3DF0013CB65 /* UIImage+Scaling.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB8F2135F3DF0013CB65 /* UIImage+Scaling.m */; };
+		A144FBA12135F3DF0013CB65 /* UIActionSheet+BlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB922135F3DF0013CB65 /* UIActionSheet+BlockAdditions.m */; };
+		A144FBA22135F3DF0013CB65 /* NSData+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB932135F3DF0013CB65 /* NSData+Hashing.m */; };
+		A144FBA32135F3DF0013CB65 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB942135F3DF0013CB65 /* UIImage+ImageEffects.m */; };
+		A144FBA42135F3DF0013CB65 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB952135F3DF0013CB65 /* UIImage+Color.m */; };
+		A144FBA52135F3DF0013CB65 /* UIAlertView+BlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB972135F3DF0013CB65 /* UIAlertView+BlockAdditions.m */; };
+		A144FBEB2135F46C0013CB65 /* PVControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBAA2135F46C0013CB65 /* PVControllerViewController.m */; };
+		A144FBED2135F46C0013CB65 /* PVControllerSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBAD2135F46C0013CB65 /* PVControllerSelectionViewController.m */; };
+		A144FBEE2135F46C0013CB65 /* PViCadeSteelSeriesController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBB22135F46C0013CB65 /* PViCadeSteelSeriesController.m */; };
+		A144FBEF2135F46C0013CB65 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBB32135F46C0013CB65 /* iCadeReaderView.m */; };
+		A144FBF02135F46C0013CB65 /* PViCadeGamepadButtonInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBBD2135F46C0013CB65 /* PViCadeGamepadButtonInput.m */; };
+		A144FBF12135F46C0013CB65 /* PViCadeControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBBE2135F46C0013CB65 /* PViCadeControllerViewController.m */; };
+		A144FBF22135F46C0013CB65 /* PViCadeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBBF2135F46C0013CB65 /* PViCadeController.m */; };
+		A144FBF32135F46C0013CB65 /* PViCadeGamepadDirectionPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC22135F46C0013CB65 /* PViCadeGamepadDirectionPad.m */; };
+		A144FBF42135F46C0013CB65 /* PViCadeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC32135F46C0013CB65 /* PViCadeReader.m */; };
+		A144FBF52135F46C0013CB65 /* PViCade8BitdoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC42135F46C0013CB65 /* PViCade8BitdoController.m */; };
+		A144FBF62135F46C0013CB65 /* PViCadeInputAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC52135F46C0013CB65 /* PViCadeInputAxis.m */; };
+		A144FBF72135F46C0013CB65 /* kICadeControllerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC72135F46C0013CB65 /* kICadeControllerSetting.m */; };
+		A144FBF82135F46C0013CB65 /* PViCadeGamepad.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBC82135F46C0013CB65 /* PViCadeGamepad.m */; };
+		A144FBF92135F46C0013CB65 /* PVControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBCA2135F46C0013CB65 /* PVControllerManager.m */; };
+		A144FC002135F46C0013CB65 /* PVVBControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBD62135F46C0013CB65 /* PVVBControllerViewController.m */; };
+		A144FC062135F46C0013CB65 /* JSDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBDE2135F46C0013CB65 /* JSDPad.m */; };
+		A144FC082135F46C0013CB65 /* JSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBE22135F46C0013CB65 /* JSButton.m */; };
+		A144FC092135F46C0013CB65 /* PVButtonGroupOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FBE42135F46C0013CB65 /* PVButtonGroupOverlayView.m */; };
+		A144FC152135F48F0013CB65 /* PVSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC0D2135F48E0013CB65 /* PVSettingsModel.m */; };
+		A144FC162135F48F0013CB65 /* PVAppearanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC0E2135F48E0013CB65 /* PVAppearanceViewController.m */; };
+		A144FC172135F48F0013CB65 /* PVLicensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC0F2135F48E0013CB65 /* PVLicensesViewController.m */; };
+		A144FC332135F4F40013CB65 /* PVGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC262135F4F40013CB65 /* PVGame.m */; };
+		A144FC352135F4F40013CB65 /* PVDirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC282135F4F40013CB65 /* PVDirectoryWatcher.m */; };
+		A144FC362135F4F40013CB65 /* PVSynchronousURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC292135F4F40013CB65 /* PVSynchronousURLSession.m */; };
+		A144FC372135F4F40013CB65 /* PVMediaCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2A2135F4F40013CB65 /* PVMediaCache.m */; };
+		A144FC382135F4F40013CB65 /* PVConflictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2B2135F4F40013CB65 /* PVConflictViewController.m */; };
+		A144FC392135F4F40013CB65 /* PVRecentGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2C2135F4F40013CB65 /* PVRecentGame.m */; };
+		A144FC3A2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2D2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.m */; };
+		A144FC3B2135F4F40013CB65 /* PVGameLibrarySectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2E2135F4F40013CB65 /* PVGameLibrarySectionHeaderView.m */; };
+		A144FC3C2135F4F40013CB65 /* OESQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC2F2135F4F40013CB65 /* OESQLiteDatabase.m */; };
+		A144FC4A2135F5380013CB65 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FC3F2135F5380013CB65 /* unzip.c */; };
+		A144FC4B2135F5380013CB65 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FC402135F5380013CB65 /* zip.c */; };
+		A144FC4C2135F5380013CB65 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FC412135F5380013CB65 /* ioapi.c */; };
+		A144FC4D2135F5380013CB65 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FC422135F5380013CB65 /* mztools.c */; };
+		A144FC4E2135F5380013CB65 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FC492135F5380013CB65 /* SSZipArchive.m */; };
+		A144FD9C2135F6020013CB65 /* LzmaSDKObjC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A144FC522135F6010013CB65 /* LzmaSDKObjC.podspec */; };
+		A144FD9D2135F6020013CB65 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A144FC532135F6010013CB65 /* LICENSE */; };
+		A144FD9E2135F6020013CB65 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = A144FC542135F6010013CB65 /* CHANGELOG */; };
+		A144FD9F2135F6020013CB65 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A144FC552135F6010013CB65 /* README.md */; };
+		A144FDA02135F6020013CB65 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A144FC562135F6010013CB65 /* .gitignore */; };
+		A144FDA12135F6020013CB65 /* LzmaSDK-ObjC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A144FC572135F6010013CB65 /* LzmaSDK-ObjC.podspec */; };
+		A144FDA22135F6020013CB65 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A144FC582135F6010013CB65 /* .travis.yml */; };
+		A144FDA32135F6020013CB65 /* NewHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC5F2135F6010013CB65 /* NewHandler.cpp */; };
+		A144FDA42135F6020013CB65 /* TextConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC612135F6010013CB65 /* TextConfig.cpp */; };
+		A144FDA52135F6020013CB65 /* CRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC622135F6010013CB65 /* CRC.cpp */; };
+		A144FDA62135F6020013CB65 /* Sha256Reg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC632135F6010013CB65 /* Sha256Reg.cpp */; };
+		A144FDA72135F6020013CB65 /* StringToInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC642135F6010013CB65 /* StringToInt.cpp */; };
+		A144FDAB2135F6020013CB65 /* MyString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC6F2135F6010013CB65 /* MyString.cpp */; };
+		A144FDAC2135F6020013CB65 /* C_FileIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC702135F6010013CB65 /* C_FileIO.cpp */; };
+		A144FDAD2135F6020013CB65 /* IntToString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC722135F6010013CB65 /* IntToString.cpp */; };
+		A144FDAE2135F6020013CB65 /* Wildcard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC732135F6010013CB65 /* Wildcard.cpp */; };
+		A144FDAF2135F6020013CB65 /* XzCrc64Reg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC7A2135F6010013CB65 /* XzCrc64Reg.cpp */; };
+		A144FDB02135F6020013CB65 /* UTFConvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC7D2135F6010013CB65 /* UTFConvert.cpp */; };
+		A144FDB12135F6020013CB65 /* MyVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC7E2135F6010013CB65 /* MyVector.cpp */; };
+		A144FDB22135F6020013CB65 /* CrcReg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC802135F6010013CB65 /* CrcReg.cpp */; };
+		A144FDB32135F6020013CB65 /* StringConvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC812135F6010013CB65 /* StringConvert.cpp */; };
+		A144FDB42135F6020013CB65 /* MyWindows.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC842135F6010013CB65 /* MyWindows.cpp */; };
+		A144FDB52135F6020013CB65 /* CommandLineParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC8B2135F6010013CB65 /* CommandLineParser.cpp */; };
+		A144FDB62135F6020013CB65 /* 7zAesRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC902135F6010013CB65 /* 7zAesRegister.cpp */; };
+		A144FDB72135F6020013CB65 /* RandGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC922135F6010013CB65 /* RandGen.cpp */; };
+		A144FDB82135F6020013CB65 /* MyAes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC932135F6010013CB65 /* MyAes.cpp */; };
+		A144FDB92135F6020013CB65 /* MyAesReg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC942135F6010013CB65 /* MyAesReg.cpp */; };
+		A144FDBA2135F6020013CB65 /* 7zAes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC972135F6010013CB65 /* 7zAes.cpp */; };
+		A144FDBB2135F6020013CB65 /* CodecExports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC9A2135F6010013CB65 /* CodecExports.cpp */; };
+		A144FDBC2135F6020013CB65 /* Lzma2Decoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC9E2135F6010013CB65 /* Lzma2Decoder.cpp */; };
+		A144FDBD2135F6020013CB65 /* Bcj2Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FC9F2135F6010013CB65 /* Bcj2Register.cpp */; };
+		A144FDBE2135F6020013CB65 /* BcjRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA32135F6010013CB65 /* BcjRegister.cpp */; };
+		A144FDBF2135F6020013CB65 /* DeltaFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA42135F6010013CB65 /* DeltaFilter.cpp */; };
+		A144FDC02135F6020013CB65 /* Lzma2Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA62135F6010013CB65 /* Lzma2Register.cpp */; };
+		A144FDC12135F6020013CB65 /* BranchRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA72135F6010013CB65 /* BranchRegister.cpp */; };
+		A144FDC22135F6020013CB65 /* CopyCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA82135F6010013CB65 /* CopyCoder.cpp */; };
+		A144FDC32135F6020013CB65 /* CopyRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCA92135F6010013CB65 /* CopyRegister.cpp */; };
+		A144FDC42135F6020013CB65 /* Lzma2Encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAA2135F6010013CB65 /* Lzma2Encoder.cpp */; };
+		A144FDC52135F6020013CB65 /* LzmaRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAB2135F6010013CB65 /* LzmaRegister.cpp */; };
+		A144FDC62135F6020013CB65 /* BcjCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAC2135F6010013CB65 /* BcjCoder.cpp */; };
+		A144FDC72135F6020013CB65 /* BranchMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAD2135F6010013CB65 /* BranchMisc.cpp */; };
+		A144FDC82135F6020013CB65 /* PpmdDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAE2135F6010013CB65 /* PpmdDecoder.cpp */; };
+		A144FDC92135F6020013CB65 /* LzmaDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCAF2135F6010013CB65 /* LzmaDecoder.cpp */; };
+		A144FDCA2135F6020013CB65 /* ByteSwap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCB02135F6010013CB65 /* ByteSwap.cpp */; };
+		A144FDCB2135F6020013CB65 /* Bcj2Coder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCB22135F6010013CB65 /* Bcj2Coder.cpp */; };
+		A144FDCC2135F6020013CB65 /* PpmdRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCB32135F6010013CB65 /* PpmdRegister.cpp */; };
+		A144FDCD2135F6020013CB65 /* LzmaEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCB52135F6010013CB65 /* LzmaEncoder.cpp */; };
+		A144FDCE2135F6020013CB65 /* PpmdEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCB72135F6010013CB65 /* PpmdEncoder.cpp */; };
+		A144FDCF2135F6020013CB65 /* ArchiveExports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCBB2135F6010013CB65 /* ArchiveExports.cpp */; };
+		A144FDD02135F6020013CB65 /* DllExports2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCBC2135F6010013CB65 /* DllExports2.cpp */; };
+		A144FDD12135F6020013CB65 /* DummyOutStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCC12135F6010013CB65 /* DummyOutStream.cpp */; };
+		A144FDD22135F6020013CB65 /* HandlerOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCC32135F6010013CB65 /* HandlerOut.cpp */; };
+		A144FDD32135F6020013CB65 /* OutStreamWithCRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCC52135F6010013CB65 /* OutStreamWithCRC.cpp */; };
+		A144FDD42135F6020013CB65 /* MultiStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCC72135F6010013CB65 /* MultiStream.cpp */; };
+		A144FDD52135F6020013CB65 /* ItemNameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCC82135F6010013CB65 /* ItemNameUtils.cpp */; };
+		A144FDD62135F6020013CB65 /* CoderMixer2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCCA2135F6010013CB65 /* CoderMixer2.cpp */; };
+		A144FDD72135F6020013CB65 /* ParseProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCCB2135F6010013CB65 /* ParseProperties.cpp */; };
+		A144FDD82135F6020013CB65 /* InStreamWithCRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCCE2135F6010013CB65 /* InStreamWithCRC.cpp */; };
+		A144FDD92135F6020013CB65 /* LzmaHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCCF2135F6010013CB65 /* LzmaHandler.cpp */; };
+		A144FDDA2135F6020013CB65 /* SplitHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCD02135F6010013CB65 /* SplitHandler.cpp */; };
+		A144FDDB2135F6020013CB65 /* 7zExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCD22135F6010013CB65 /* 7zExtract.cpp */; };
+		A144FDDC2135F6020013CB65 /* 7zFolderInStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCD32135F6010013CB65 /* 7zFolderInStream.cpp */; };
+		A144FDDD2135F6020013CB65 /* 7zHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCD42135F6010013CB65 /* 7zHandler.cpp */; };
+		A144FDDE2135F6020013CB65 /* 7zHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCD72135F6010013CB65 /* 7zHeader.cpp */; };
+		A144FDDF2135F6020013CB65 /* 7zProperties.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCDB2135F6010013CB65 /* 7zProperties.cpp */; };
+		A144FDE02135F6020013CB65 /* 7zHandlerOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCDE2135F6010013CB65 /* 7zHandlerOut.cpp */; };
+		A144FDE12135F6020013CB65 /* 7zIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCDF2135F6010013CB65 /* 7zIn.cpp */; };
+		A144FDE22135F6020013CB65 /* 7zOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCE22135F6010013CB65 /* 7zOut.cpp */; };
+		A144FDE32135F6020013CB65 /* 7zEncode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCE32135F6010013CB65 /* 7zEncode.cpp */; };
+		A144FDE42135F6020013CB65 /* 7zUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCE42135F6010013CB65 /* 7zUpdate.cpp */; };
+		A144FDE52135F6020013CB65 /* 7zCompressionMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCE92135F6010013CB65 /* 7zCompressionMode.cpp */; };
+		A144FDE62135F6020013CB65 /* 7zDecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCEA2135F6010013CB65 /* 7zDecode.cpp */; };
+		A144FDE72135F6020013CB65 /* 7zSpecStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCEB2135F6010013CB65 /* 7zSpecStream.cpp */; };
+		A144FDE82135F6020013CB65 /* 7zRegister.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCEC2135F6010013CB65 /* 7zRegister.cpp */; };
+		A144FDE92135F6020013CB65 /* ProgressUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCF22135F6010013CB65 /* ProgressUtils.cpp */; };
+		A144FDEA2135F6020013CB65 /* VirtThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCF32135F6010013CB65 /* VirtThread.cpp */; };
+		A144FDEB2135F6020013CB65 /* OutBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCF72135F6010013CB65 /* OutBuffer.cpp */; };
+		A144FDEC2135F6020013CB65 /* UniqBlocks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCF82135F6010013CB65 /* UniqBlocks.cpp */; };
+		A144FDED2135F6020013CB65 /* FilterCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCFA2135F6010013CB65 /* FilterCoder.cpp */; };
+		A144FDEE2135F6020013CB65 /* InBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCFE2135F6010013CB65 /* InBuffer.cpp */; };
+		A144FDEF2135F6020013CB65 /* StreamUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FCFF2135F6010013CB65 /* StreamUtils.cpp */; };
+		A144FDF02135F6020013CB65 /* MethodProps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD022135F6010013CB65 /* MethodProps.cpp */; };
+		A144FDF12135F6020013CB65 /* StreamBinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD032135F6010013CB65 /* StreamBinder.cpp */; };
+		A144FDF22135F6020013CB65 /* LockedStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD042135F6010013CB65 /* LockedStream.cpp */; };
+		A144FDF32135F6020013CB65 /* LimitedStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD082135F6010013CB65 /* LimitedStreams.cpp */; };
+		A144FDF42135F6020013CB65 /* InOutTempBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD0B2135F6010013CB65 /* InOutTempBuffer.cpp */; };
+		A144FDF52135F6020013CB65 /* CWrappers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD0C2135F6010013CB65 /* CWrappers.cpp */; };
+		A144FDF62135F6020013CB65 /* OffsetStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD0D2135F6010013CB65 /* OffsetStream.cpp */; };
+		A144FDF72135F6020013CB65 /* FileStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD0F2135F6010013CB65 /* FileStreams.cpp */; };
+		A144FDF82135F6020013CB65 /* MethodId.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD122135F6010013CB65 /* MethodId.cpp */; };
+		A144FDF92135F6020013CB65 /* StreamObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD152135F6010013CB65 /* StreamObjects.cpp */; };
+		A144FDFB2135F6020013CB65 /* PropId.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD182135F6010013CB65 /* PropId.cpp */; };
+		A144FDFC2135F6020013CB65 /* CreateCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD1A2135F6010013CB65 /* CreateCoder.cpp */; };
+		A144FDFD2135F6020013CB65 /* PropVariantConv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD232135F6010013CB65 /* PropVariantConv.cpp */; };
+		A144FDFF2135F6020013CB65 /* PropVariant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD282135F6010013CB65 /* PropVariant.cpp */; };
+		A144FE002135F6020013CB65 /* Lzma2Dec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD2A2135F6010013CB65 /* Lzma2Dec.c */; };
+		A144FE012135F6020013CB65 /* LzmaEnc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD2C2135F6010013CB65 /* LzmaEnc.c */; };
+		A144FE022135F6020013CB65 /* Ppmd7Dec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD2D2135F6010013CB65 /* Ppmd7Dec.c */; };
+		A144FE032135F6020013CB65 /* Aes.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD2E2135F6010013CB65 /* Aes.c */; };
+		A144FE042135F6020013CB65 /* LzFindMt.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD2F2135F6010013CB65 /* LzFindMt.c */; };
+		A144FE052135F6020013CB65 /* XzDec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD312135F6010013CB65 /* XzDec.c */; };
+		A144FE062135F6020013CB65 /* MtCoder.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD322135F6010013CB65 /* MtCoder.c */; };
+		A144FE072135F6020013CB65 /* Bcj2.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD332135F6010013CB65 /* Bcj2.c */; };
+		A144FE082135F6020013CB65 /* LzFind.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD352135F6010013CB65 /* LzFind.c */; };
+		A144FE092135F6020013CB65 /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD392135F6010013CB65 /* Sort.c */; };
+		A144FE0A2135F6020013CB65 /* Ppmd7.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD3B2135F6010013CB65 /* Ppmd7.c */; };
+		A144FE0B2135F6020013CB65 /* Bra.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD3D2135F6010013CB65 /* Bra.c */; };
+		A144FE0C2135F6020013CB65 /* Bra86.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD3F2135F6010013CB65 /* Bra86.c */; };
+		A144FE0D2135F6020013CB65 /* 7zArcIn.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD402135F6010013CB65 /* 7zArcIn.c */; };
+		A144FE0E2135F6020013CB65 /* 7zAlloc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD412135F6010013CB65 /* 7zAlloc.c */; };
+		A144FE0F2135F6020013CB65 /* XzIn.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD432135F6010013CB65 /* XzIn.c */; };
+		A144FE102135F6020013CB65 /* XzEnc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD442135F6010013CB65 /* XzEnc.c */; };
+		A144FE112135F6020013CB65 /* Alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD492135F6010013CB65 /* Alloc.c */; };
+		A144FE122135F6020013CB65 /* LzmaDec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD4B2135F6010013CB65 /* LzmaDec.c */; };
+		A144FE132135F6020013CB65 /* Lzma2Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD4C2135F6010013CB65 /* Lzma2Enc.c */; };
+		A144FE142135F6020013CB65 /* Ppmd7Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD4D2135F6010013CB65 /* Ppmd7Enc.c */; };
+		A144FE152135F6020013CB65 /* 7zDec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD4F2135F6010013CB65 /* 7zDec.c */; };
+		A144FE162135F6020013CB65 /* 7zBuf2.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD542135F6010013CB65 /* 7zBuf2.c */; };
+		A144FE172135F6020013CB65 /* XzCrc64.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD552135F6010013CB65 /* XzCrc64.c */; };
+		A144FE182135F6020013CB65 /* BraIA64.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD572135F6010013CB65 /* BraIA64.c */; };
+		A144FE192135F6020013CB65 /* Lzma86Dec.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD582135F6010013CB65 /* Lzma86Dec.c */; };
+		A144FE1A2135F6020013CB65 /* 7zStream.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD592135F6010013CB65 /* 7zStream.c */; };
+		A144FE1B2135F6020013CB65 /* Sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD5D2135F6010013CB65 /* Sha256.c */; };
+		A144FE1C2135F6020013CB65 /* Delta.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD5F2135F6010013CB65 /* Delta.c */; };
+		A144FE1D2135F6020013CB65 /* 7zFile.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD612135F6010013CB65 /* 7zFile.c */; };
+		A144FE1E2135F6020013CB65 /* 7zCrc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD632135F6010013CB65 /* 7zCrc.c */; };
+		A144FE1F2135F6020013CB65 /* AesOpt.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD652135F6010013CB65 /* AesOpt.c */; };
+		A144FE202135F6020013CB65 /* Lzma86Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD672135F6010013CB65 /* Lzma86Enc.c */; };
+		A144FE212135F6020013CB65 /* CpuArch.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD692135F6010013CB65 /* CpuArch.c */; };
+		A144FE222135F6020013CB65 /* Bcj2Enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD6B2135F6010013CB65 /* Bcj2Enc.c */; };
+		A144FE232135F6020013CB65 /* XzCrc64Opt.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD6D2135F6010013CB65 /* XzCrc64Opt.c */; };
+		A144FE242135F6020013CB65 /* Xz.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD6E2135F6010013CB65 /* Xz.c */; };
+		A144FE252135F6020013CB65 /* 7zCrcOpt.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD6F2135F6010013CB65 /* 7zCrcOpt.c */; };
+		A144FE262135F6020013CB65 /* Threads.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD712135F6010013CB65 /* Threads.c */; };
+		A144FE272135F6020013CB65 /* 7zBuf.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD722135F6010013CB65 /* 7zBuf.c */; };
+		A144FE282135F6020013CB65 /* LzmaLib.c in Sources */ = {isa = PBXBuildFile; fileRef = A144FD732135F6010013CB65 /* LzmaLib.c */; };
+		A144FE292135F6020013CB65 /* LzmaSDKObjCBufferProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD792135F6010013CB65 /* LzmaSDKObjCBufferProcessor.mm */; };
+		A144FE2A2135F6020013CB65 /* LzmaSDKObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD7A2135F6010013CB65 /* LzmaSDKObjC.mm */; };
+		A144FE2B2135F6020013CB65 /* LzmaSDKObjCUpdateCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD7B2135F6010013CB65 /* LzmaSDKObjCUpdateCallback.mm */; };
+		A144FE2C2135F6020013CB65 /* LzmaSDKObjCCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD7D2135F6010013CB65 /* LzmaSDKObjCCommon.cpp */; };
+		A144FE2D2135F6020013CB65 /* LzmaSDKObjCError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD7E2135F6010013CB65 /* LzmaSDKObjCError.mm */; };
+		A144FE2E2135F6020013CB65 /* LzmaSDKObjCReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD852135F6010013CB65 /* LzmaSDKObjCReader.mm */; };
+		A144FE2F2135F6020013CB65 /* LzmaSDKObjCFileDecoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD862135F6010013CB65 /* LzmaSDKObjCFileDecoder.cpp */; };
+		A144FE302135F6020013CB65 /* LzmaSDKObjCWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD8F2135F6010013CB65 /* LzmaSDKObjCWriter.mm */; };
+		A144FE312135F6020013CB65 /* LzmaSDKObjCMutableItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD902135F6010013CB65 /* LzmaSDKObjCMutableItem.mm */; };
+		A144FE322135F6020013CB65 /* LzmaSDKObjCOpenCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD922135F6010013CB65 /* LzmaSDKObjCOpenCallback.cpp */; };
+		A144FE332135F6020013CB65 /* LzmaSDKObjCInFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD932135F6010013CB65 /* LzmaSDKObjCInFile.cpp */; };
+		A144FE342135F6020013CB65 /* LzmaSDKObjCOutFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD942135F6010013CB65 /* LzmaSDKObjCOutFile.cpp */; };
+		A144FE352135F6020013CB65 /* LzmaSDKObjCBaseCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD952135F6010013CB65 /* LzmaSDKObjCBaseCoder.cpp */; };
+		A144FE362135F6020013CB65 /* LzmaSDKObjCFileEncoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A144FD962135F6010013CB65 /* LzmaSDKObjCFileEncoder.cpp */; };
+		A144FE372135F6020013CB65 /* LzmaSDKObjCExtern.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD972135F6010013CB65 /* LzmaSDKObjCExtern.mm */; };
+		A144FE382135F6020013CB65 /* LzmaSDKObjCExtractCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD9A2135F6010013CB65 /* LzmaSDKObjCExtractCallback.mm */; };
+		A144FE392135F6020013CB65 /* LzmaSDKObjCItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = A144FD9B2135F6010013CB65 /* LzmaSDKObjCItem.mm */; };
+		A144FE432135F6290013CB65 /* PVEmulatorConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3C2135F6280013CB65 /* PVEmulatorConstants.m */; };
+		A144FE462135F6290013CB65 /* PVEmulatorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE422135F6280013CB65 /* PVEmulatorConfiguration.m */; };
+		A144FE492135FA4D0013CB65 /* PVAppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE482135FA4D0013CB65 /* PVAppConstants.m */; };
 		A16DA3F12134A5F900CD9E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */; };
 		A16DA3F32134A5F900CD9E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA3F22134A5F900CD9E21 /* ViewController.swift */; };
 		A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F42134A5F900CD9E21 /* Main.storyboard */; };
@@ -20,6 +226,475 @@
 		2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualBoyVR-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76781830749ECD85A8E91162 /* Pods-VirtualBoyVR-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A144FB762135F2D70013CB65 /* PVMednafen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVMednafen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A144FB782135F2D70013CB65 /* PVSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A144FB7C2135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSDate_SignificantDates.m"; sourceTree = "<group>"; };
+		A144FB7D2135F3DF0013CB65 /* UIImage+Scaling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scaling.h"; sourceTree = "<group>"; };
+		A144FB7E2135F3DF0013CB65 /* NSFileManager+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Hashing.h"; sourceTree = "<group>"; };
+		A144FB7F2135F3DF0013CB65 /* PVGame+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PVGame+Sizing.m"; sourceTree = "<group>"; };
+		A144FB802135F3DF0013CB65 /* RLMRealmConfiguration+Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMRealmConfiguration+Config.h"; sourceTree = "<group>"; };
+		A144FB812135F3DF0013CB65 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		A144FB822135F3DF0013CB65 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A144FB832135F3DF0013CB65 /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
+		A144FB842135F3DF0013CB65 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		A144FB852135F3DF0013CB65 /* UIView+FrameAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameAdditions.m"; sourceTree = "<group>"; };
+		A144FB862135F3DF0013CB65 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		A144FB872135F3DF0013CB65 /* NSData+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Hashing.h"; sourceTree = "<group>"; };
+		A144FB882135F3DF0013CB65 /* UIActionSheet+BlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+BlockAdditions.h"; sourceTree = "<group>"; };
+		A144FB892135F3DF0013CB65 /* UIAlertView+BlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+BlockAdditions.h"; sourceTree = "<group>"; };
+		A144FB8A2135F3DF0013CB65 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A144FB8B2135F3DF0013CB65 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		A144FB8C2135F3DF0013CB65 /* RLMRealmConfiguration+Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMRealmConfiguration+Config.m"; sourceTree = "<group>"; };
+		A144FB8D2135F3DF0013CB65 /* PVGame+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PVGame+Sizing.h"; sourceTree = "<group>"; };
+		A144FB8E2135F3DF0013CB65 /* NSFileManager+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Hashing.m"; sourceTree = "<group>"; };
+		A144FB8F2135F3DF0013CB65 /* UIImage+Scaling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scaling.m"; sourceTree = "<group>"; };
+		A144FB902135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSDate_SignificantDates.h"; sourceTree = "<group>"; };
+		A144FB912135F3DF0013CB65 /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
+		A144FB922135F3DF0013CB65 /* UIActionSheet+BlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+BlockAdditions.m"; sourceTree = "<group>"; };
+		A144FB932135F3DF0013CB65 /* NSData+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hashing.m"; sourceTree = "<group>"; };
+		A144FB942135F3DF0013CB65 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		A144FB952135F3DF0013CB65 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		A144FB962135F3DF0013CB65 /* UIView+FrameAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameAdditions.h"; sourceTree = "<group>"; };
+		A144FB972135F3DF0013CB65 /* UIAlertView+BlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+BlockAdditions.m"; sourceTree = "<group>"; };
+		A144FBA72135F46C0013CB65 /* PVGBAControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGBAControllerViewController.h; sourceTree = "<group>"; };
+		A144FBA82135F46C0013CB65 /* PVNESControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVNESControllerViewController.h; sourceTree = "<group>"; };
+		A144FBA92135F46C0013CB65 /* PVPSXControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPSXControllerViewController.h; sourceTree = "<group>"; };
+		A144FBAA2135F46C0013CB65 /* PVControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVControllerViewController.m; sourceTree = "<group>"; };
+		A144FBAB2135F46C0013CB65 /* PVNeoGeoPocketControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVNeoGeoPocketControllerViewController.m; sourceTree = "<group>"; };
+		A144FBAC2135F46C0013CB65 /* PVVBControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVVBControllerViewController.h; sourceTree = "<group>"; };
+		A144FBAD2135F46C0013CB65 /* PVControllerSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVControllerSelectionViewController.m; sourceTree = "<group>"; };
+		A144FBAE2135F46C0013CB65 /* JSDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDPad.h; sourceTree = "<group>"; };
+		A144FBAF2135F46C0013CB65 /* PVAtari5200ControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAtari5200ControllerViewController.h; sourceTree = "<group>"; };
+		A144FBB02135F46C0013CB65 /* PVGenesisControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGenesisControllerViewController.h; sourceTree = "<group>"; };
+		A144FBB22135F46C0013CB65 /* PViCadeSteelSeriesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeSteelSeriesController.m; sourceTree = "<group>"; };
+		A144FBB32135F46C0013CB65 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
+		A144FBB42135F46C0013CB65 /* PViCadeControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeControllerViewController.h; sourceTree = "<group>"; };
+		A144FBB52135F46C0013CB65 /* PViCadeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeController.h; sourceTree = "<group>"; };
+		A144FBB62135F46C0013CB65 /* PViCadeGamepadButtonInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeGamepadButtonInput.h; sourceTree = "<group>"; };
+		A144FBB72135F46C0013CB65 /* PViCadeGamepadDirectionPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeGamepadDirectionPad.h; sourceTree = "<group>"; };
+		A144FBB82135F46C0013CB65 /* PViCadeInputAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeInputAxis.h; sourceTree = "<group>"; };
+		A144FBB92135F46C0013CB65 /* PViCade8BitdoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCade8BitdoController.h; sourceTree = "<group>"; };
+		A144FBBA2135F46C0013CB65 /* PViCadeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeReader.h; sourceTree = "<group>"; };
+		A144FBBB2135F46C0013CB65 /* PViCadeGamepad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeGamepad.h; sourceTree = "<group>"; };
+		A144FBBC2135F46C0013CB65 /* kICadeControllerSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kICadeControllerSetting.h; sourceTree = "<group>"; };
+		A144FBBD2135F46C0013CB65 /* PViCadeGamepadButtonInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeGamepadButtonInput.m; sourceTree = "<group>"; };
+		A144FBBE2135F46C0013CB65 /* PViCadeControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeControllerViewController.m; sourceTree = "<group>"; };
+		A144FBBF2135F46C0013CB65 /* PViCadeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeController.m; sourceTree = "<group>"; };
+		A144FBC02135F46C0013CB65 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
+		A144FBC12135F46C0013CB65 /* PViCadeSteelSeriesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PViCadeSteelSeriesController.h; sourceTree = "<group>"; };
+		A144FBC22135F46C0013CB65 /* PViCadeGamepadDirectionPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeGamepadDirectionPad.m; sourceTree = "<group>"; };
+		A144FBC32135F46C0013CB65 /* PViCadeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeReader.m; sourceTree = "<group>"; };
+		A144FBC42135F46C0013CB65 /* PViCade8BitdoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCade8BitdoController.m; sourceTree = "<group>"; };
+		A144FBC52135F46C0013CB65 /* PViCadeInputAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeInputAxis.m; sourceTree = "<group>"; };
+		A144FBC62135F46C0013CB65 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
+		A144FBC72135F46C0013CB65 /* kICadeControllerSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = kICadeControllerSetting.m; sourceTree = "<group>"; };
+		A144FBC82135F46C0013CB65 /* PViCadeGamepad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PViCadeGamepad.m; sourceTree = "<group>"; };
+		A144FBC92135F46C0013CB65 /* PVButtonGroupOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVButtonGroupOverlayView.h; sourceTree = "<group>"; };
+		A144FBCA2135F46C0013CB65 /* PVControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVControllerManager.m; sourceTree = "<group>"; };
+		A144FBCB2135F46C0013CB65 /* JSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSButton.h; sourceTree = "<group>"; };
+		A144FBCC2135F46C0013CB65 /* PVGBControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGBControllerViewController.h; sourceTree = "<group>"; };
+		A144FBCD2135F46C0013CB65 /* PVAtari7800ControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAtari7800ControllerViewController.m; sourceTree = "<group>"; };
+		A144FBCE2135F46C0013CB65 /* PVLynxControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLynxControllerViewController.m; sourceTree = "<group>"; };
+		A144FBCF2135F46C0013CB65 /* PVSNESControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSNESControllerViewController.h; sourceTree = "<group>"; };
+		A144FBD02135F46C0013CB65 /* PVPokeMiniControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPokeMiniControllerViewController.m; sourceTree = "<group>"; };
+		A144FBD12135F46C0013CB65 /* PVPCEControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPCEControllerViewController.m; sourceTree = "<group>"; };
+		A144FBD22135F46C0013CB65 /* PVWonderSwanControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVWonderSwanControllerViewController.m; sourceTree = "<group>"; };
+		A144FBD32135F46C0013CB65 /* PV32XControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PV32XControllerViewController.h; sourceTree = "<group>"; };
+		A144FBD42135F46C0013CB65 /* PVStellaControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVStellaControllerViewController.m; sourceTree = "<group>"; };
+		A144FBD52135F46C0013CB65 /* PVControllerSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVControllerSelectionViewController.h; sourceTree = "<group>"; };
+		A144FBD62135F46C0013CB65 /* PVVBControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVVBControllerViewController.m; sourceTree = "<group>"; };
+		A144FBD72135F46C0013CB65 /* PVNeoGeoPocketControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVNeoGeoPocketControllerViewController.h; sourceTree = "<group>"; };
+		A144FBD82135F46C0013CB65 /* PVControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVControllerViewController.h; sourceTree = "<group>"; };
+		A144FBD92135F46C0013CB65 /* PVPSXControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVPSXControllerViewController.m; sourceTree = "<group>"; };
+		A144FBDA2135F46C0013CB65 /* PVNESControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVNESControllerViewController.m; sourceTree = "<group>"; };
+		A144FBDB2135F46C0013CB65 /* PVGBAControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGBAControllerViewController.m; sourceTree = "<group>"; };
+		A144FBDC2135F46C0013CB65 /* PVGenesisControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGenesisControllerViewController.m; sourceTree = "<group>"; };
+		A144FBDD2135F46C0013CB65 /* PVAtari5200ControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAtari5200ControllerViewController.m; sourceTree = "<group>"; };
+		A144FBDE2135F46C0013CB65 /* JSDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDPad.m; sourceTree = "<group>"; };
+		A144FBDF2135F46C0013CB65 /* PVLynxControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLynxControllerViewController.h; sourceTree = "<group>"; };
+		A144FBE02135F46C0013CB65 /* PVAtari7800ControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAtari7800ControllerViewController.h; sourceTree = "<group>"; };
+		A144FBE12135F46C0013CB65 /* PVGBControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGBControllerViewController.m; sourceTree = "<group>"; };
+		A144FBE22135F46C0013CB65 /* JSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSButton.m; sourceTree = "<group>"; };
+		A144FBE32135F46C0013CB65 /* PVControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVControllerManager.h; sourceTree = "<group>"; };
+		A144FBE42135F46C0013CB65 /* PVButtonGroupOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVButtonGroupOverlayView.m; sourceTree = "<group>"; };
+		A144FBE52135F46C0013CB65 /* PVStellaControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVStellaControllerViewController.h; sourceTree = "<group>"; };
+		A144FBE62135F46C0013CB65 /* PV32XControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PV32XControllerViewController.m; sourceTree = "<group>"; };
+		A144FBE72135F46C0013CB65 /* PVWonderSwanControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVWonderSwanControllerViewController.h; sourceTree = "<group>"; };
+		A144FBE82135F46C0013CB65 /* PVPCEControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPCEControllerViewController.h; sourceTree = "<group>"; };
+		A144FBE92135F46C0013CB65 /* PVPokeMiniControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPokeMiniControllerViewController.h; sourceTree = "<group>"; };
+		A144FBEA2135F46C0013CB65 /* PVSNESControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSNESControllerViewController.m; sourceTree = "<group>"; };
+		A144FC0D2135F48E0013CB65 /* PVSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSettingsModel.m; sourceTree = "<group>"; };
+		A144FC0E2135F48E0013CB65 /* PVAppearanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAppearanceViewController.m; sourceTree = "<group>"; };
+		A144FC0F2135F48E0013CB65 /* PVLicensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVLicensesViewController.m; sourceTree = "<group>"; };
+		A144FC102135F48E0013CB65 /* PVSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSettingsViewController.m; sourceTree = "<group>"; };
+		A144FC112135F48E0013CB65 /* PVAppearanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVAppearanceViewController.h; sourceTree = "<group>"; };
+		A144FC122135F48E0013CB65 /* PVSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSettingsModel.h; sourceTree = "<group>"; };
+		A144FC132135F48E0013CB65 /* PVLicensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVLicensesViewController.h; sourceTree = "<group>"; };
+		A144FC142135F48E0013CB65 /* PVSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSettingsViewController.h; sourceTree = "<group>"; };
+		A144FC192135F4AD0013CB65 /* Provenance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Provenance-Prefix.pch"; sourceTree = "<group>"; };
+		A144FC1A2135F4C70013CB65 /* PVAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVAvailability.h; sourceTree = "<group>"; };
+		A144FC1C2135F4F40013CB65 /* PVGameLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGameLibraryViewController.h; sourceTree = "<group>"; };
+		A144FC1D2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGameLibraryCollectionViewCell.h; sourceTree = "<group>"; };
+		A144FC1E2135F4F40013CB65 /* PVRecentGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVRecentGame.h; sourceTree = "<group>"; };
+		A144FC1F2135F4F40013CB65 /* PVMediaCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVMediaCache.h; sourceTree = "<group>"; };
+		A144FC202135F4F40013CB65 /* PVConflictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVConflictViewController.h; sourceTree = "<group>"; };
+		A144FC212135F4F40013CB65 /* PVSynchronousURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVSynchronousURLSession.h; sourceTree = "<group>"; };
+		A144FC222135F4F40013CB65 /* PVDirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVDirectoryWatcher.h; sourceTree = "<group>"; };
+		A144FC232135F4F40013CB65 /* PVGameLibrarySectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGameLibrarySectionHeaderView.h; sourceTree = "<group>"; };
+		A144FC242135F4F40013CB65 /* OESQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OESQLiteDatabase.h; sourceTree = "<group>"; };
+		A144FC252135F4F40013CB65 /* PVGameImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGameImporter.m; sourceTree = "<group>"; };
+		A144FC262135F4F40013CB65 /* PVGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGame.m; sourceTree = "<group>"; };
+		A144FC272135F4F40013CB65 /* PVGameLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGameLibraryViewController.m; sourceTree = "<group>"; };
+		A144FC282135F4F40013CB65 /* PVDirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVDirectoryWatcher.m; sourceTree = "<group>"; };
+		A144FC292135F4F40013CB65 /* PVSynchronousURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVSynchronousURLSession.m; sourceTree = "<group>"; };
+		A144FC2A2135F4F40013CB65 /* PVMediaCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVMediaCache.m; sourceTree = "<group>"; };
+		A144FC2B2135F4F40013CB65 /* PVConflictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVConflictViewController.m; sourceTree = "<group>"; };
+		A144FC2C2135F4F40013CB65 /* PVRecentGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVRecentGame.m; sourceTree = "<group>"; };
+		A144FC2D2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGameLibraryCollectionViewCell.m; sourceTree = "<group>"; };
+		A144FC2E2135F4F40013CB65 /* PVGameLibrarySectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGameLibrarySectionHeaderView.m; sourceTree = "<group>"; };
+		A144FC2F2135F4F40013CB65 /* OESQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OESQLiteDatabase.m; sourceTree = "<group>"; };
+		A144FC302135F4F40013CB65 /* PVGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGame.h; sourceTree = "<group>"; };
+		A144FC312135F4F40013CB65 /* PVGameImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGameImporter.h; sourceTree = "<group>"; };
+		A144FC3F2135F5380013CB65 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A144FC402135F5380013CB65 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		A144FC412135F5380013CB65 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A144FC422135F5380013CB65 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		A144FC432135F5380013CB65 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		A144FC442135F5380013CB65 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		A144FC452135F5380013CB65 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A144FC462135F5380013CB65 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		A144FC472135F5380013CB65 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A144FC482135F5380013CB65 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		A144FC492135F5380013CB65 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		A144FC502135F6010013CB65 /* NSArray+Inlineobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Inlineobjc.h"; sourceTree = "<group>"; };
+		A144FC512135F6010013CB65 /* NSString+Inlineobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Inlineobjc.h"; sourceTree = "<group>"; };
+		A144FC522135F6010013CB65 /* LzmaSDKObjC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LzmaSDKObjC.podspec; sourceTree = "<group>"; };
+		A144FC532135F6010013CB65 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A144FC542135F6010013CB65 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG; sourceTree = "<group>"; };
+		A144FC552135F6010013CB65 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A144FC562135F6010013CB65 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A144FC572135F6010013CB65 /* LzmaSDK-ObjC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LzmaSDK-ObjC.podspec"; sourceTree = "<group>"; };
+		A144FC582135F6010013CB65 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		A144FC5C2135F6010013CB65 /* MyWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWindows.h; sourceTree = "<group>"; };
+		A144FC5D2135F6010013CB65 /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
+		A144FC5E2135F6010013CB65 /* MyGuidDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGuidDef.h; sourceTree = "<group>"; };
+		A144FC5F2135F6010013CB65 /* NewHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewHandler.cpp; sourceTree = "<group>"; };
+		A144FC602135F6010013CB65 /* ListFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListFileUtils.h; sourceTree = "<group>"; };
+		A144FC612135F6010013CB65 /* TextConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextConfig.cpp; sourceTree = "<group>"; };
+		A144FC622135F6010013CB65 /* CRC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRC.cpp; sourceTree = "<group>"; };
+		A144FC632135F6010013CB65 /* Sha256Reg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sha256Reg.cpp; sourceTree = "<group>"; };
+		A144FC642135F6010013CB65 /* StringToInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringToInt.cpp; sourceTree = "<group>"; };
+		A144FC652135F6010013CB65 /* Defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defs.h; sourceTree = "<group>"; };
+		A144FC662135F6010013CB65 /* MyVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVector.h; sourceTree = "<group>"; };
+		A144FC672135F6010013CB65 /* IntToString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntToString.h; sourceTree = "<group>"; };
+		A144FC682135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FC692135F6010013CB65 /* StdOutStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StdOutStream.cpp; sourceTree = "<group>"; };
+		A144FC6A2135F6010013CB65 /* StdInStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StdInStream.cpp; sourceTree = "<group>"; };
+		A144FC6B2135F6010013CB65 /* ListFileUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ListFileUtils.cpp; sourceTree = "<group>"; };
+		A144FC6C2135F6010013CB65 /* MyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
+		A144FC6D2135F6010013CB65 /* StringToInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringToInt.h; sourceTree = "<group>"; };
+		A144FC6E2135F6010013CB65 /* MyBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBuffer.h; sourceTree = "<group>"; };
+		A144FC6F2135F6010013CB65 /* MyString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyString.cpp; sourceTree = "<group>"; };
+		A144FC702135F6010013CB65 /* C_FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = C_FileIO.cpp; sourceTree = "<group>"; };
+		A144FC712135F6010013CB65 /* Wildcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wildcard.h; sourceTree = "<group>"; };
+		A144FC722135F6010013CB65 /* IntToString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntToString.cpp; sourceTree = "<group>"; };
+		A144FC732135F6010013CB65 /* Wildcard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Wildcard.cpp; sourceTree = "<group>"; };
+		A144FC742135F6010013CB65 /* StdInStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdInStream.h; sourceTree = "<group>"; };
+		A144FC752135F6010013CB65 /* MyUnknown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUnknown.h; sourceTree = "<group>"; };
+		A144FC762135F6010013CB65 /* MyLinux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLinux.h; sourceTree = "<group>"; };
+		A144FC772135F6010013CB65 /* AutoPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoPtr.h; sourceTree = "<group>"; };
+		A144FC782135F6010013CB65 /* DynamicBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicBuffer.h; sourceTree = "<group>"; };
+		A144FC792135F6010013CB65 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		A144FC7A2135F6010013CB65 /* XzCrc64Reg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XzCrc64Reg.cpp; sourceTree = "<group>"; };
+		A144FC7B2135F6010013CB65 /* ComTry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComTry.h; sourceTree = "<group>"; };
+		A144FC7C2135F6010013CB65 /* StringConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringConvert.h; sourceTree = "<group>"; };
+		A144FC7D2135F6010013CB65 /* UTFConvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UTFConvert.cpp; sourceTree = "<group>"; };
+		A144FC7E2135F6010013CB65 /* MyVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyVector.cpp; sourceTree = "<group>"; };
+		A144FC7F2135F6010013CB65 /* NewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewHandler.h; sourceTree = "<group>"; };
+		A144FC802135F6010013CB65 /* CrcReg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrcReg.cpp; sourceTree = "<group>"; };
+		A144FC812135F6010013CB65 /* StringConvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringConvert.cpp; sourceTree = "<group>"; };
+		A144FC822135F6010013CB65 /* UTFConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTFConvert.h; sourceTree = "<group>"; };
+		A144FC832135F6010013CB65 /* CommandLineParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandLineParser.h; sourceTree = "<group>"; };
+		A144FC842135F6010013CB65 /* MyWindows.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyWindows.cpp; sourceTree = "<group>"; };
+		A144FC852135F6010013CB65 /* C_FileIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C_FileIO.h; sourceTree = "<group>"; };
+		A144FC862135F6010013CB65 /* StdOutStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdOutStream.h; sourceTree = "<group>"; };
+		A144FC872135F6010013CB65 /* MyInitGuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInitGuid.h; sourceTree = "<group>"; };
+		A144FC882135F6010013CB65 /* MyCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCom.h; sourceTree = "<group>"; };
+		A144FC892135F6010013CB65 /* TextConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextConfig.h; sourceTree = "<group>"; };
+		A144FC8A2135F6010013CB65 /* MyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTypes.h; sourceTree = "<group>"; };
+		A144FC8B2135F6010013CB65 /* CommandLineParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandLineParser.cpp; sourceTree = "<group>"; };
+		A144FC8D2135F6010013CB65 /* IProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IProgress.h; sourceTree = "<group>"; };
+		A144FC8F2135F6010013CB65 /* MyAes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAes.h; sourceTree = "<group>"; };
+		A144FC902135F6010013CB65 /* 7zAesRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zAesRegister.cpp; sourceTree = "<group>"; };
+		A144FC912135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FC922135F6010013CB65 /* RandGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RandGen.cpp; sourceTree = "<group>"; };
+		A144FC932135F6010013CB65 /* MyAes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyAes.cpp; sourceTree = "<group>"; };
+		A144FC942135F6010013CB65 /* MyAesReg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyAesReg.cpp; sourceTree = "<group>"; };
+		A144FC952135F6010013CB65 /* 7zAes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zAes.h; sourceTree = "<group>"; };
+		A144FC962135F6010013CB65 /* RandGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandGen.h; sourceTree = "<group>"; };
+		A144FC972135F6010013CB65 /* 7zAes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zAes.cpp; sourceTree = "<group>"; };
+		A144FC992135F6010013CB65 /* LzmaEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaEncoder.h; sourceTree = "<group>"; };
+		A144FC9A2135F6010013CB65 /* CodecExports.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CodecExports.cpp; sourceTree = "<group>"; };
+		A144FC9B2135F6010013CB65 /* BranchMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BranchMisc.h; sourceTree = "<group>"; };
+		A144FC9C2135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FC9D2135F6010013CB65 /* Lzma2Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lzma2Encoder.h; sourceTree = "<group>"; };
+		A144FC9E2135F6010013CB65 /* Lzma2Decoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lzma2Decoder.cpp; sourceTree = "<group>"; };
+		A144FC9F2135F6010013CB65 /* Bcj2Register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bcj2Register.cpp; sourceTree = "<group>"; };
+		A144FCA02135F6010013CB65 /* PpmdDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PpmdDecoder.h; sourceTree = "<group>"; };
+		A144FCA12135F6010013CB65 /* CopyCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyCoder.h; sourceTree = "<group>"; };
+		A144FCA22135F6010013CB65 /* Bcj2Coder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bcj2Coder.h; sourceTree = "<group>"; };
+		A144FCA32135F6010013CB65 /* BcjRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BcjRegister.cpp; sourceTree = "<group>"; };
+		A144FCA42135F6010013CB65 /* DeltaFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeltaFilter.cpp; sourceTree = "<group>"; };
+		A144FCA52135F6010013CB65 /* BcjCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BcjCoder.h; sourceTree = "<group>"; };
+		A144FCA62135F6010013CB65 /* Lzma2Register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lzma2Register.cpp; sourceTree = "<group>"; };
+		A144FCA72135F6010013CB65 /* BranchRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BranchRegister.cpp; sourceTree = "<group>"; };
+		A144FCA82135F6010013CB65 /* CopyCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CopyCoder.cpp; sourceTree = "<group>"; };
+		A144FCA92135F6010013CB65 /* CopyRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CopyRegister.cpp; sourceTree = "<group>"; };
+		A144FCAA2135F6010013CB65 /* Lzma2Encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lzma2Encoder.cpp; sourceTree = "<group>"; };
+		A144FCAB2135F6010013CB65 /* LzmaRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaRegister.cpp; sourceTree = "<group>"; };
+		A144FCAC2135F6010013CB65 /* BcjCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BcjCoder.cpp; sourceTree = "<group>"; };
+		A144FCAD2135F6010013CB65 /* BranchMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BranchMisc.cpp; sourceTree = "<group>"; };
+		A144FCAE2135F6010013CB65 /* PpmdDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PpmdDecoder.cpp; sourceTree = "<group>"; };
+		A144FCAF2135F6010013CB65 /* LzmaDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaDecoder.cpp; sourceTree = "<group>"; };
+		A144FCB02135F6010013CB65 /* ByteSwap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ByteSwap.cpp; sourceTree = "<group>"; };
+		A144FCB12135F6010013CB65 /* PpmdEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PpmdEncoder.h; sourceTree = "<group>"; };
+		A144FCB22135F6010013CB65 /* Bcj2Coder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bcj2Coder.cpp; sourceTree = "<group>"; };
+		A144FCB32135F6010013CB65 /* PpmdRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PpmdRegister.cpp; sourceTree = "<group>"; };
+		A144FCB42135F6010013CB65 /* Lzma2Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lzma2Decoder.h; sourceTree = "<group>"; };
+		A144FCB52135F6010013CB65 /* LzmaEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaEncoder.cpp; sourceTree = "<group>"; };
+		A144FCB62135F6010013CB65 /* LzmaDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaDecoder.h; sourceTree = "<group>"; };
+		A144FCB72135F6010013CB65 /* PpmdEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PpmdEncoder.cpp; sourceTree = "<group>"; };
+		A144FCB92135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FCBA2135F6010013CB65 /* IArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IArchive.h; sourceTree = "<group>"; };
+		A144FCBB2135F6010013CB65 /* ArchiveExports.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArchiveExports.cpp; sourceTree = "<group>"; };
+		A144FCBC2135F6010013CB65 /* DllExports2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DllExports2.cpp; sourceTree = "<group>"; };
+		A144FCBE2135F6010013CB65 /* OutStreamWithCRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutStreamWithCRC.h; sourceTree = "<group>"; };
+		A144FCBF2135F6010013CB65 /* ItemNameUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemNameUtils.h; sourceTree = "<group>"; };
+		A144FCC02135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FCC12135F6010013CB65 /* DummyOutStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DummyOutStream.cpp; sourceTree = "<group>"; };
+		A144FCC22135F6010013CB65 /* InStreamWithCRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InStreamWithCRC.h; sourceTree = "<group>"; };
+		A144FCC32135F6010013CB65 /* HandlerOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HandlerOut.cpp; sourceTree = "<group>"; };
+		A144FCC42135F6010013CB65 /* HandlerOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlerOut.h; sourceTree = "<group>"; };
+		A144FCC52135F6010013CB65 /* OutStreamWithCRC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutStreamWithCRC.cpp; sourceTree = "<group>"; };
+		A144FCC62135F6010013CB65 /* MultiStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiStream.h; sourceTree = "<group>"; };
+		A144FCC72135F6010013CB65 /* MultiStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiStream.cpp; sourceTree = "<group>"; };
+		A144FCC82135F6010013CB65 /* ItemNameUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ItemNameUtils.cpp; sourceTree = "<group>"; };
+		A144FCC92135F6010013CB65 /* CoderMixer2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderMixer2.h; sourceTree = "<group>"; };
+		A144FCCA2135F6010013CB65 /* CoderMixer2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoderMixer2.cpp; sourceTree = "<group>"; };
+		A144FCCB2135F6010013CB65 /* ParseProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParseProperties.cpp; sourceTree = "<group>"; };
+		A144FCCC2135F6010013CB65 /* DummyOutStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyOutStream.h; sourceTree = "<group>"; };
+		A144FCCD2135F6010013CB65 /* ParseProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseProperties.h; sourceTree = "<group>"; };
+		A144FCCE2135F6010013CB65 /* InStreamWithCRC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InStreamWithCRC.cpp; sourceTree = "<group>"; };
+		A144FCCF2135F6010013CB65 /* LzmaHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaHandler.cpp; sourceTree = "<group>"; };
+		A144FCD02135F6010013CB65 /* SplitHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SplitHandler.cpp; sourceTree = "<group>"; };
+		A144FCD22135F6010013CB65 /* 7zExtract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zExtract.cpp; sourceTree = "<group>"; };
+		A144FCD32135F6010013CB65 /* 7zFolderInStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zFolderInStream.cpp; sourceTree = "<group>"; };
+		A144FCD42135F6010013CB65 /* 7zHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zHandler.cpp; sourceTree = "<group>"; };
+		A144FCD52135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FCD62135F6010013CB65 /* 7zHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zHandler.h; sourceTree = "<group>"; };
+		A144FCD72135F6010013CB65 /* 7zHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zHeader.cpp; sourceTree = "<group>"; };
+		A144FCD82135F6010013CB65 /* 7zItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zItem.h; sourceTree = "<group>"; };
+		A144FCD92135F6010013CB65 /* 7zSpecStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zSpecStream.h; sourceTree = "<group>"; };
+		A144FCDA2135F6010013CB65 /* 7zHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zHeader.h; sourceTree = "<group>"; };
+		A144FCDB2135F6010013CB65 /* 7zProperties.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zProperties.cpp; sourceTree = "<group>"; };
+		A144FCDC2135F6010013CB65 /* 7zFolderInStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zFolderInStream.h; sourceTree = "<group>"; };
+		A144FCDD2135F6010013CB65 /* 7zProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zProperties.h; sourceTree = "<group>"; };
+		A144FCDE2135F6010013CB65 /* 7zHandlerOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zHandlerOut.cpp; sourceTree = "<group>"; };
+		A144FCDF2135F6010013CB65 /* 7zIn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zIn.cpp; sourceTree = "<group>"; };
+		A144FCE02135F6010013CB65 /* 7zDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zDecode.h; sourceTree = "<group>"; };
+		A144FCE12135F6010013CB65 /* 7zUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zUpdate.h; sourceTree = "<group>"; };
+		A144FCE22135F6010013CB65 /* 7zOut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zOut.cpp; sourceTree = "<group>"; };
+		A144FCE32135F6010013CB65 /* 7zEncode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zEncode.cpp; sourceTree = "<group>"; };
+		A144FCE42135F6010013CB65 /* 7zUpdate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zUpdate.cpp; sourceTree = "<group>"; };
+		A144FCE52135F6010013CB65 /* 7zEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zEncode.h; sourceTree = "<group>"; };
+		A144FCE62135F6010013CB65 /* 7zOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zOut.h; sourceTree = "<group>"; };
+		A144FCE72135F6010013CB65 /* 7zCompressionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zCompressionMode.h; sourceTree = "<group>"; };
+		A144FCE82135F6010013CB65 /* 7zIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zIn.h; sourceTree = "<group>"; };
+		A144FCE92135F6010013CB65 /* 7zCompressionMode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zCompressionMode.cpp; sourceTree = "<group>"; };
+		A144FCEA2135F6010013CB65 /* 7zDecode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zDecode.cpp; sourceTree = "<group>"; };
+		A144FCEB2135F6010013CB65 /* 7zSpecStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zSpecStream.cpp; sourceTree = "<group>"; };
+		A144FCEC2135F6010013CB65 /* 7zRegister.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zRegister.cpp; sourceTree = "<group>"; };
+		A144FCED2135F6010013CB65 /* DllExports2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DllExports2.h; sourceTree = "<group>"; };
+		A144FCEE2135F6010013CB65 /* IDecl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDecl.h; sourceTree = "<group>"; };
+		A144FCEF2135F6010013CB65 /* ICoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICoder.h; sourceTree = "<group>"; };
+		A144FCF02135F6010013CB65 /* MyVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyVersion.h; sourceTree = "<group>"; };
+		A144FCF22135F6010013CB65 /* ProgressUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgressUtils.cpp; sourceTree = "<group>"; };
+		A144FCF32135F6010013CB65 /* VirtThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VirtThread.cpp; sourceTree = "<group>"; };
+		A144FCF42135F6010013CB65 /* LimitedStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LimitedStreams.h; sourceTree = "<group>"; };
+		A144FCF52135F6010013CB65 /* MethodProps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodProps.h; sourceTree = "<group>"; };
+		A144FCF62135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FCF72135F6010013CB65 /* OutBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutBuffer.cpp; sourceTree = "<group>"; };
+		A144FCF82135F6010013CB65 /* UniqBlocks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UniqBlocks.cpp; sourceTree = "<group>"; };
+		A144FCF92135F6010013CB65 /* CWrappers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWrappers.h; sourceTree = "<group>"; };
+		A144FCFA2135F6010013CB65 /* FilterCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterCoder.cpp; sourceTree = "<group>"; };
+		A144FCFB2135F6010013CB65 /* StreamObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamObjects.h; sourceTree = "<group>"; };
+		A144FCFC2135F6010013CB65 /* RegisterArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterArc.h; sourceTree = "<group>"; };
+		A144FCFD2135F6010013CB65 /* RegisterCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterCodec.h; sourceTree = "<group>"; };
+		A144FCFE2135F6010013CB65 /* InBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InBuffer.cpp; sourceTree = "<group>"; };
+		A144FCFF2135F6010013CB65 /* StreamUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamUtils.cpp; sourceTree = "<group>"; };
+		A144FD002135F6010013CB65 /* MethodId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodId.h; sourceTree = "<group>"; };
+		A144FD012135F6010013CB65 /* VirtThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtThread.h; sourceTree = "<group>"; };
+		A144FD022135F6010013CB65 /* MethodProps.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MethodProps.cpp; sourceTree = "<group>"; };
+		A144FD032135F6010013CB65 /* StreamBinder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamBinder.cpp; sourceTree = "<group>"; };
+		A144FD042135F6010013CB65 /* LockedStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LockedStream.cpp; sourceTree = "<group>"; };
+		A144FD052135F6010013CB65 /* FilterCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCoder.h; sourceTree = "<group>"; };
+		A144FD062135F6010013CB65 /* StreamBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamBinder.h; sourceTree = "<group>"; };
+		A144FD072135F6010013CB65 /* FileStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileStreams.h; sourceTree = "<group>"; };
+		A144FD082135F6010013CB65 /* LimitedStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LimitedStreams.cpp; sourceTree = "<group>"; };
+		A144FD092135F6010013CB65 /* InOutTempBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InOutTempBuffer.h; sourceTree = "<group>"; };
+		A144FD0A2135F6010013CB65 /* CreateCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateCoder.h; sourceTree = "<group>"; };
+		A144FD0B2135F6010013CB65 /* InOutTempBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InOutTempBuffer.cpp; sourceTree = "<group>"; };
+		A144FD0C2135F6010013CB65 /* CWrappers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWrappers.cpp; sourceTree = "<group>"; };
+		A144FD0D2135F6010013CB65 /* OffsetStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OffsetStream.cpp; sourceTree = "<group>"; };
+		A144FD0E2135F6010013CB65 /* OffsetStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OffsetStream.h; sourceTree = "<group>"; };
+		A144FD0F2135F6010013CB65 /* FileStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileStreams.cpp; sourceTree = "<group>"; };
+		A144FD102135F6010013CB65 /* FilePathAutoRename.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePathAutoRename.h; sourceTree = "<group>"; };
+		A144FD112135F6010013CB65 /* LockedStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockedStream.h; sourceTree = "<group>"; };
+		A144FD122135F6010013CB65 /* MethodId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MethodId.cpp; sourceTree = "<group>"; };
+		A144FD132135F6010013CB65 /* ProgressUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressUtils.h; sourceTree = "<group>"; };
+		A144FD142135F6010013CB65 /* StreamUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamUtils.h; sourceTree = "<group>"; };
+		A144FD152135F6010013CB65 /* StreamObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamObjects.cpp; sourceTree = "<group>"; };
+		A144FD162135F6010013CB65 /* FilePathAutoRename.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilePathAutoRename.cpp; sourceTree = "<group>"; };
+		A144FD172135F6010013CB65 /* UniqBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqBlocks.h; sourceTree = "<group>"; };
+		A144FD182135F6010013CB65 /* PropId.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropId.cpp; sourceTree = "<group>"; };
+		A144FD192135F6010013CB65 /* OutBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutBuffer.h; sourceTree = "<group>"; };
+		A144FD1A2135F6010013CB65 /* CreateCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreateCoder.cpp; sourceTree = "<group>"; };
+		A144FD1B2135F6010013CB65 /* InBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InBuffer.h; sourceTree = "<group>"; };
+		A144FD1C2135F6010013CB65 /* PropID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropID.h; sourceTree = "<group>"; };
+		A144FD1D2135F6010013CB65 /* IStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStream.h; sourceTree = "<group>"; };
+		A144FD1E2135F6010013CB65 /* IPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPassword.h; sourceTree = "<group>"; };
+		A144FD202135F6010013CB65 /* Defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defs.h; sourceTree = "<group>"; };
+		A144FD212135F6010013CB65 /* PropVariantConv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropVariantConv.h; sourceTree = "<group>"; };
+		A144FD222135F6010013CB65 /* StdAfx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StdAfx.h; sourceTree = "<group>"; };
+		A144FD232135F6010013CB65 /* PropVariantConv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropVariantConv.cpp; sourceTree = "<group>"; };
+		A144FD242135F6010013CB65 /* Synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization.h; sourceTree = "<group>"; };
+		A144FD252135F6010013CB65 /* FileIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FileIO.cpp; sourceTree = "<group>"; };
+		A144FD262135F6010013CB65 /* PropVariant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropVariant.h; sourceTree = "<group>"; };
+		A144FD272135F6010013CB65 /* Thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thread.h; sourceTree = "<group>"; };
+		A144FD282135F6010013CB65 /* PropVariant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PropVariant.cpp; sourceTree = "<group>"; };
+		A144FD2A2135F6010013CB65 /* Lzma2Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzma2Dec.c; sourceTree = "<group>"; };
+		A144FD2B2135F6010013CB65 /* LzHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzHash.h; sourceTree = "<group>"; };
+		A144FD2C2135F6010013CB65 /* LzmaEnc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LzmaEnc.c; sourceTree = "<group>"; };
+		A144FD2D2135F6010013CB65 /* Ppmd7Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ppmd7Dec.c; sourceTree = "<group>"; };
+		A144FD2E2135F6010013CB65 /* Aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Aes.c; sourceTree = "<group>"; };
+		A144FD2F2135F6010013CB65 /* LzFindMt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LzFindMt.c; sourceTree = "<group>"; };
+		A144FD302135F6010013CB65 /* 7zTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zTypes.h; sourceTree = "<group>"; };
+		A144FD312135F6010013CB65 /* XzDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XzDec.c; sourceTree = "<group>"; };
+		A144FD322135F6010013CB65 /* MtCoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MtCoder.c; sourceTree = "<group>"; };
+		A144FD332135F6010013CB65 /* Bcj2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bcj2.c; sourceTree = "<group>"; };
+		A144FD342135F6010013CB65 /* Compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		A144FD352135F6010013CB65 /* LzFind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LzFind.c; sourceTree = "<group>"; };
+		A144FD362135F6010013CB65 /* XzCrc64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XzCrc64.h; sourceTree = "<group>"; };
+		A144FD372135F6010013CB65 /* Precomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Precomp.h; sourceTree = "<group>"; };
+		A144FD382135F6010013CB65 /* CpuArch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuArch.h; sourceTree = "<group>"; };
+		A144FD392135F6010013CB65 /* Sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
+		A144FD3A2135F6010013CB65 /* 7zCrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zCrc.h; sourceTree = "<group>"; };
+		A144FD3B2135F6010013CB65 /* Ppmd7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ppmd7.c; sourceTree = "<group>"; };
+		A144FD3C2135F6010013CB65 /* Delta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delta.h; sourceTree = "<group>"; };
+		A144FD3D2135F6010013CB65 /* Bra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bra.c; sourceTree = "<group>"; };
+		A144FD3E2135F6010013CB65 /* 7zFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zFile.h; sourceTree = "<group>"; };
+		A144FD3F2135F6010013CB65 /* Bra86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bra86.c; sourceTree = "<group>"; };
+		A144FD402135F6010013CB65 /* 7zArcIn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zArcIn.c; sourceTree = "<group>"; };
+		A144FD412135F6010013CB65 /* 7zAlloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zAlloc.c; sourceTree = "<group>"; };
+		A144FD422135F6010013CB65 /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha256.h; sourceTree = "<group>"; };
+		A144FD432135F6010013CB65 /* XzIn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XzIn.c; sourceTree = "<group>"; };
+		A144FD442135F6010013CB65 /* XzEnc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XzEnc.c; sourceTree = "<group>"; };
+		A144FD452135F6010013CB65 /* Threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Threads.h; sourceTree = "<group>"; };
+		A144FD462135F6010013CB65 /* LzmaLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaLib.h; sourceTree = "<group>"; };
+		A144FD472135F6010013CB65 /* 7zBuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zBuf.h; sourceTree = "<group>"; };
+		A144FD482135F6010013CB65 /* 7z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7z.h; sourceTree = "<group>"; };
+		A144FD492135F6010013CB65 /* Alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Alloc.c; sourceTree = "<group>"; };
+		A144FD4A2135F6010013CB65 /* Xz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xz.h; sourceTree = "<group>"; };
+		A144FD4B2135F6010013CB65 /* LzmaDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LzmaDec.c; sourceTree = "<group>"; };
+		A144FD4C2135F6010013CB65 /* Lzma2Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzma2Enc.c; sourceTree = "<group>"; };
+		A144FD4D2135F6010013CB65 /* Ppmd7Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ppmd7Enc.c; sourceTree = "<group>"; };
+		A144FD4E2135F6010013CB65 /* LzFindMt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzFindMt.h; sourceTree = "<group>"; };
+		A144FD4F2135F6010013CB65 /* 7zDec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zDec.c; sourceTree = "<group>"; };
+		A144FD502135F6010013CB65 /* Lzma86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lzma86.h; sourceTree = "<group>"; };
+		A144FD512135F6010013CB65 /* LzmaEnc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaEnc.h; sourceTree = "<group>"; };
+		A144FD522135F6010013CB65 /* Lzma2Dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lzma2Dec.h; sourceTree = "<group>"; };
+		A144FD532135F6010013CB65 /* Aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aes.h; sourceTree = "<group>"; };
+		A144FD542135F6010013CB65 /* 7zBuf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zBuf2.c; sourceTree = "<group>"; };
+		A144FD552135F6010013CB65 /* XzCrc64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XzCrc64.c; sourceTree = "<group>"; };
+		A144FD562135F6010013CB65 /* LzFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzFind.h; sourceTree = "<group>"; };
+		A144FD572135F6010013CB65 /* BraIA64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BraIA64.c; sourceTree = "<group>"; };
+		A144FD582135F6010013CB65 /* Lzma86Dec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzma86Dec.c; sourceTree = "<group>"; };
+		A144FD592135F6010013CB65 /* 7zStream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zStream.c; sourceTree = "<group>"; };
+		A144FD5A2135F6010013CB65 /* Bcj2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bcj2.h; sourceTree = "<group>"; };
+		A144FD5B2135F6010013CB65 /* Ppmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ppmd.h; sourceTree = "<group>"; };
+		A144FD5C2135F6010013CB65 /* MtCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtCoder.h; sourceTree = "<group>"; };
+		A144FD5D2135F6010013CB65 /* Sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sha256.c; sourceTree = "<group>"; };
+		A144FD5E2135F6010013CB65 /* 7zAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zAlloc.h; sourceTree = "<group>"; };
+		A144FD5F2135F6010013CB65 /* Delta.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Delta.c; sourceTree = "<group>"; };
+		A144FD602135F6010013CB65 /* 7zVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zVersion.h; sourceTree = "<group>"; };
+		A144FD612135F6010013CB65 /* 7zFile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zFile.c; sourceTree = "<group>"; };
+		A144FD622135F6010013CB65 /* Bra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bra.h; sourceTree = "<group>"; };
+		A144FD632135F6010013CB65 /* 7zCrc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zCrc.c; sourceTree = "<group>"; };
+		A144FD642135F6010013CB65 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		A144FD652135F6010013CB65 /* AesOpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AesOpt.c; sourceTree = "<group>"; };
+		A144FD662135F6010013CB65 /* RotateDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateDefs.h; sourceTree = "<group>"; };
+		A144FD672135F6010013CB65 /* Lzma86Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lzma86Enc.c; sourceTree = "<group>"; };
+		A144FD682135F6010013CB65 /* Ppmd7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ppmd7.h; sourceTree = "<group>"; };
+		A144FD692135F6010013CB65 /* CpuArch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CpuArch.c; sourceTree = "<group>"; };
+		A144FD6A2135F6010013CB65 /* Lzma2Enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lzma2Enc.h; sourceTree = "<group>"; };
+		A144FD6B2135F6010013CB65 /* Bcj2Enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Bcj2Enc.c; sourceTree = "<group>"; };
+		A144FD6C2135F6010013CB65 /* LzmaDec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaDec.h; sourceTree = "<group>"; };
+		A144FD6D2135F6010013CB65 /* XzCrc64Opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = XzCrc64Opt.c; sourceTree = "<group>"; };
+		A144FD6E2135F6010013CB65 /* Xz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Xz.c; sourceTree = "<group>"; };
+		A144FD6F2135F6010013CB65 /* 7zCrcOpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zCrcOpt.c; sourceTree = "<group>"; };
+		A144FD702135F6010013CB65 /* Alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alloc.h; sourceTree = "<group>"; };
+		A144FD712135F6010013CB65 /* Threads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Threads.c; sourceTree = "<group>"; };
+		A144FD722135F6010013CB65 /* 7zBuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zBuf.c; sourceTree = "<group>"; };
+		A144FD732135F6010013CB65 /* LzmaLib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LzmaLib.c; sourceTree = "<group>"; };
+		A144FD742135F6010013CB65 /* XzEnc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XzEnc.h; sourceTree = "<group>"; };
+		A144FD762135F6010013CB65 /* LzmaAppleCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaAppleCommon.h; sourceTree = "<group>"; };
+		A144FD772135F6010013CB65 /* LzmaSDKObjCOutFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCOutFile.h; sourceTree = "<group>"; };
+		A144FD782135F6010013CB65 /* LzmaSDKObjCWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCWriter.h; sourceTree = "<group>"; };
+		A144FD792135F6010013CB65 /* LzmaSDKObjCBufferProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCBufferProcessor.mm; sourceTree = "<group>"; };
+		A144FD7A2135F6010013CB65 /* LzmaSDKObjC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjC.mm; sourceTree = "<group>"; };
+		A144FD7B2135F6010013CB65 /* LzmaSDKObjCUpdateCallback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCUpdateCallback.mm; sourceTree = "<group>"; };
+		A144FD7C2135F6010013CB65 /* LzmaSDKObjCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCCommon.h; sourceTree = "<group>"; };
+		A144FD7D2135F6010013CB65 /* LzmaSDKObjCCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCCommon.cpp; sourceTree = "<group>"; };
+		A144FD7E2135F6010013CB65 /* LzmaSDKObjCError.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCError.mm; sourceTree = "<group>"; };
+		A144FD7F2135F6010013CB65 /* LzmaSDKObjCInFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCInFile.h; sourceTree = "<group>"; };
+		A144FD802135F6010013CB65 /* LzmaSDKObjCExtractCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCExtractCallback.h; sourceTree = "<group>"; };
+		A144FD812135F6010013CB65 /* LzmaSDKObjCUpdateCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCUpdateCallback.h; sourceTree = "<group>"; };
+		A144FD822135F6010013CB65 /* LzmaSDKObjCFileEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCFileEncoder.h; sourceTree = "<group>"; };
+		A144FD832135F6010013CB65 /* LzmaSDKObjCExtern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCExtern.h; sourceTree = "<group>"; };
+		A144FD842135F6010013CB65 /* LzmaSDKObjCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCItem.h; sourceTree = "<group>"; };
+		A144FD852135F6010013CB65 /* LzmaSDKObjCReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCReader.mm; sourceTree = "<group>"; };
+		A144FD862135F6010013CB65 /* LzmaSDKObjCFileDecoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCFileDecoder.cpp; sourceTree = "<group>"; };
+		A144FD872135F6010013CB65 /* LzmaSDKObjCMutableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCMutableItem.h; sourceTree = "<group>"; };
+		A144FD882135F6010013CB65 /* LzmaSDKObjCItem+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LzmaSDKObjCItem+Private.h"; sourceTree = "<group>"; };
+		A144FD892135F6010013CB65 /* LzmaSDKObjCBufferProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCBufferProcessor.h; sourceTree = "<group>"; };
+		A144FD8A2135F6010013CB65 /* LzmaSDKObjCTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCTypes.h; sourceTree = "<group>"; };
+		A144FD8B2135F6010013CB65 /* LzmaSDKObjCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCError.h; sourceTree = "<group>"; };
+		A144FD8C2135F6010013CB65 /* LzmaSDKObjCFileDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCFileDecoder.h; sourceTree = "<group>"; };
+		A144FD8D2135F6010013CB65 /* LzmaSDKObjCReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCReader.h; sourceTree = "<group>"; };
+		A144FD8E2135F6010013CB65 /* LzmaSDKObjCBaseCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCBaseCoder.h; sourceTree = "<group>"; };
+		A144FD8F2135F6010013CB65 /* LzmaSDKObjCWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCWriter.mm; sourceTree = "<group>"; };
+		A144FD902135F6010013CB65 /* LzmaSDKObjCMutableItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCMutableItem.mm; sourceTree = "<group>"; };
+		A144FD912135F6010013CB65 /* LzmaSDKObjCOpenCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjCOpenCallback.h; sourceTree = "<group>"; };
+		A144FD922135F6010013CB65 /* LzmaSDKObjCOpenCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCOpenCallback.cpp; sourceTree = "<group>"; };
+		A144FD932135F6010013CB65 /* LzmaSDKObjCInFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCInFile.cpp; sourceTree = "<group>"; };
+		A144FD942135F6010013CB65 /* LzmaSDKObjCOutFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCOutFile.cpp; sourceTree = "<group>"; };
+		A144FD952135F6010013CB65 /* LzmaSDKObjCBaseCoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCBaseCoder.cpp; sourceTree = "<group>"; };
+		A144FD962135F6010013CB65 /* LzmaSDKObjCFileEncoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LzmaSDKObjCFileEncoder.cpp; sourceTree = "<group>"; };
+		A144FD972135F6010013CB65 /* LzmaSDKObjCExtern.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCExtern.mm; sourceTree = "<group>"; };
+		A144FD982135F6010013CB65 /* LzmaSDKObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LzmaSDKObjC.h; sourceTree = "<group>"; };
+		A144FD992135F6010013CB65 /* LzmaSDKObjCMutableItem+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LzmaSDKObjCMutableItem+Private.h"; sourceTree = "<group>"; };
+		A144FD9A2135F6010013CB65 /* LzmaSDKObjCExtractCallback.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCExtractCallback.mm; sourceTree = "<group>"; };
+		A144FD9B2135F6010013CB65 /* LzmaSDKObjCItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LzmaSDKObjCItem.mm; sourceTree = "<group>"; };
+		A144FE3B2135F6280013CB65 /* PVGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVGLViewController.h; sourceTree = "<group>"; };
+		A144FE3C2135F6280013CB65 /* PVEmulatorConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVEmulatorConstants.m; sourceTree = "<group>"; };
+		A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVEmulatorViewController.m; sourceTree = "<group>"; };
+		A144FE3E2135F6280013CB65 /* PVEmulatorConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVEmulatorConfiguration.h; sourceTree = "<group>"; };
+		A144FE3F2135F6280013CB65 /* PVGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVGLViewController.m; sourceTree = "<group>"; };
+		A144FE402135F6280013CB65 /* PVEmulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVEmulatorViewController.h; sourceTree = "<group>"; };
+		A144FE412135F6280013CB65 /* PVEmulatorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVEmulatorConstants.h; sourceTree = "<group>"; };
+		A144FE422135F6280013CB65 /* PVEmulatorConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVEmulatorConfiguration.m; sourceTree = "<group>"; };
+		A144FE472135F7B80013CB65 /* PVAppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVAppConstants.h; sourceTree = "<group>"; };
+		A144FE482135FA4D0013CB65 /* PVAppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVAppConstants.m; sourceTree = "<group>"; };
 		A16DA3ED2134A5F900CD9E21 /* VirtualBoyVR-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirtualBoyVR-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16DA3F22134A5F900CD9E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +711,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A144FB772135F2D70013CB65 /* PVMednafen.framework in Frameworks */,
+				A144FB792135F2D70013CB65 /* PVSupport.framework in Frameworks */,
 				DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +723,8 @@
 		02A79EDB23284F59C0912120 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A144FB762135F2D70013CB65 /* PVMednafen.framework */,
+				A144FB782135F2D70013CB65 /* PVSupport.framework */,
 				6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */,
 			);
 			name = Frameworks;
@@ -58,6 +737,656 @@
 				2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A144FB7A2135F3980013CB65 /* Provenance */ = {
+			isa = PBXGroup;
+			children = (
+				A144FE3A2135F6280013CB65 /* Emulator */,
+				A144FC4F2135F6010013CB65 /* LzmaSDKObjC */,
+				A144FB7B2135F3DF0013CB65 /* Categories */,
+				A144FBA62135F46C0013CB65 /* Controller */,
+				A144FC1B2135F4F40013CB65 /* Game Library */,
+				A144FC192135F4AD0013CB65 /* Provenance-Prefix.pch */,
+				A144FE482135FA4D0013CB65 /* PVAppConstants.m */,
+				A144FE472135F7B80013CB65 /* PVAppConstants.h */,
+				A144FC1A2135F4C70013CB65 /* PVAvailability.h */,
+				A144FC0C2135F48E0013CB65 /* Settings */,
+				A144FC3D2135F5380013CB65 /* SSZipArchive */,
+			);
+			path = Provenance;
+			sourceTree = "<group>";
+		};
+		A144FB7B2135F3DF0013CB65 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A144FB8A2135F3DF0013CB65 /* MBProgressHUD.h */,
+				A144FB822135F3DF0013CB65 /* MBProgressHUD.m */,
+				A144FB872135F3DF0013CB65 /* NSData+Hashing.h */,
+				A144FB932135F3DF0013CB65 /* NSData+Hashing.m */,
+				A144FB902135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.h */,
+				A144FB7C2135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m */,
+				A144FB7E2135F3DF0013CB65 /* NSFileManager+Hashing.h */,
+				A144FB8E2135F3DF0013CB65 /* NSFileManager+Hashing.m */,
+				A144FB912135F3DF0013CB65 /* NSString+Hashing.h */,
+				A144FB832135F3DF0013CB65 /* NSString+Hashing.m */,
+				A144FB8D2135F3DF0013CB65 /* PVGame+Sizing.h */,
+				A144FB7F2135F3DF0013CB65 /* PVGame+Sizing.m */,
+				A144FB802135F3DF0013CB65 /* RLMRealmConfiguration+Config.h */,
+				A144FB8C2135F3DF0013CB65 /* RLMRealmConfiguration+Config.m */,
+				A144FB882135F3DF0013CB65 /* UIActionSheet+BlockAdditions.h */,
+				A144FB922135F3DF0013CB65 /* UIActionSheet+BlockAdditions.m */,
+				A144FB892135F3DF0013CB65 /* UIAlertView+BlockAdditions.h */,
+				A144FB972135F3DF0013CB65 /* UIAlertView+BlockAdditions.m */,
+				A144FB8B2135F3DF0013CB65 /* UIDevice+Hardware.h */,
+				A144FB812135F3DF0013CB65 /* UIDevice+Hardware.m */,
+				A144FB842135F3DF0013CB65 /* UIImage+Color.h */,
+				A144FB952135F3DF0013CB65 /* UIImage+Color.m */,
+				A144FB862135F3DF0013CB65 /* UIImage+ImageEffects.h */,
+				A144FB942135F3DF0013CB65 /* UIImage+ImageEffects.m */,
+				A144FB7D2135F3DF0013CB65 /* UIImage+Scaling.h */,
+				A144FB8F2135F3DF0013CB65 /* UIImage+Scaling.m */,
+				A144FB962135F3DF0013CB65 /* UIView+FrameAdditions.h */,
+				A144FB852135F3DF0013CB65 /* UIView+FrameAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A144FBA62135F46C0013CB65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A144FBB12135F46C0013CB65 /* iCade */,
+				A144FBCB2135F46C0013CB65 /* JSButton.h */,
+				A144FBE22135F46C0013CB65 /* JSButton.m */,
+				A144FBAE2135F46C0013CB65 /* JSDPad.h */,
+				A144FBDE2135F46C0013CB65 /* JSDPad.m */,
+				A144FBD32135F46C0013CB65 /* PV32XControllerViewController.h */,
+				A144FBE62135F46C0013CB65 /* PV32XControllerViewController.m */,
+				A144FBAF2135F46C0013CB65 /* PVAtari5200ControllerViewController.h */,
+				A144FBDD2135F46C0013CB65 /* PVAtari5200ControllerViewController.m */,
+				A144FBE02135F46C0013CB65 /* PVAtari7800ControllerViewController.h */,
+				A144FBCD2135F46C0013CB65 /* PVAtari7800ControllerViewController.m */,
+				A144FBC92135F46C0013CB65 /* PVButtonGroupOverlayView.h */,
+				A144FBE42135F46C0013CB65 /* PVButtonGroupOverlayView.m */,
+				A144FBE32135F46C0013CB65 /* PVControllerManager.h */,
+				A144FBCA2135F46C0013CB65 /* PVControllerManager.m */,
+				A144FBD52135F46C0013CB65 /* PVControllerSelectionViewController.h */,
+				A144FBAD2135F46C0013CB65 /* PVControllerSelectionViewController.m */,
+				A144FBD82135F46C0013CB65 /* PVControllerViewController.h */,
+				A144FBAA2135F46C0013CB65 /* PVControllerViewController.m */,
+				A144FBA72135F46C0013CB65 /* PVGBAControllerViewController.h */,
+				A144FBDB2135F46C0013CB65 /* PVGBAControllerViewController.m */,
+				A144FBCC2135F46C0013CB65 /* PVGBControllerViewController.h */,
+				A144FBE12135F46C0013CB65 /* PVGBControllerViewController.m */,
+				A144FBB02135F46C0013CB65 /* PVGenesisControllerViewController.h */,
+				A144FBDC2135F46C0013CB65 /* PVGenesisControllerViewController.m */,
+				A144FBDF2135F46C0013CB65 /* PVLynxControllerViewController.h */,
+				A144FBCE2135F46C0013CB65 /* PVLynxControllerViewController.m */,
+				A144FBD72135F46C0013CB65 /* PVNeoGeoPocketControllerViewController.h */,
+				A144FBAB2135F46C0013CB65 /* PVNeoGeoPocketControllerViewController.m */,
+				A144FBA82135F46C0013CB65 /* PVNESControllerViewController.h */,
+				A144FBDA2135F46C0013CB65 /* PVNESControllerViewController.m */,
+				A144FBE82135F46C0013CB65 /* PVPCEControllerViewController.h */,
+				A144FBD12135F46C0013CB65 /* PVPCEControllerViewController.m */,
+				A144FBE92135F46C0013CB65 /* PVPokeMiniControllerViewController.h */,
+				A144FBD02135F46C0013CB65 /* PVPokeMiniControllerViewController.m */,
+				A144FBA92135F46C0013CB65 /* PVPSXControllerViewController.h */,
+				A144FBD92135F46C0013CB65 /* PVPSXControllerViewController.m */,
+				A144FBCF2135F46C0013CB65 /* PVSNESControllerViewController.h */,
+				A144FBEA2135F46C0013CB65 /* PVSNESControllerViewController.m */,
+				A144FBE52135F46C0013CB65 /* PVStellaControllerViewController.h */,
+				A144FBD42135F46C0013CB65 /* PVStellaControllerViewController.m */,
+				A144FBAC2135F46C0013CB65 /* PVVBControllerViewController.h */,
+				A144FBD62135F46C0013CB65 /* PVVBControllerViewController.m */,
+				A144FBE72135F46C0013CB65 /* PVWonderSwanControllerViewController.h */,
+				A144FBD22135F46C0013CB65 /* PVWonderSwanControllerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A144FBB12135F46C0013CB65 /* iCade */ = {
+			isa = PBXGroup;
+			children = (
+				A144FBB22135F46C0013CB65 /* PViCadeSteelSeriesController.m */,
+				A144FBB32135F46C0013CB65 /* iCadeReaderView.m */,
+				A144FBB42135F46C0013CB65 /* PViCadeControllerViewController.h */,
+				A144FBB52135F46C0013CB65 /* PViCadeController.h */,
+				A144FBB62135F46C0013CB65 /* PViCadeGamepadButtonInput.h */,
+				A144FBB72135F46C0013CB65 /* PViCadeGamepadDirectionPad.h */,
+				A144FBB82135F46C0013CB65 /* PViCadeInputAxis.h */,
+				A144FBB92135F46C0013CB65 /* PViCade8BitdoController.h */,
+				A144FBBA2135F46C0013CB65 /* PViCadeReader.h */,
+				A144FBBB2135F46C0013CB65 /* PViCadeGamepad.h */,
+				A144FBBC2135F46C0013CB65 /* kICadeControllerSetting.h */,
+				A144FBBD2135F46C0013CB65 /* PViCadeGamepadButtonInput.m */,
+				A144FBBE2135F46C0013CB65 /* PViCadeControllerViewController.m */,
+				A144FBBF2135F46C0013CB65 /* PViCadeController.m */,
+				A144FBC02135F46C0013CB65 /* iCadeReaderView.h */,
+				A144FBC12135F46C0013CB65 /* PViCadeSteelSeriesController.h */,
+				A144FBC22135F46C0013CB65 /* PViCadeGamepadDirectionPad.m */,
+				A144FBC32135F46C0013CB65 /* PViCadeReader.m */,
+				A144FBC42135F46C0013CB65 /* PViCade8BitdoController.m */,
+				A144FBC52135F46C0013CB65 /* PViCadeInputAxis.m */,
+				A144FBC62135F46C0013CB65 /* iCadeState.h */,
+				A144FBC72135F46C0013CB65 /* kICadeControllerSetting.m */,
+				A144FBC82135F46C0013CB65 /* PViCadeGamepad.m */,
+			);
+			path = iCade;
+			sourceTree = "<group>";
+		};
+		A144FC0C2135F48E0013CB65 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC0D2135F48E0013CB65 /* PVSettingsModel.m */,
+				A144FC0E2135F48E0013CB65 /* PVAppearanceViewController.m */,
+				A144FC0F2135F48E0013CB65 /* PVLicensesViewController.m */,
+				A144FC102135F48E0013CB65 /* PVSettingsViewController.m */,
+				A144FC112135F48E0013CB65 /* PVAppearanceViewController.h */,
+				A144FC122135F48E0013CB65 /* PVSettingsModel.h */,
+				A144FC132135F48E0013CB65 /* PVLicensesViewController.h */,
+				A144FC142135F48E0013CB65 /* PVSettingsViewController.h */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A144FC1B2135F4F40013CB65 /* Game Library */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC242135F4F40013CB65 /* OESQLiteDatabase.h */,
+				A144FC2F2135F4F40013CB65 /* OESQLiteDatabase.m */,
+				A144FC202135F4F40013CB65 /* PVConflictViewController.h */,
+				A144FC2B2135F4F40013CB65 /* PVConflictViewController.m */,
+				A144FC222135F4F40013CB65 /* PVDirectoryWatcher.h */,
+				A144FC282135F4F40013CB65 /* PVDirectoryWatcher.m */,
+				A144FC302135F4F40013CB65 /* PVGame.h */,
+				A144FC262135F4F40013CB65 /* PVGame.m */,
+				A144FC312135F4F40013CB65 /* PVGameImporter.h */,
+				A144FC252135F4F40013CB65 /* PVGameImporter.m */,
+				A144FC1D2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.h */,
+				A144FC2D2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.m */,
+				A144FC232135F4F40013CB65 /* PVGameLibrarySectionHeaderView.h */,
+				A144FC2E2135F4F40013CB65 /* PVGameLibrarySectionHeaderView.m */,
+				A144FC1C2135F4F40013CB65 /* PVGameLibraryViewController.h */,
+				A144FC272135F4F40013CB65 /* PVGameLibraryViewController.m */,
+				A144FC1F2135F4F40013CB65 /* PVMediaCache.h */,
+				A144FC2A2135F4F40013CB65 /* PVMediaCache.m */,
+				A144FC1E2135F4F40013CB65 /* PVRecentGame.h */,
+				A144FC2C2135F4F40013CB65 /* PVRecentGame.m */,
+				A144FC212135F4F40013CB65 /* PVSynchronousURLSession.h */,
+				A144FC292135F4F40013CB65 /* PVSynchronousURLSession.m */,
+			);
+			path = "Game Library";
+			sourceTree = "<group>";
+		};
+		A144FC3D2135F5380013CB65 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC3E2135F5380013CB65 /* minizip */,
+				A144FC482135F5380013CB65 /* SSZipArchive.h */,
+				A144FC492135F5380013CB65 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		A144FC3E2135F5380013CB65 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC3F2135F5380013CB65 /* unzip.c */,
+				A144FC402135F5380013CB65 /* zip.c */,
+				A144FC412135F5380013CB65 /* ioapi.c */,
+				A144FC422135F5380013CB65 /* mztools.c */,
+				A144FC432135F5380013CB65 /* crypt.h */,
+				A144FC442135F5380013CB65 /* zip.h */,
+				A144FC452135F5380013CB65 /* unzip.h */,
+				A144FC462135F5380013CB65 /* mztools.h */,
+				A144FC472135F5380013CB65 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		A144FC4F2135F6010013CB65 /* LzmaSDKObjC */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC502135F6010013CB65 /* NSArray+Inlineobjc.h */,
+				A144FC512135F6010013CB65 /* NSString+Inlineobjc.h */,
+				A144FC522135F6010013CB65 /* LzmaSDKObjC.podspec */,
+				A144FC532135F6010013CB65 /* LICENSE */,
+				A144FC542135F6010013CB65 /* CHANGELOG */,
+				A144FC552135F6010013CB65 /* README.md */,
+				A144FC562135F6010013CB65 /* .gitignore */,
+				A144FC572135F6010013CB65 /* LzmaSDK-ObjC.podspec */,
+				A144FC582135F6010013CB65 /* .travis.yml */,
+				A144FC592135F6010013CB65 /* lzma */,
+				A144FD752135F6010013CB65 /* src */,
+			);
+			path = LzmaSDKObjC;
+			sourceTree = "<group>";
+		};
+		A144FC592135F6010013CB65 /* lzma */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC5A2135F6010013CB65 /* CPP */,
+				A144FD292135F6010013CB65 /* C */,
+			);
+			path = lzma;
+			sourceTree = "<group>";
+		};
+		A144FC5A2135F6010013CB65 /* CPP */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC5B2135F6010013CB65 /* Common */,
+				A144FC8C2135F6010013CB65 /* 7zip */,
+				A144FD1F2135F6010013CB65 /* Windows */,
+			);
+			path = CPP;
+			sourceTree = "<group>";
+		};
+		A144FC5B2135F6010013CB65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC5C2135F6010013CB65 /* MyWindows.h */,
+				A144FC5D2135F6010013CB65 /* MyException.h */,
+				A144FC5E2135F6010013CB65 /* MyGuidDef.h */,
+				A144FC5F2135F6010013CB65 /* NewHandler.cpp */,
+				A144FC602135F6010013CB65 /* ListFileUtils.h */,
+				A144FC612135F6010013CB65 /* TextConfig.cpp */,
+				A144FC622135F6010013CB65 /* CRC.cpp */,
+				A144FC632135F6010013CB65 /* Sha256Reg.cpp */,
+				A144FC642135F6010013CB65 /* StringToInt.cpp */,
+				A144FC652135F6010013CB65 /* Defs.h */,
+				A144FC662135F6010013CB65 /* MyVector.h */,
+				A144FC672135F6010013CB65 /* IntToString.h */,
+				A144FC682135F6010013CB65 /* StdAfx.h */,
+				A144FC692135F6010013CB65 /* StdOutStream.cpp */,
+				A144FC6A2135F6010013CB65 /* StdInStream.cpp */,
+				A144FC6B2135F6010013CB65 /* ListFileUtils.cpp */,
+				A144FC6C2135F6010013CB65 /* MyString.h */,
+				A144FC6D2135F6010013CB65 /* StringToInt.h */,
+				A144FC6E2135F6010013CB65 /* MyBuffer.h */,
+				A144FC6F2135F6010013CB65 /* MyString.cpp */,
+				A144FC702135F6010013CB65 /* C_FileIO.cpp */,
+				A144FC712135F6010013CB65 /* Wildcard.h */,
+				A144FC722135F6010013CB65 /* IntToString.cpp */,
+				A144FC732135F6010013CB65 /* Wildcard.cpp */,
+				A144FC742135F6010013CB65 /* StdInStream.h */,
+				A144FC752135F6010013CB65 /* MyUnknown.h */,
+				A144FC762135F6010013CB65 /* MyLinux.h */,
+				A144FC772135F6010013CB65 /* AutoPtr.h */,
+				A144FC782135F6010013CB65 /* DynamicBuffer.h */,
+				A144FC792135F6010013CB65 /* Common.h */,
+				A144FC7A2135F6010013CB65 /* XzCrc64Reg.cpp */,
+				A144FC7B2135F6010013CB65 /* ComTry.h */,
+				A144FC7C2135F6010013CB65 /* StringConvert.h */,
+				A144FC7D2135F6010013CB65 /* UTFConvert.cpp */,
+				A144FC7E2135F6010013CB65 /* MyVector.cpp */,
+				A144FC7F2135F6010013CB65 /* NewHandler.h */,
+				A144FC802135F6010013CB65 /* CrcReg.cpp */,
+				A144FC812135F6010013CB65 /* StringConvert.cpp */,
+				A144FC822135F6010013CB65 /* UTFConvert.h */,
+				A144FC832135F6010013CB65 /* CommandLineParser.h */,
+				A144FC842135F6010013CB65 /* MyWindows.cpp */,
+				A144FC852135F6010013CB65 /* C_FileIO.h */,
+				A144FC862135F6010013CB65 /* StdOutStream.h */,
+				A144FC872135F6010013CB65 /* MyInitGuid.h */,
+				A144FC882135F6010013CB65 /* MyCom.h */,
+				A144FC892135F6010013CB65 /* TextConfig.h */,
+				A144FC8A2135F6010013CB65 /* MyTypes.h */,
+				A144FC8B2135F6010013CB65 /* CommandLineParser.cpp */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A144FC8C2135F6010013CB65 /* 7zip */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC8D2135F6010013CB65 /* IProgress.h */,
+				A144FC8E2135F6010013CB65 /* Crypto */,
+				A144FC982135F6010013CB65 /* Compress */,
+				A144FCB82135F6010013CB65 /* Archive */,
+				A144FCEE2135F6010013CB65 /* IDecl.h */,
+				A144FCEF2135F6010013CB65 /* ICoder.h */,
+				A144FCF02135F6010013CB65 /* MyVersion.h */,
+				A144FCF12135F6010013CB65 /* Common */,
+				A144FD1C2135F6010013CB65 /* PropID.h */,
+				A144FD1D2135F6010013CB65 /* IStream.h */,
+				A144FD1E2135F6010013CB65 /* IPassword.h */,
+			);
+			path = 7zip;
+			sourceTree = "<group>";
+		};
+		A144FC8E2135F6010013CB65 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC8F2135F6010013CB65 /* MyAes.h */,
+				A144FC902135F6010013CB65 /* 7zAesRegister.cpp */,
+				A144FC912135F6010013CB65 /* StdAfx.h */,
+				A144FC922135F6010013CB65 /* RandGen.cpp */,
+				A144FC932135F6010013CB65 /* MyAes.cpp */,
+				A144FC942135F6010013CB65 /* MyAesReg.cpp */,
+				A144FC952135F6010013CB65 /* 7zAes.h */,
+				A144FC962135F6010013CB65 /* RandGen.h */,
+				A144FC972135F6010013CB65 /* 7zAes.cpp */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		A144FC982135F6010013CB65 /* Compress */ = {
+			isa = PBXGroup;
+			children = (
+				A144FC992135F6010013CB65 /* LzmaEncoder.h */,
+				A144FC9A2135F6010013CB65 /* CodecExports.cpp */,
+				A144FC9B2135F6010013CB65 /* BranchMisc.h */,
+				A144FC9C2135F6010013CB65 /* StdAfx.h */,
+				A144FC9D2135F6010013CB65 /* Lzma2Encoder.h */,
+				A144FC9E2135F6010013CB65 /* Lzma2Decoder.cpp */,
+				A144FC9F2135F6010013CB65 /* Bcj2Register.cpp */,
+				A144FCA02135F6010013CB65 /* PpmdDecoder.h */,
+				A144FCA12135F6010013CB65 /* CopyCoder.h */,
+				A144FCA22135F6010013CB65 /* Bcj2Coder.h */,
+				A144FCA32135F6010013CB65 /* BcjRegister.cpp */,
+				A144FCA42135F6010013CB65 /* DeltaFilter.cpp */,
+				A144FCA52135F6010013CB65 /* BcjCoder.h */,
+				A144FCA62135F6010013CB65 /* Lzma2Register.cpp */,
+				A144FCA72135F6010013CB65 /* BranchRegister.cpp */,
+				A144FCA82135F6010013CB65 /* CopyCoder.cpp */,
+				A144FCA92135F6010013CB65 /* CopyRegister.cpp */,
+				A144FCAA2135F6010013CB65 /* Lzma2Encoder.cpp */,
+				A144FCAB2135F6010013CB65 /* LzmaRegister.cpp */,
+				A144FCAC2135F6010013CB65 /* BcjCoder.cpp */,
+				A144FCAD2135F6010013CB65 /* BranchMisc.cpp */,
+				A144FCAE2135F6010013CB65 /* PpmdDecoder.cpp */,
+				A144FCAF2135F6010013CB65 /* LzmaDecoder.cpp */,
+				A144FCB02135F6010013CB65 /* ByteSwap.cpp */,
+				A144FCB12135F6010013CB65 /* PpmdEncoder.h */,
+				A144FCB22135F6010013CB65 /* Bcj2Coder.cpp */,
+				A144FCB32135F6010013CB65 /* PpmdRegister.cpp */,
+				A144FCB42135F6010013CB65 /* Lzma2Decoder.h */,
+				A144FCB52135F6010013CB65 /* LzmaEncoder.cpp */,
+				A144FCB62135F6010013CB65 /* LzmaDecoder.h */,
+				A144FCB72135F6010013CB65 /* PpmdEncoder.cpp */,
+			);
+			path = Compress;
+			sourceTree = "<group>";
+		};
+		A144FCB82135F6010013CB65 /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				A144FCB92135F6010013CB65 /* StdAfx.h */,
+				A144FCBA2135F6010013CB65 /* IArchive.h */,
+				A144FCBB2135F6010013CB65 /* ArchiveExports.cpp */,
+				A144FCBC2135F6010013CB65 /* DllExports2.cpp */,
+				A144FCBD2135F6010013CB65 /* Common */,
+				A144FCCF2135F6010013CB65 /* LzmaHandler.cpp */,
+				A144FCD02135F6010013CB65 /* SplitHandler.cpp */,
+				A144FCD12135F6010013CB65 /* 7z */,
+				A144FCED2135F6010013CB65 /* DllExports2.h */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		A144FCBD2135F6010013CB65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A144FCBE2135F6010013CB65 /* OutStreamWithCRC.h */,
+				A144FCBF2135F6010013CB65 /* ItemNameUtils.h */,
+				A144FCC02135F6010013CB65 /* StdAfx.h */,
+				A144FCC12135F6010013CB65 /* DummyOutStream.cpp */,
+				A144FCC22135F6010013CB65 /* InStreamWithCRC.h */,
+				A144FCC32135F6010013CB65 /* HandlerOut.cpp */,
+				A144FCC42135F6010013CB65 /* HandlerOut.h */,
+				A144FCC52135F6010013CB65 /* OutStreamWithCRC.cpp */,
+				A144FCC62135F6010013CB65 /* MultiStream.h */,
+				A144FCC72135F6010013CB65 /* MultiStream.cpp */,
+				A144FCC82135F6010013CB65 /* ItemNameUtils.cpp */,
+				A144FCC92135F6010013CB65 /* CoderMixer2.h */,
+				A144FCCA2135F6010013CB65 /* CoderMixer2.cpp */,
+				A144FCCB2135F6010013CB65 /* ParseProperties.cpp */,
+				A144FCCC2135F6010013CB65 /* DummyOutStream.h */,
+				A144FCCD2135F6010013CB65 /* ParseProperties.h */,
+				A144FCCE2135F6010013CB65 /* InStreamWithCRC.cpp */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A144FCD12135F6010013CB65 /* 7z */ = {
+			isa = PBXGroup;
+			children = (
+				A144FCD22135F6010013CB65 /* 7zExtract.cpp */,
+				A144FCD32135F6010013CB65 /* 7zFolderInStream.cpp */,
+				A144FCD42135F6010013CB65 /* 7zHandler.cpp */,
+				A144FCD52135F6010013CB65 /* StdAfx.h */,
+				A144FCD62135F6010013CB65 /* 7zHandler.h */,
+				A144FCD72135F6010013CB65 /* 7zHeader.cpp */,
+				A144FCD82135F6010013CB65 /* 7zItem.h */,
+				A144FCD92135F6010013CB65 /* 7zSpecStream.h */,
+				A144FCDA2135F6010013CB65 /* 7zHeader.h */,
+				A144FCDB2135F6010013CB65 /* 7zProperties.cpp */,
+				A144FCDC2135F6010013CB65 /* 7zFolderInStream.h */,
+				A144FCDD2135F6010013CB65 /* 7zProperties.h */,
+				A144FCDE2135F6010013CB65 /* 7zHandlerOut.cpp */,
+				A144FCDF2135F6010013CB65 /* 7zIn.cpp */,
+				A144FCE02135F6010013CB65 /* 7zDecode.h */,
+				A144FCE12135F6010013CB65 /* 7zUpdate.h */,
+				A144FCE22135F6010013CB65 /* 7zOut.cpp */,
+				A144FCE32135F6010013CB65 /* 7zEncode.cpp */,
+				A144FCE42135F6010013CB65 /* 7zUpdate.cpp */,
+				A144FCE52135F6010013CB65 /* 7zEncode.h */,
+				A144FCE62135F6010013CB65 /* 7zOut.h */,
+				A144FCE72135F6010013CB65 /* 7zCompressionMode.h */,
+				A144FCE82135F6010013CB65 /* 7zIn.h */,
+				A144FCE92135F6010013CB65 /* 7zCompressionMode.cpp */,
+				A144FCEA2135F6010013CB65 /* 7zDecode.cpp */,
+				A144FCEB2135F6010013CB65 /* 7zSpecStream.cpp */,
+				A144FCEC2135F6010013CB65 /* 7zRegister.cpp */,
+			);
+			path = 7z;
+			sourceTree = "<group>";
+		};
+		A144FCF12135F6010013CB65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A144FCF22135F6010013CB65 /* ProgressUtils.cpp */,
+				A144FCF32135F6010013CB65 /* VirtThread.cpp */,
+				A144FCF42135F6010013CB65 /* LimitedStreams.h */,
+				A144FCF52135F6010013CB65 /* MethodProps.h */,
+				A144FCF62135F6010013CB65 /* StdAfx.h */,
+				A144FCF72135F6010013CB65 /* OutBuffer.cpp */,
+				A144FCF82135F6010013CB65 /* UniqBlocks.cpp */,
+				A144FCF92135F6010013CB65 /* CWrappers.h */,
+				A144FCFA2135F6010013CB65 /* FilterCoder.cpp */,
+				A144FCFB2135F6010013CB65 /* StreamObjects.h */,
+				A144FCFC2135F6010013CB65 /* RegisterArc.h */,
+				A144FCFD2135F6010013CB65 /* RegisterCodec.h */,
+				A144FCFE2135F6010013CB65 /* InBuffer.cpp */,
+				A144FCFF2135F6010013CB65 /* StreamUtils.cpp */,
+				A144FD002135F6010013CB65 /* MethodId.h */,
+				A144FD012135F6010013CB65 /* VirtThread.h */,
+				A144FD022135F6010013CB65 /* MethodProps.cpp */,
+				A144FD032135F6010013CB65 /* StreamBinder.cpp */,
+				A144FD042135F6010013CB65 /* LockedStream.cpp */,
+				A144FD052135F6010013CB65 /* FilterCoder.h */,
+				A144FD062135F6010013CB65 /* StreamBinder.h */,
+				A144FD072135F6010013CB65 /* FileStreams.h */,
+				A144FD082135F6010013CB65 /* LimitedStreams.cpp */,
+				A144FD092135F6010013CB65 /* InOutTempBuffer.h */,
+				A144FD0A2135F6010013CB65 /* CreateCoder.h */,
+				A144FD0B2135F6010013CB65 /* InOutTempBuffer.cpp */,
+				A144FD0C2135F6010013CB65 /* CWrappers.cpp */,
+				A144FD0D2135F6010013CB65 /* OffsetStream.cpp */,
+				A144FD0E2135F6010013CB65 /* OffsetStream.h */,
+				A144FD0F2135F6010013CB65 /* FileStreams.cpp */,
+				A144FD102135F6010013CB65 /* FilePathAutoRename.h */,
+				A144FD112135F6010013CB65 /* LockedStream.h */,
+				A144FD122135F6010013CB65 /* MethodId.cpp */,
+				A144FD132135F6010013CB65 /* ProgressUtils.h */,
+				A144FD142135F6010013CB65 /* StreamUtils.h */,
+				A144FD152135F6010013CB65 /* StreamObjects.cpp */,
+				A144FD162135F6010013CB65 /* FilePathAutoRename.cpp */,
+				A144FD172135F6010013CB65 /* UniqBlocks.h */,
+				A144FD182135F6010013CB65 /* PropId.cpp */,
+				A144FD192135F6010013CB65 /* OutBuffer.h */,
+				A144FD1A2135F6010013CB65 /* CreateCoder.cpp */,
+				A144FD1B2135F6010013CB65 /* InBuffer.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A144FD1F2135F6010013CB65 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				A144FD202135F6010013CB65 /* Defs.h */,
+				A144FD212135F6010013CB65 /* PropVariantConv.h */,
+				A144FD222135F6010013CB65 /* StdAfx.h */,
+				A144FD232135F6010013CB65 /* PropVariantConv.cpp */,
+				A144FD242135F6010013CB65 /* Synchronization.h */,
+				A144FD252135F6010013CB65 /* FileIO.cpp */,
+				A144FD262135F6010013CB65 /* PropVariant.h */,
+				A144FD272135F6010013CB65 /* Thread.h */,
+				A144FD282135F6010013CB65 /* PropVariant.cpp */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		A144FD292135F6010013CB65 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				A144FD2A2135F6010013CB65 /* Lzma2Dec.c */,
+				A144FD2B2135F6010013CB65 /* LzHash.h */,
+				A144FD2C2135F6010013CB65 /* LzmaEnc.c */,
+				A144FD2D2135F6010013CB65 /* Ppmd7Dec.c */,
+				A144FD2E2135F6010013CB65 /* Aes.c */,
+				A144FD2F2135F6010013CB65 /* LzFindMt.c */,
+				A144FD302135F6010013CB65 /* 7zTypes.h */,
+				A144FD312135F6010013CB65 /* XzDec.c */,
+				A144FD322135F6010013CB65 /* MtCoder.c */,
+				A144FD332135F6010013CB65 /* Bcj2.c */,
+				A144FD342135F6010013CB65 /* Compiler.h */,
+				A144FD352135F6010013CB65 /* LzFind.c */,
+				A144FD362135F6010013CB65 /* XzCrc64.h */,
+				A144FD372135F6010013CB65 /* Precomp.h */,
+				A144FD382135F6010013CB65 /* CpuArch.h */,
+				A144FD392135F6010013CB65 /* Sort.c */,
+				A144FD3A2135F6010013CB65 /* 7zCrc.h */,
+				A144FD3B2135F6010013CB65 /* Ppmd7.c */,
+				A144FD3C2135F6010013CB65 /* Delta.h */,
+				A144FD3D2135F6010013CB65 /* Bra.c */,
+				A144FD3E2135F6010013CB65 /* 7zFile.h */,
+				A144FD3F2135F6010013CB65 /* Bra86.c */,
+				A144FD402135F6010013CB65 /* 7zArcIn.c */,
+				A144FD412135F6010013CB65 /* 7zAlloc.c */,
+				A144FD422135F6010013CB65 /* Sha256.h */,
+				A144FD432135F6010013CB65 /* XzIn.c */,
+				A144FD442135F6010013CB65 /* XzEnc.c */,
+				A144FD452135F6010013CB65 /* Threads.h */,
+				A144FD462135F6010013CB65 /* LzmaLib.h */,
+				A144FD472135F6010013CB65 /* 7zBuf.h */,
+				A144FD482135F6010013CB65 /* 7z.h */,
+				A144FD492135F6010013CB65 /* Alloc.c */,
+				A144FD4A2135F6010013CB65 /* Xz.h */,
+				A144FD4B2135F6010013CB65 /* LzmaDec.c */,
+				A144FD4C2135F6010013CB65 /* Lzma2Enc.c */,
+				A144FD4D2135F6010013CB65 /* Ppmd7Enc.c */,
+				A144FD4E2135F6010013CB65 /* LzFindMt.h */,
+				A144FD4F2135F6010013CB65 /* 7zDec.c */,
+				A144FD502135F6010013CB65 /* Lzma86.h */,
+				A144FD512135F6010013CB65 /* LzmaEnc.h */,
+				A144FD522135F6010013CB65 /* Lzma2Dec.h */,
+				A144FD532135F6010013CB65 /* Aes.h */,
+				A144FD542135F6010013CB65 /* 7zBuf2.c */,
+				A144FD552135F6010013CB65 /* XzCrc64.c */,
+				A144FD562135F6010013CB65 /* LzFind.h */,
+				A144FD572135F6010013CB65 /* BraIA64.c */,
+				A144FD582135F6010013CB65 /* Lzma86Dec.c */,
+				A144FD592135F6010013CB65 /* 7zStream.c */,
+				A144FD5A2135F6010013CB65 /* Bcj2.h */,
+				A144FD5B2135F6010013CB65 /* Ppmd.h */,
+				A144FD5C2135F6010013CB65 /* MtCoder.h */,
+				A144FD5D2135F6010013CB65 /* Sha256.c */,
+				A144FD5E2135F6010013CB65 /* 7zAlloc.h */,
+				A144FD5F2135F6010013CB65 /* Delta.c */,
+				A144FD602135F6010013CB65 /* 7zVersion.h */,
+				A144FD612135F6010013CB65 /* 7zFile.c */,
+				A144FD622135F6010013CB65 /* Bra.h */,
+				A144FD632135F6010013CB65 /* 7zCrc.c */,
+				A144FD642135F6010013CB65 /* Sort.h */,
+				A144FD652135F6010013CB65 /* AesOpt.c */,
+				A144FD662135F6010013CB65 /* RotateDefs.h */,
+				A144FD672135F6010013CB65 /* Lzma86Enc.c */,
+				A144FD682135F6010013CB65 /* Ppmd7.h */,
+				A144FD692135F6010013CB65 /* CpuArch.c */,
+				A144FD6A2135F6010013CB65 /* Lzma2Enc.h */,
+				A144FD6B2135F6010013CB65 /* Bcj2Enc.c */,
+				A144FD6C2135F6010013CB65 /* LzmaDec.h */,
+				A144FD6D2135F6010013CB65 /* XzCrc64Opt.c */,
+				A144FD6E2135F6010013CB65 /* Xz.c */,
+				A144FD6F2135F6010013CB65 /* 7zCrcOpt.c */,
+				A144FD702135F6010013CB65 /* Alloc.h */,
+				A144FD712135F6010013CB65 /* Threads.c */,
+				A144FD722135F6010013CB65 /* 7zBuf.c */,
+				A144FD732135F6010013CB65 /* LzmaLib.c */,
+				A144FD742135F6010013CB65 /* XzEnc.h */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		A144FD752135F6010013CB65 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A144FD762135F6010013CB65 /* LzmaAppleCommon.h */,
+				A144FD772135F6010013CB65 /* LzmaSDKObjCOutFile.h */,
+				A144FD782135F6010013CB65 /* LzmaSDKObjCWriter.h */,
+				A144FD792135F6010013CB65 /* LzmaSDKObjCBufferProcessor.mm */,
+				A144FD7A2135F6010013CB65 /* LzmaSDKObjC.mm */,
+				A144FD7B2135F6010013CB65 /* LzmaSDKObjCUpdateCallback.mm */,
+				A144FD7C2135F6010013CB65 /* LzmaSDKObjCCommon.h */,
+				A144FD7D2135F6010013CB65 /* LzmaSDKObjCCommon.cpp */,
+				A144FD7E2135F6010013CB65 /* LzmaSDKObjCError.mm */,
+				A144FD7F2135F6010013CB65 /* LzmaSDKObjCInFile.h */,
+				A144FD802135F6010013CB65 /* LzmaSDKObjCExtractCallback.h */,
+				A144FD812135F6010013CB65 /* LzmaSDKObjCUpdateCallback.h */,
+				A144FD822135F6010013CB65 /* LzmaSDKObjCFileEncoder.h */,
+				A144FD832135F6010013CB65 /* LzmaSDKObjCExtern.h */,
+				A144FD842135F6010013CB65 /* LzmaSDKObjCItem.h */,
+				A144FD852135F6010013CB65 /* LzmaSDKObjCReader.mm */,
+				A144FD862135F6010013CB65 /* LzmaSDKObjCFileDecoder.cpp */,
+				A144FD872135F6010013CB65 /* LzmaSDKObjCMutableItem.h */,
+				A144FD882135F6010013CB65 /* LzmaSDKObjCItem+Private.h */,
+				A144FD892135F6010013CB65 /* LzmaSDKObjCBufferProcessor.h */,
+				A144FD8A2135F6010013CB65 /* LzmaSDKObjCTypes.h */,
+				A144FD8B2135F6010013CB65 /* LzmaSDKObjCError.h */,
+				A144FD8C2135F6010013CB65 /* LzmaSDKObjCFileDecoder.h */,
+				A144FD8D2135F6010013CB65 /* LzmaSDKObjCReader.h */,
+				A144FD8E2135F6010013CB65 /* LzmaSDKObjCBaseCoder.h */,
+				A144FD8F2135F6010013CB65 /* LzmaSDKObjCWriter.mm */,
+				A144FD902135F6010013CB65 /* LzmaSDKObjCMutableItem.mm */,
+				A144FD912135F6010013CB65 /* LzmaSDKObjCOpenCallback.h */,
+				A144FD922135F6010013CB65 /* LzmaSDKObjCOpenCallback.cpp */,
+				A144FD932135F6010013CB65 /* LzmaSDKObjCInFile.cpp */,
+				A144FD942135F6010013CB65 /* LzmaSDKObjCOutFile.cpp */,
+				A144FD952135F6010013CB65 /* LzmaSDKObjCBaseCoder.cpp */,
+				A144FD962135F6010013CB65 /* LzmaSDKObjCFileEncoder.cpp */,
+				A144FD972135F6010013CB65 /* LzmaSDKObjCExtern.mm */,
+				A144FD982135F6010013CB65 /* LzmaSDKObjC.h */,
+				A144FD992135F6010013CB65 /* LzmaSDKObjCMutableItem+Private.h */,
+				A144FD9A2135F6010013CB65 /* LzmaSDKObjCExtractCallback.mm */,
+				A144FD9B2135F6010013CB65 /* LzmaSDKObjCItem.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A144FE3A2135F6280013CB65 /* Emulator */ = {
+			isa = PBXGroup;
+			children = (
+				A144FE3E2135F6280013CB65 /* PVEmulatorConfiguration.h */,
+				A144FE422135F6280013CB65 /* PVEmulatorConfiguration.m */,
+				A144FE412135F6280013CB65 /* PVEmulatorConstants.h */,
+				A144FE3C2135F6280013CB65 /* PVEmulatorConstants.m */,
+				A144FE402135F6280013CB65 /* PVEmulatorViewController.h */,
+				A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */,
+				A144FE3B2135F6280013CB65 /* PVGLViewController.h */,
+				A144FE3F2135F6280013CB65 /* PVGLViewController.m */,
+			);
+			path = Emulator;
 			sourceTree = "<group>";
 		};
 		A16DA3E42134A5F900CD9E21 = {
@@ -81,6 +1410,7 @@
 		A16DA3EF2134A5F900CD9E21 /* VirtualBoyVR-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A144FB7A2135F3980013CB65 /* Provenance */,
 				A16DA4082134ACEF00CD9E21 /* bridging.h */,
 				A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */,
 				A16DA3F22134A5F900CD9E21 /* ViewController.swift */,
@@ -154,9 +1484,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A144FDA22135F6020013CB65 /* .travis.yml in Resources */,
+				A144FDA02135F6020013CB65 /* .gitignore in Resources */,
 				A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */,
 				A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */,
 				A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */,
+				A144FDA12135F6020013CB65 /* LzmaSDK-ObjC.podspec in Resources */,
+				A144FD9F2135F6020013CB65 /* README.md in Resources */,
+				A144FD9C2135F6020013CB65 /* LzmaSDKObjC.podspec in Resources */,
+				A144FD9D2135F6020013CB65 /* LICENSE in Resources */,
+				A144FD9E2135F6020013CB65 /* CHANGELOG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +1555,206 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A144FDFF2135F6020013CB65 /* PropVariant.cpp in Sources */,
+				A144FDFC2135F6020013CB65 /* CreateCoder.cpp in Sources */,
+				A144FE0D2135F6020013CB65 /* 7zArcIn.c in Sources */,
+				A144FDDE2135F6020013CB65 /* 7zHeader.cpp in Sources */,
+				A144FDB22135F6020013CB65 /* CrcReg.cpp in Sources */,
+				A144FDBB2135F6020013CB65 /* CodecExports.cpp in Sources */,
+				A144FDCA2135F6020013CB65 /* ByteSwap.cpp in Sources */,
+				A144FE382135F6020013CB65 /* LzmaSDKObjCExtractCallback.mm in Sources */,
+				A144FDBD2135F6020013CB65 /* Bcj2Register.cpp in Sources */,
+				A144FBF12135F46C0013CB65 /* PViCadeControllerViewController.m in Sources */,
+				A144FDC22135F6020013CB65 /* CopyCoder.cpp in Sources */,
+				A144FDC42135F6020013CB65 /* Lzma2Encoder.cpp in Sources */,
+				A144FB992135F3DF0013CB65 /* PVGame+Sizing.m in Sources */,
+				A144FE262135F6020013CB65 /* Threads.c in Sources */,
+				A144FDE92135F6020013CB65 /* ProgressUtils.cpp in Sources */,
 				A16DA4032134AA0300CD9E21 /* EmulatorViewController.swift in Sources */,
+				A144FE142135F6020013CB65 /* Ppmd7Enc.c in Sources */,
+				A144FE1A2135F6020013CB65 /* 7zStream.c in Sources */,
+				A144FDA52135F6020013CB65 /* CRC.cpp in Sources */,
+				A144FDF52135F6020013CB65 /* CWrappers.cpp in Sources */,
+				A144FDC72135F6020013CB65 /* BranchMisc.cpp in Sources */,
+				A144FBA12135F3DF0013CB65 /* UIActionSheet+BlockAdditions.m in Sources */,
+				A144FDE62135F6020013CB65 /* 7zDecode.cpp in Sources */,
+				A144FE002135F6020013CB65 /* Lzma2Dec.c in Sources */,
+				A144FDD02135F6020013CB65 /* DllExports2.cpp in Sources */,
+				A144FDE32135F6020013CB65 /* 7zEncode.cpp in Sources */,
+				A144FDDB2135F6020013CB65 /* 7zExtract.cpp in Sources */,
+				A144FDC92135F6020013CB65 /* LzmaDecoder.cpp in Sources */,
+				A144FE0C2135F6020013CB65 /* Bra86.c in Sources */,
+				A144FC352135F4F40013CB65 /* PVDirectoryWatcher.m in Sources */,
+				A144FDC62135F6020013CB65 /* BcjCoder.cpp in Sources */,
+				A144FE2C2135F6020013CB65 /* LzmaSDKObjCCommon.cpp in Sources */,
+				A144FB9C2135F3DF0013CB65 /* NSString+Hashing.m in Sources */,
+				A144FC4A2135F5380013CB65 /* unzip.c in Sources */,
+				A144FC332135F4F40013CB65 /* PVGame.m in Sources */,
+				A144FDAB2135F6020013CB65 /* MyString.cpp in Sources */,
+				A144FDAD2135F6020013CB65 /* IntToString.cpp in Sources */,
+				A144FDC52135F6020013CB65 /* LzmaRegister.cpp in Sources */,
+				A144FC4D2135F5380013CB65 /* mztools.c in Sources */,
+				A144FDDF2135F6020013CB65 /* 7zProperties.cpp in Sources */,
+				A144FDFB2135F6020013CB65 /* PropId.cpp in Sources */,
+				A144FDCD2135F6020013CB65 /* LzmaEncoder.cpp in Sources */,
+				A144FE2B2135F6020013CB65 /* LzmaSDKObjCUpdateCallback.mm in Sources */,
+				A144FE272135F6020013CB65 /* 7zBuf.c in Sources */,
+				A144FDD12135F6020013CB65 /* DummyOutStream.cpp in Sources */,
+				A144FE2A2135F6020013CB65 /* LzmaSDKObjC.mm in Sources */,
+				A144FE362135F6020013CB65 /* LzmaSDKObjCFileEncoder.cpp in Sources */,
+				A144FDEF2135F6020013CB65 /* StreamUtils.cpp in Sources */,
+				A144FE252135F6020013CB65 /* 7zCrcOpt.c in Sources */,
+				A144FBA42135F3DF0013CB65 /* UIImage+Color.m in Sources */,
+				A144FDD32135F6020013CB65 /* OutStreamWithCRC.cpp in Sources */,
+				A144FE0A2135F6020013CB65 /* Ppmd7.c in Sources */,
+				A144FDF32135F6020013CB65 /* LimitedStreams.cpp in Sources */,
+				A144FDEB2135F6020013CB65 /* OutBuffer.cpp in Sources */,
+				A144FDB42135F6020013CB65 /* MyWindows.cpp in Sources */,
+				A144FE092135F6020013CB65 /* Sort.c in Sources */,
+				A144FE072135F6020013CB65 /* Bcj2.c in Sources */,
+				A144FE0E2135F6020013CB65 /* 7zAlloc.c in Sources */,
+				A144FE1B2135F6020013CB65 /* Sha256.c in Sources */,
+				A144FC3B2135F4F40013CB65 /* PVGameLibrarySectionHeaderView.m in Sources */,
+				A144FE372135F6020013CB65 /* LzmaSDKObjCExtern.mm in Sources */,
+				A144FC372135F4F40013CB65 /* PVMediaCache.m in Sources */,
+				A144FDF42135F6020013CB65 /* InOutTempBuffer.cpp in Sources */,
+				A144FE1C2135F6020013CB65 /* Delta.c in Sources */,
+				A144FDB12135F6020013CB65 /* MyVector.cpp in Sources */,
+				A144FDA62135F6020013CB65 /* Sha256Reg.cpp in Sources */,
+				A144FE032135F6020013CB65 /* Aes.c in Sources */,
+				A144FBF32135F46C0013CB65 /* PViCadeGamepadDirectionPad.m in Sources */,
+				A144FDB92135F6020013CB65 /* MyAesReg.cpp in Sources */,
+				A144FB9F2135F3DF0013CB65 /* NSFileManager+Hashing.m in Sources */,
+				A144FE112135F6020013CB65 /* Alloc.c in Sources */,
+				A144FDA42135F6020013CB65 /* TextConfig.cpp in Sources */,
+				A144FDF12135F6020013CB65 /* StreamBinder.cpp in Sources */,
+				A144FDED2135F6020013CB65 /* FilterCoder.cpp in Sources */,
+				A144FDDA2135F6020013CB65 /* SplitHandler.cpp in Sources */,
+				A144FE222135F6020013CB65 /* Bcj2Enc.c in Sources */,
+				A144FE212135F6020013CB65 /* CpuArch.c in Sources */,
+				A144FE062135F6020013CB65 /* MtCoder.c in Sources */,
+				A144FC4E2135F5380013CB65 /* SSZipArchive.m in Sources */,
+				A144FE162135F6020013CB65 /* 7zBuf2.c in Sources */,
+				A144FBF62135F46C0013CB65 /* PViCadeInputAxis.m in Sources */,
+				A144FDDC2135F6020013CB65 /* 7zFolderInStream.cpp in Sources */,
+				A144FBEF2135F46C0013CB65 /* iCadeReaderView.m in Sources */,
+				A144FBA02135F3DF0013CB65 /* UIImage+Scaling.m in Sources */,
+				A144FC3C2135F4F40013CB65 /* OESQLiteDatabase.m in Sources */,
+				A144FDE72135F6020013CB65 /* 7zSpecStream.cpp in Sources */,
+				A144FDC32135F6020013CB65 /* CopyRegister.cpp in Sources */,
+				A144FE192135F6020013CB65 /* Lzma86Dec.c in Sources */,
+				A144FE122135F6020013CB65 /* LzmaDec.c in Sources */,
 				A16DA3F32134A5F900CD9E21 /* ViewController.swift in Sources */,
+				A144FDD72135F6020013CB65 /* ParseProperties.cpp in Sources */,
+				A144FE332135F6020013CB65 /* LzmaSDKObjCInFile.cpp in Sources */,
+				A144FE0B2135F6020013CB65 /* Bra.c in Sources */,
+				A144FC062135F46C0013CB65 /* JSDPad.m in Sources */,
+				A144FB9A2135F3DF0013CB65 /* UIDevice+Hardware.m in Sources */,
+				A144FDDD2135F6020013CB65 /* 7zHandler.cpp in Sources */,
+				A144FC172135F48F0013CB65 /* PVLicensesViewController.m in Sources */,
+				A144FDEC2135F6020013CB65 /* UniqBlocks.cpp in Sources */,
+				A144FC362135F4F40013CB65 /* PVSynchronousURLSession.m in Sources */,
+				A144FC002135F46C0013CB65 /* PVVBControllerViewController.m in Sources */,
+				A144FE0F2135F6020013CB65 /* XzIn.c in Sources */,
+				A144FDE22135F6020013CB65 /* 7zOut.cpp in Sources */,
+				A144FE022135F6020013CB65 /* Ppmd7Dec.c in Sources */,
+				A144FE492135FA4D0013CB65 /* PVAppConstants.m in Sources */,
+				A144FE462135F6290013CB65 /* PVEmulatorConfiguration.m in Sources */,
+				A144FDB72135F6020013CB65 /* RandGen.cpp in Sources */,
+				A144FBA22135F3DF0013CB65 /* NSData+Hashing.m in Sources */,
+				A144FDE82135F6020013CB65 /* 7zRegister.cpp in Sources */,
+				A144FDBA2135F6020013CB65 /* 7zAes.cpp in Sources */,
+				A144FE232135F6020013CB65 /* XzCrc64Opt.c in Sources */,
+				A144FDB02135F6020013CB65 /* UTFConvert.cpp in Sources */,
+				A144FDF02135F6020013CB65 /* MethodProps.cpp in Sources */,
+				A144FDF92135F6020013CB65 /* StreamObjects.cpp in Sources */,
+				A144FDCE2135F6020013CB65 /* PpmdEncoder.cpp in Sources */,
+				A144FDCF2135F6020013CB65 /* ArchiveExports.cpp in Sources */,
+				A144FC152135F48F0013CB65 /* PVSettingsModel.m in Sources */,
+				A144FDC82135F6020013CB65 /* PpmdDecoder.cpp in Sources */,
+				A144FE2F2135F6020013CB65 /* LzmaSDKObjCFileDecoder.cpp in Sources */,
+				A144FE282135F6020013CB65 /* LzmaLib.c in Sources */,
+				A144FDB82135F6020013CB65 /* MyAes.cpp in Sources */,
+				A144FC082135F46C0013CB65 /* JSButton.m in Sources */,
+				A144FE052135F6020013CB65 /* XzDec.c in Sources */,
+				A144FDF22135F6020013CB65 /* LockedStream.cpp in Sources */,
+				A144FDA32135F6020013CB65 /* NewHandler.cpp in Sources */,
+				A144FE012135F6020013CB65 /* LzmaEnc.c in Sources */,
+				A144FDF62135F6020013CB65 /* OffsetStream.cpp in Sources */,
+				A144FBF22135F46C0013CB65 /* PViCadeController.m in Sources */,
+				A144FC162135F48F0013CB65 /* PVAppearanceViewController.m in Sources */,
+				A144FDCC2135F6020013CB65 /* PpmdRegister.cpp in Sources */,
+				A144FE132135F6020013CB65 /* Lzma2Enc.c in Sources */,
+				A144FB9D2135F3DF0013CB65 /* UIView+FrameAdditions.m in Sources */,
+				A144FE1D2135F6020013CB65 /* 7zFile.c in Sources */,
+				A144FE202135F6020013CB65 /* Lzma86Enc.c in Sources */,
+				A144FBA32135F3DF0013CB65 /* UIImage+ImageEffects.m in Sources */,
+				A144FDEE2135F6020013CB65 /* InBuffer.cpp in Sources */,
+				A144FE342135F6020013CB65 /* LzmaSDKObjCOutFile.cpp in Sources */,
+				A144FDE42135F6020013CB65 /* 7zUpdate.cpp in Sources */,
+				A144FDE12135F6020013CB65 /* 7zIn.cpp in Sources */,
+				A144FDB52135F6020013CB65 /* CommandLineParser.cpp in Sources */,
+				A144FBF42135F46C0013CB65 /* PViCadeReader.m in Sources */,
+				A144FDCB2135F6020013CB65 /* Bcj2Coder.cpp in Sources */,
+				A144FE432135F6290013CB65 /* PVEmulatorConstants.m in Sources */,
+				A144FC092135F46C0013CB65 /* PVButtonGroupOverlayView.m in Sources */,
+				A144FDF72135F6020013CB65 /* FileStreams.cpp in Sources */,
+				A144FB982135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m in Sources */,
+				A144FBF92135F46C0013CB65 /* PVControllerManager.m in Sources */,
+				A144FDFD2135F6020013CB65 /* PropVariantConv.cpp in Sources */,
+				A144FBEE2135F46C0013CB65 /* PViCadeSteelSeriesController.m in Sources */,
+				A144FDD62135F6020013CB65 /* CoderMixer2.cpp in Sources */,
+				A144FE242135F6020013CB65 /* Xz.c in Sources */,
+				A144FDE02135F6020013CB65 /* 7zHandlerOut.cpp in Sources */,
+				A144FBEB2135F46C0013CB65 /* PVControllerViewController.m in Sources */,
+				A144FDD92135F6020013CB65 /* LzmaHandler.cpp in Sources */,
+				A144FE2D2135F6020013CB65 /* LzmaSDKObjCError.mm in Sources */,
+				A144FDD82135F6020013CB65 /* InStreamWithCRC.cpp in Sources */,
+				A144FE042135F6020013CB65 /* LzFindMt.c in Sources */,
+				A144FDA72135F6020013CB65 /* StringToInt.cpp in Sources */,
+				A144FDAF2135F6020013CB65 /* XzCrc64Reg.cpp in Sources */,
+				A144FE352135F6020013CB65 /* LzmaSDKObjCBaseCoder.cpp in Sources */,
+				A144FE312135F6020013CB65 /* LzmaSDKObjCMutableItem.mm in Sources */,
+				A144FBA52135F3DF0013CB65 /* UIAlertView+BlockAdditions.m in Sources */,
+				A144FE292135F6020013CB65 /* LzmaSDKObjCBufferProcessor.mm in Sources */,
 				A16DA3F12134A5F900CD9E21 /* AppDelegate.swift in Sources */,
+				A144FDD22135F6020013CB65 /* HandlerOut.cpp in Sources */,
+				A144FC4B2135F5380013CB65 /* zip.c in Sources */,
+				A144FDBE2135F6020013CB65 /* BcjRegister.cpp in Sources */,
+				A144FDB62135F6020013CB65 /* 7zAesRegister.cpp in Sources */,
+				A144FE152135F6020013CB65 /* 7zDec.c in Sources */,
+				A144FB9B2135F3DF0013CB65 /* MBProgressHUD.m in Sources */,
+				A144FE082135F6020013CB65 /* LzFind.c in Sources */,
+				A144FDC12135F6020013CB65 /* BranchRegister.cpp in Sources */,
+				A144FDF82135F6020013CB65 /* MethodId.cpp in Sources */,
+				A144FBF82135F46C0013CB65 /* PViCadeGamepad.m in Sources */,
+				A144FC3A2135F4F40013CB65 /* PVGameLibraryCollectionViewCell.m in Sources */,
+				A144FE1E2135F6020013CB65 /* 7zCrc.c in Sources */,
+				A144FDAC2135F6020013CB65 /* C_FileIO.cpp in Sources */,
+				A144FE322135F6020013CB65 /* LzmaSDKObjCOpenCallback.cpp in Sources */,
+				A144FDD52135F6020013CB65 /* ItemNameUtils.cpp in Sources */,
+				A144FE392135F6020013CB65 /* LzmaSDKObjCItem.mm in Sources */,
+				A144FDAE2135F6020013CB65 /* Wildcard.cpp in Sources */,
+				A144FE1F2135F6020013CB65 /* AesOpt.c in Sources */,
+				A144FDB32135F6020013CB65 /* StringConvert.cpp in Sources */,
+				A144FC392135F4F40013CB65 /* PVRecentGame.m in Sources */,
+				A144FDBF2135F6020013CB65 /* DeltaFilter.cpp in Sources */,
+				A144FDEA2135F6020013CB65 /* VirtThread.cpp in Sources */,
+				A144FE102135F6020013CB65 /* XzEnc.c in Sources */,
+				A144FE2E2135F6020013CB65 /* LzmaSDKObjCReader.mm in Sources */,
+				A144FDD42135F6020013CB65 /* MultiStream.cpp in Sources */,
+				A144FBED2135F46C0013CB65 /* PVControllerSelectionViewController.m in Sources */,
+				A144FDC02135F6020013CB65 /* Lzma2Register.cpp in Sources */,
+				A144FC382135F4F40013CB65 /* PVConflictViewController.m in Sources */,
+				A144FE172135F6020013CB65 /* XzCrc64.c in Sources */,
+				A144FBF72135F46C0013CB65 /* kICadeControllerSetting.m in Sources */,
+				A144FBF52135F46C0013CB65 /* PViCade8BitdoController.m in Sources */,
+				A144FE182135F6020013CB65 /* BraIA64.c in Sources */,
+				A144FDBC2135F6020013CB65 /* Lzma2Decoder.cpp in Sources */,
+				A144FC4C2135F5380013CB65 /* ioapi.c in Sources */,
+				A144FE302135F6020013CB65 /* LzmaSDKObjCWriter.mm in Sources */,
+				A144FDE52135F6020013CB65 /* 7zCompressionMode.cpp in Sources */,
+				A144FBF02135F46C0013CB65 /* PViCadeGamepadButtonInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

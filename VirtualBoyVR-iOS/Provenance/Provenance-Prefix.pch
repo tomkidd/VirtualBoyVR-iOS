@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'Provenance' target in the 'Provenance' project
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+    #import <PVSupport/DebugUtils.h>
+    #import "PVAvailability.h"
+#endif
