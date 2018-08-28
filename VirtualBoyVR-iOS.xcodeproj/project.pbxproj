@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A16DA3F12134A5F900CD9E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */; };
+		A16DA3F32134A5F900CD9E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA3F22134A5F900CD9E21 /* ViewController.swift */; };
+		A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F42134A5F900CD9E21 /* Main.storyboard */; };
+		A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F72134A5FB00CD9E21 /* Assets.xcassets */; };
+		A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F92134A5FB00CD9E21 /* LaunchScreen.storyboard */; };
+		A16DA4032134AA0300CD9E21 /* EmulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */; };
+		DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualBoyVR-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76781830749ECD85A8E91162 /* Pods-VirtualBoyVR-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A16DA3ED2134A5F900CD9E21 /* VirtualBoyVR-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VirtualBoyVR-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A16DA3F22134A5F900CD9E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A16DA3F52134A5F900CD9E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A16DA3F72134A5FB00CD9E21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A16DA3FA2134A5FB00CD9E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A16DA3FC2134A5FB00CD9E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorViewController.swift; sourceTree = "<group>"; };
+		A16DA4082134ACEF00CD9E21 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A16DA3EA2134A5F900CD9E21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A79EDB23284F59C0912120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DC1B4A35A6DD7F4A1460616 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76781830749ECD85A8E91162 /* Pods-VirtualBoyVR-iOS.debug.xcconfig */,
+				2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A16DA3E42134A5F900CD9E21 = {
+			isa = PBXGroup;
+			children = (
+				A16DA3EF2134A5F900CD9E21 /* VirtualBoyVR-iOS */,
+				A16DA3EE2134A5F900CD9E21 /* Products */,
+				4DC1B4A35A6DD7F4A1460616 /* Pods */,
+				02A79EDB23284F59C0912120 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A16DA3EE2134A5F900CD9E21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A16DA3ED2134A5F900CD9E21 /* VirtualBoyVR-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A16DA3EF2134A5F900CD9E21 /* VirtualBoyVR-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A16DA4082134ACEF00CD9E21 /* bridging.h */,
+				A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */,
+				A16DA3F22134A5F900CD9E21 /* ViewController.swift */,
+				A16DA3F42134A5F900CD9E21 /* Main.storyboard */,
+				A16DA3F72134A5FB00CD9E21 /* Assets.xcassets */,
+				A16DA3F92134A5FB00CD9E21 /* LaunchScreen.storyboard */,
+				A16DA3FC2134A5FB00CD9E21 /* Info.plist */,
+				A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */,
+			);
+			path = "VirtualBoyVR-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A16DA3EC2134A5F900CD9E21 /* VirtualBoyVR-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16DA3FF2134A5FB00CD9E21 /* Build configuration list for PBXNativeTarget "VirtualBoyVR-iOS" */;
+			buildPhases = (
+				1E7097049CA48C0B59F7E0AC /* [CP] Check Pods Manifest.lock */,
+				A16DA3E92134A5F900CD9E21 /* Sources */,
+				A16DA3EA2134A5F900CD9E21 /* Frameworks */,
+				A16DA3EB2134A5F900CD9E21 /* Resources */,
+				998D6C3978A2A48E726AFD22 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VirtualBoyVR-iOS";
+			productName = "VirtualBoyVR-iOS";
+			productReference = A16DA3ED2134A5F900CD9E21 /* VirtualBoyVR-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A16DA3E52134A5F900CD9E21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Tom Kidd";
+				TargetAttributes = {
+					A16DA3EC2134A5F900CD9E21 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = A16DA3E82134A5F900CD9E21 /* Build configuration list for PBXProject "VirtualBoyVR-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A16DA3E42134A5F900CD9E21;
+			productRefGroup = A16DA3EE2134A5F900CD9E21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A16DA3EC2134A5F900CD9E21 /* VirtualBoyVR-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A16DA3EB2134A5F900CD9E21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */,
+				A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */,
+				A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7097049CA48C0B59F7E0AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirtualBoyVR-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998D6C3978A2A48E726AFD22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS-resources.sh",
+				"${PODS_ROOT}/GVRSDK/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogsArrows.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitDialogsStrings.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Resources/MaterialRobotoFontLoader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CardboardSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogs.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogsArrows.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitDialogsStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleKitHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MaterialRobotoFontLoader.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A16DA3E92134A5F900CD9E21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16DA4032134AA0300CD9E21 /* EmulatorViewController.swift in Sources */,
+				A16DA3F32134A5F900CD9E21 /* ViewController.swift in Sources */,
+				A16DA3F12134A5F900CD9E21 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A16DA3F42134A5F900CD9E21 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16DA3F52134A5F900CD9E21 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A16DA3F92134A5FB00CD9E21 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16DA3FA2134A5FB00CD9E21 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A16DA3FD2134A5FB00CD9E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A16DA3FE2134A5FB00CD9E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A16DA4002134A5FB00CD9E21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76781830749ECD85A8E91162 /* Pods-VirtualBoyVR-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VirtualBoyVR-iOS/Provenance/Provenance-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LSB_FIRST,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/mednafen/hw_cpu\"",
+					"\"$(SRCROOT)/mednafen/hw_misc\"",
+					"\"$(SRCROOT)/mednafen/hw_sound\"",
+					"\"$(SRCROOT)/mednafen/hw_video\"",
+					"\"$(SRCROOT)/libsndfile\"",
+				);
+				INFOPLIST_FILE = "VirtualBoyVR-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fwrapv",
+					"-DHAVE_MKDIR",
+					"-DSIZEOF_DOUBLE=8",
+					"-DMEDNAFEN_VERSION=\\\"0.9.38.7\\\"",
+					"-DPACKAGE=\\\"mednafen\\\"",
+					"-DMEDNAFEN_VERSION_NUMERIC=0x000938",
+					"-DPSS_STYLE=1",
+					"-DMPC_FIXED_POINT",
+					"-DARCH_ARM",
+					"-DWANT_VB_EMU",
+					"-DSTDC_HEADERS",
+					"-DICONV_CONST=",
+					"-DLSB_FIRST",
+					"-D__STDC_LIMIT_MACROS",
+					"-DSIZEOF_CHAR=1",
+					"-DSIZEOF_SHORT=2",
+					"-DSIZEOF_INT=4",
+					"-DSIZEOF_LONG=8",
+					"-DSIZEOF_LONG_LONG=8",
+					"-DSIZEOF_OFF_T=8",
+					"-mllvm",
+					"-disable-lsr",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomkiddconsulting.VirtualBoyVR-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VirtualBoyVR-iOS/bridging.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/VirtualBoyVR-iOS\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/Provenance\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVMednafen\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVMednafen/include\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVSupport\"",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A16DA4012134A5FB00CD9E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VirtualBoyVR-iOS/Provenance/Provenance-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LSB_FIRST,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/include\"",
+					"\"$(SRCROOT)/mednafen/hw_cpu\"",
+					"\"$(SRCROOT)/mednafen/hw_misc\"",
+					"\"$(SRCROOT)/mednafen/hw_sound\"",
+					"\"$(SRCROOT)/mednafen/hw_video\"",
+					"\"$(SRCROOT)/libsndfile\"",
+				);
+				INFOPLIST_FILE = "VirtualBoyVR-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fwrapv",
+					"-DHAVE_MKDIR",
+					"-DSIZEOF_DOUBLE=8",
+					"-DMEDNAFEN_VERSION=\\\"0.9.38.7\\\"",
+					"-DPACKAGE=\\\"mednafen\\\"",
+					"-DMEDNAFEN_VERSION_NUMERIC=0x000938",
+					"-DPSS_STYLE=1",
+					"-DMPC_FIXED_POINT",
+					"-DARCH_ARM",
+					"-DWANT_VB_EMU",
+					"-DSTDC_HEADERS",
+					"-DICONV_CONST=",
+					"-DLSB_FIRST",
+					"-D__STDC_LIMIT_MACROS",
+					"-DSIZEOF_CHAR=1",
+					"-DSIZEOF_SHORT=2",
+					"-DSIZEOF_INT=4",
+					"-DSIZEOF_LONG=8",
+					"-DSIZEOF_LONG_LONG=8",
+					"-DSIZEOF_OFF_T=8",
+					"-mllvm",
+					"-disable-lsr",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tomkiddconsulting.VirtualBoyVR-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VirtualBoyVR-iOS/bridging.h";
+				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/VirtualBoyVR-iOS\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/Provenance\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVMednafen\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVMednafen/include\"",
+					"\"$(SRCROOT)/VirtualBoyVR-iOS/PVSupport\"",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A16DA3E82134A5F900CD9E21 /* Build configuration list for PBXProject "VirtualBoyVR-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16DA3FD2134A5FB00CD9E21 /* Debug */,
+				A16DA3FE2134A5FB00CD9E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16DA3FF2134A5FB00CD9E21 /* Build configuration list for PBXNativeTarget "VirtualBoyVR-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16DA4002134A5FB00CD9E21 /* Debug */,
+				A16DA4012134A5FB00CD9E21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A16DA3E52134A5F900CD9E21 /* Project object */;
+}
