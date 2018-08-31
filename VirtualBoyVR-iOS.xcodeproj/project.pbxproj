@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A144FB772135F2D70013CB65 /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB762135F2D70013CB65 /* PVMednafen.framework */; };
-		A144FB792135F2D70013CB65 /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; };
+		A12615C52138A1C1007EC2A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12615C42138A1C1007EC2A4 /* HomeViewController.swift */; };
+		A12615C82138A2F0007EC2A4 /* roms in Resources */ = {isa = PBXBuildFile; fileRef = A12615C72138A2F0007EC2A4 /* roms */; };
+		A12615CB2138EA1D007EC2A4 /* systems.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12615CA2138EA1D007EC2A4 /* systems.plist */; };
 		A144FB982135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB7C2135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m */; };
 		A144FB992135F3DF0013CB65 /* PVGame+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB7F2135F3DF0013CB65 /* PVGame+Sizing.m */; };
 		A144FB9A2135F3DF0013CB65 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FB812135F3DF0013CB65 /* UIDevice+Hardware.m */; };
@@ -218,14 +219,39 @@
 		A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F42134A5F900CD9E21 /* Main.storyboard */; };
 		A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F72134A5FB00CD9E21 /* Assets.xcassets */; };
 		A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16DA3F92134A5FB00CD9E21 /* LaunchScreen.storyboard */; };
-		A16DA4032134AA0300CD9E21 /* EmulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */; };
+		A1B2EC292139F91000845ADB /* shader_crt_fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A1B2EC272139F90F00845ADB /* shader_crt_fragment.glsl */; };
+		A1B2EC2A2139F91000845ADB /* shader_crt_vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A1B2EC282139F90F00845ADB /* shader_crt_vertex.glsl */; };
+		A1B2EC2C213A00B300845ADB /* PVMednafen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB762135F2D70013CB65 /* PVMednafen.framework */; };
+		A1B2EC2D213A00B300845ADB /* PVMednafen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB762135F2D70013CB65 /* PVMednafen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1B2EC2E213A00B300845ADB /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; };
+		A1B2EC2F213A00B300845ADB /* PVSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1B390EF21360AA7000E28C3 /* PVEmulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */; };
+		A1B390F021360AB1000E28C3 /* PVGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3F2135F6280013CB65 /* PVGLViewController.m */; };
 		DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1B2EC30213A00B300845ADB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A1B2EC2F213A00B300845ADB /* PVSupport.framework in Embed Frameworks */,
+				A1B2EC2D213A00B300845ADB /* PVMednafen.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B63DBB24415617F3B396D81 /* Pods-VirtualBoyVR-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualBoyVR-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76781830749ECD85A8E91162 /* Pods-VirtualBoyVR-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualBoyVR-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualBoyVR-iOS/Pods-VirtualBoyVR-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A12615C42138A1C1007EC2A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "VirtualBoyVR-iOS/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A12615C72138A2F0007EC2A4 /* roms */ = {isa = PBXFileReference; lastKnownFileType = folder; name = roms; path = "../../../Dropbox/Files/Virtual Boy Roms/roms"; sourceTree = "<group>"; };
+		A12615CA2138EA1D007EC2A4 /* systems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = systems.plist; sourceTree = "<group>"; };
 		A144FB762135F2D70013CB65 /* PVMednafen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVMednafen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A144FB782135F2D70013CB65 /* PVSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PVSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A144FB7C2135F3DF0013CB65 /* NSDate+NSDate_SignificantDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSDate_SignificantDates.m"; sourceTree = "<group>"; };
@@ -704,6 +730,8 @@
 		A16DA3FC2134A5FB00CD9E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorViewController.swift; sourceTree = "<group>"; };
 		A16DA4082134ACEF00CD9E21 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		A1B2EC272139F90F00845ADB /* shader_crt_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader_crt_fragment.glsl; sourceTree = "<group>"; };
+		A1B2EC282139F90F00845ADB /* shader_crt_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader_crt_vertex.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -711,8 +739,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A144FB772135F2D70013CB65 /* PVMednafen.framework in Frameworks */,
-				A144FB792135F2D70013CB65 /* PVSupport.framework in Frameworks */,
+				A1B2EC2E213A00B300845ADB /* PVSupport.framework in Frameworks */,
+				A1B2EC2C213A00B300845ADB /* PVMednafen.framework in Frameworks */,
 				DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,17 +767,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A12615C92138EA0E007EC2A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2EC272139F90F00845ADB /* shader_crt_fragment.glsl */,
+				A1B2EC282139F90F00845ADB /* shader_crt_vertex.glsl */,
+				A12615CA2138EA1D007EC2A4 /* systems.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A144FB7A2135F3980013CB65 /* Provenance */ = {
 			isa = PBXGroup;
 			children = (
-				A144FE3A2135F6280013CB65 /* Emulator */,
-				A144FC4F2135F6010013CB65 /* LzmaSDKObjC */,
+				A12615C92138EA0E007EC2A4 /* Resources */,
 				A144FB7B2135F3DF0013CB65 /* Categories */,
 				A144FBA62135F46C0013CB65 /* Controller */,
+				A144FE3A2135F6280013CB65 /* Emulator */,
 				A144FC1B2135F4F40013CB65 /* Game Library */,
+				A144FC4F2135F6010013CB65 /* LzmaSDKObjC */,
 				A144FC192135F4AD0013CB65 /* Provenance-Prefix.pch */,
-				A144FE482135FA4D0013CB65 /* PVAppConstants.m */,
 				A144FE472135F7B80013CB65 /* PVAppConstants.h */,
+				A144FE482135FA4D0013CB65 /* PVAppConstants.m */,
 				A144FC1A2135F4C70013CB65 /* PVAvailability.h */,
 				A144FC0C2135F48E0013CB65 /* Settings */,
 				A144FC3D2135F5380013CB65 /* SSZipArchive */,
@@ -1392,6 +1431,7 @@
 		A16DA3E42134A5F900CD9E21 = {
 			isa = PBXGroup;
 			children = (
+				A12615C72138A2F0007EC2A4 /* roms */,
 				A16DA3EF2134A5F900CD9E21 /* VirtualBoyVR-iOS */,
 				A16DA3EE2134A5F900CD9E21 /* Products */,
 				4DC1B4A35A6DD7F4A1460616 /* Pods */,
@@ -1418,6 +1458,7 @@
 				A16DA3F72134A5FB00CD9E21 /* Assets.xcassets */,
 				A16DA3F92134A5FB00CD9E21 /* LaunchScreen.storyboard */,
 				A16DA3FC2134A5FB00CD9E21 /* Info.plist */,
+				A12615C42138A1C1007EC2A4 /* HomeViewController.swift */,
 				A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */,
 			);
 			path = "VirtualBoyVR-iOS";
@@ -1435,6 +1476,7 @@
 				A16DA3EA2134A5F900CD9E21 /* Frameworks */,
 				A16DA3EB2134A5F900CD9E21 /* Resources */,
 				998D6C3978A2A48E726AFD22 /* [CP] Copy Pods Resources */,
+				A1B2EC30213A00B300845ADB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1487,13 +1529,17 @@
 				A144FDA22135F6020013CB65 /* .travis.yml in Resources */,
 				A144FDA02135F6020013CB65 /* .gitignore in Resources */,
 				A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */,
+				A1B2EC292139F91000845ADB /* shader_crt_fragment.glsl in Resources */,
 				A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */,
 				A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */,
 				A144FDA12135F6020013CB65 /* LzmaSDK-ObjC.podspec in Resources */,
 				A144FD9F2135F6020013CB65 /* README.md in Resources */,
 				A144FD9C2135F6020013CB65 /* LzmaSDKObjC.podspec in Resources */,
+				A12615C82138A2F0007EC2A4 /* roms in Resources */,
 				A144FD9D2135F6020013CB65 /* LICENSE in Resources */,
 				A144FD9E2135F6020013CB65 /* CHANGELOG in Resources */,
+				A1B2EC2A2139F91000845ADB /* shader_crt_vertex.glsl in Resources */,
+				A12615CB2138EA1D007EC2A4 /* systems.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1570,7 +1616,6 @@
 				A144FB992135F3DF0013CB65 /* PVGame+Sizing.m in Sources */,
 				A144FE262135F6020013CB65 /* Threads.c in Sources */,
 				A144FDE92135F6020013CB65 /* ProgressUtils.cpp in Sources */,
-				A16DA4032134AA0300CD9E21 /* EmulatorViewController.swift in Sources */,
 				A144FE142135F6020013CB65 /* Ppmd7Enc.c in Sources */,
 				A144FE1A2135F6020013CB65 /* 7zStream.c in Sources */,
 				A144FDA52135F6020013CB65 /* CRC.cpp in Sources */,
@@ -1581,6 +1626,7 @@
 				A144FE002135F6020013CB65 /* Lzma2Dec.c in Sources */,
 				A144FDD02135F6020013CB65 /* DllExports2.cpp in Sources */,
 				A144FDE32135F6020013CB65 /* 7zEncode.cpp in Sources */,
+				A12615C52138A1C1007EC2A4 /* HomeViewController.swift in Sources */,
 				A144FDDB2135F6020013CB65 /* 7zExtract.cpp in Sources */,
 				A144FDC92135F6020013CB65 /* LzmaDecoder.cpp in Sources */,
 				A144FE0C2135F6020013CB65 /* Bra86.c in Sources */,
@@ -1603,6 +1649,7 @@
 				A144FE2A2135F6020013CB65 /* LzmaSDKObjC.mm in Sources */,
 				A144FE362135F6020013CB65 /* LzmaSDKObjCFileEncoder.cpp in Sources */,
 				A144FDEF2135F6020013CB65 /* StreamUtils.cpp in Sources */,
+				A1B390EF21360AA7000E28C3 /* PVEmulatorViewController.m in Sources */,
 				A144FE252135F6020013CB65 /* 7zCrcOpt.c in Sources */,
 				A144FBA42135F3DF0013CB65 /* UIImage+Color.m in Sources */,
 				A144FDD32135F6020013CB65 /* OutStreamWithCRC.cpp in Sources */,
@@ -1669,6 +1716,7 @@
 				A144FDF02135F6020013CB65 /* MethodProps.cpp in Sources */,
 				A144FDF92135F6020013CB65 /* StreamObjects.cpp in Sources */,
 				A144FDCE2135F6020013CB65 /* PpmdEncoder.cpp in Sources */,
+				A1B390F021360AB1000E28C3 /* PVGLViewController.m in Sources */,
 				A144FDCF2135F6020013CB65 /* ArchiveExports.cpp in Sources */,
 				A144FC152135F48F0013CB65 /* PVSettingsModel.m in Sources */,
 				A144FDC82135F6020013CB65 /* PpmdDecoder.cpp in Sources */,
@@ -1902,6 +1950,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VirtualBoyVR-iOS/Provenance/Provenance-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1974,6 +2023,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VirtualBoyVR-iOS/Provenance/Provenance-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (

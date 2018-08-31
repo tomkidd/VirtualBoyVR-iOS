@@ -155,8 +155,11 @@ void uncaughtExceptionHandler(NSException *exception)
     [self.emulatorCore setController1:[[PVControllerManager sharedManager] player1]];
     [self.emulatorCore setController2:[[PVControllerManager sharedManager] player2]];
 	
-    NSString *romPath = [[self documentsPath] stringByAppendingPathComponent:[self.game romPath]];
+//    NSString *romPath = [[self documentsPath] stringByAppendingPathComponent:[self.game romPath]];
 
+    NSString *romPath = [self.game romPath];
+
+    
     NSError *error = nil;
     NSString *md5Hash, *crc32Hash;
     if(![[NSFileManager defaultManager] hashFileAtURL:[NSURL fileURLWithPath:romPath] md5:&md5Hash crc32:&crc32Hash error:&error])

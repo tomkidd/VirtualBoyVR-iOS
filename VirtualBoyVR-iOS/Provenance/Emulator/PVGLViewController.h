@@ -15,5 +15,6 @@
 @property (nonatomic, weak) PVEmulatorCore *emulatorCore;
 
 - (instancetype)initWithEmulatorCore:(PVEmulatorCore *)emulatorCore;
+- (GLuint)compileShaderResource:(NSString*)shaderResourceName ofType:(GLenum)shaderType;
 
 @end

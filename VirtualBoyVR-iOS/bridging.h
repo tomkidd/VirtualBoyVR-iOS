@@ -5,3 +5,8 @@
 //#include "PVEmulatorCore.h"
 //#include "OEGameAudio.h"
 #include "PVControllerViewController.h"
+#include "PVGLViewController.h"
+#include "PVEmulatorViewController.h"
+#include "PVControllerManager.h"
+#include "PVGame.h"
+#include "PVEmulatorConfiguration.h"
