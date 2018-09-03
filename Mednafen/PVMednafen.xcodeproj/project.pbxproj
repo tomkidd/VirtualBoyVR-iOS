@@ -1421,7 +1421,7 @@
 		8CB3DC5F17F1DE5D0090372A /* vb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vb.h; sourceTree = "<group>"; };
 		8CB3DC6017F1DE5D0090372A /* vip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vip.cpp; sourceTree = "<group>"; };
 		8CB3DC6117F1DE5D0090372A /* vip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vip.h; sourceTree = "<group>"; };
-		8CB3DC6217F1DE5D0090372A /* vip_draw.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = vip_draw.inc; sourceTree = "<group>"; };
+		8CB3DC6217F1DE5D0090372A /* vip_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vip_draw.h; sourceTree = "<group>"; };
 		8CB3DC6317F1DE5D0090372A /* vsu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vsu.cpp; sourceTree = "<group>"; };
 		8CB3DC6417F1DE5D0090372A /* vsu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vsu.h; sourceTree = "<group>"; };
 		8CB3DC6617F1DE5D0090372A /* Deinterlacer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deinterlacer.cpp; sourceTree = "<group>"; };
@@ -3948,7 +3948,7 @@
 				8CB3DC5F17F1DE5D0090372A /* vb.h */,
 				8CB3DC6017F1DE5D0090372A /* vip.cpp */,
 				8CB3DC6117F1DE5D0090372A /* vip.h */,
-				8CB3DC6217F1DE5D0090372A /* vip_draw.inc */,
+				8CB3DC6217F1DE5D0090372A /* vip_draw.h */,
 				8CB3DC6317F1DE5D0090372A /* vsu.cpp */,
 				8CB3DC6417F1DE5D0090372A /* vsu.h */,
 			);

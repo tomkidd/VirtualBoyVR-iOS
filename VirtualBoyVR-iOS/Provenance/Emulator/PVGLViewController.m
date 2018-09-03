@@ -133,10 +133,10 @@
         }
         else
         {
-            origin.y = roundf((parentSize.height - height) / 2.0); // centered
+            origin.y = roundf((parentSize.height - (height / 2)) / 2.0); // centered
         }
 
-        [[self view] setFrame:CGRectMake(origin.x, origin.y, width, height)];
+        [[self view] setFrame:CGRectMake(origin.x, origin.y, width, height / 2)];
     }
 }
 

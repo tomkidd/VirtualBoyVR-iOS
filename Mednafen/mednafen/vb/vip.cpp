@@ -410,7 +410,7 @@ void VIP_Init(void)
  ParallaxDisabled = false;
  Anaglyph_Colors[0] = 0xFF0000;
  Anaglyph_Colors[1] = 0x0000FF;
- VB3DMode = VB3DMODE_ANAGLYPH;
+ VB3DMode = VB3DMODE_SIDEBYSIDE;
  Default_Color = 0xFFFFFF;
  VB3DReverse = 0;
  VBPrescale = 1;
@@ -928,7 +928,7 @@ static int32 CalcNextEvent(void)
  return(ColumnCounter);
 }
 
-#include "vip_draw.inc"
+#include "vip_draw.h"
 
 static INLINE void CopyFBColumnToTarget_Anaglyph_BASE(const bool DisplayActive_arg, const int lr)
 {
