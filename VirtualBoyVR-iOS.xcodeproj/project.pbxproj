@@ -225,6 +225,7 @@
 		A1B2EC2D213A00B300845ADB /* PVMednafen.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB762135F2D70013CB65 /* PVMednafen.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1B2EC2E213A00B300845ADB /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; };
 		A1B2EC2F213A00B300845ADB /* PVSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1B2EC33213DAF8D00845ADB /* PVGCVRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */; };
 		A1B390EF21360AA7000E28C3 /* PVEmulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */; };
 		A1B390F021360AB1000E28C3 /* PVGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3F2135F6280013CB65 /* PVGLViewController.m */; };
 		DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */; };
@@ -732,6 +733,8 @@
 		A16DA4082134ACEF00CD9E21 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
 		A1B2EC272139F90F00845ADB /* shader_crt_fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader_crt_fragment.glsl; sourceTree = "<group>"; };
 		A1B2EC282139F90F00845ADB /* shader_crt_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader_crt_vertex.glsl; sourceTree = "<group>"; };
+		A1B2EC31213DAF8C00845ADB /* PVGCVRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVGCVRViewController.h; sourceTree = "<group>"; };
+		A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVGCVRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1424,6 +1427,8 @@
 				A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */,
 				A144FE3B2135F6280013CB65 /* PVGLViewController.h */,
 				A144FE3F2135F6280013CB65 /* PVGLViewController.m */,
+				A1B2EC31213DAF8C00845ADB /* PVGCVRViewController.h */,
+				A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */,
 			);
 			path = Emulator;
 			sourceTree = "<group>";
@@ -1691,6 +1696,7 @@
 				A144FDC32135F6020013CB65 /* CopyRegister.cpp in Sources */,
 				A144FE192135F6020013CB65 /* Lzma86Dec.c in Sources */,
 				A144FE122135F6020013CB65 /* LzmaDec.c in Sources */,
+				A1B2EC33213DAF8D00845ADB /* PVGCVRViewController.m in Sources */,
 				A16DA3F32134A5F900CD9E21 /* ViewController.swift in Sources */,
 				A144FDD72135F6020013CB65 /* ParseProperties.cpp in Sources */,
 				A144FE332135F6020013CB65 /* LzmaSDKObjCInFile.cpp in Sources */,
