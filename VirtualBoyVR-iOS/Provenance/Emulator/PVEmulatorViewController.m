@@ -7,7 +7,8 @@
 //
 
 #import "PVEmulatorViewController.h"
-#import "PVGLViewController.h"
+//#import "PVGLViewController.h"
+#import "PVGCVRViewController.h"
 #import <PVSupport/PVSupport.h>
 #import "PVGame.h"
 #import "JSButton.h"
@@ -24,7 +25,7 @@
 
 @interface PVEmulatorViewController ()
 
-@property (nonatomic, strong) PVGLViewController *glViewController;
+@property (nonatomic, strong) PVGCVRViewController *gvrViewController;
 @property (nonatomic, strong) OEGameAudio *gameAudio;
 @property (nonatomic, strong) PVControllerViewController *controllerViewController;
 
@@ -83,13 +84,13 @@ void uncaughtExceptionHandler(NSException *exception)
 	[[self.controllerViewController view] removeFromSuperview];
 	[self.controllerViewController removeFromParentViewController];
 	
-	[self.glViewController willMoveToParentViewController:nil];
-	[[self.glViewController view] removeFromSuperview];
-	[self.glViewController removeFromParentViewController];
+	[self.gvrViewController willMoveToParentViewController:nil];
+	[[self.gvrViewController view] removeFromSuperview];
+	[self.gvrViewController removeFromParentViewController];
 	
 	self.emulatorCore = nil;
 	self.gameAudio = nil;
-	self.glViewController = nil;
+	self.gvrViewController = nil;
 	self.controllerViewController = nil;
 	self.menuButton = nil;
 
@@ -170,7 +171,7 @@ void uncaughtExceptionHandler(NSException *exception)
 
     self.emulatorCore.romMD5 = md5Hash;
     
-	self.glViewController = [[PVGLViewController alloc] initWithEmulatorCore:self.emulatorCore];
+	self.gvrViewController = [[PVGCVRViewController alloc] initWithEmulatorCore:self.emulatorCore];
 
         // Load now. Moved here becauase Mednafen needed to know what kind of game it's working with in order
         // to provide the correct data for creating views.
@@ -181,16 +182,16 @@ void uncaughtExceptionHandler(NSException *exception)
         self.secondaryScreen = [[UIScreen screens] objectAtIndex:1];
         self.secondaryWindow = [[UIWindow alloc] initWithFrame:[self.secondaryScreen bounds]];
         [self.secondaryWindow setScreen:self.secondaryScreen];
-        [self.secondaryWindow setRootViewController:self.glViewController];
-        [[self.glViewController view] setFrame:[self.secondaryWindow bounds]];
-        [self.secondaryWindow addSubview:[self.glViewController view]];
+        [self.secondaryWindow setRootViewController:self.gvrViewController];
+        [[self.gvrViewController view] setFrame:[self.secondaryWindow bounds]];
+        [self.secondaryWindow addSubview:[self.gvrViewController view]];
         [self.secondaryWindow setHidden:NO];
     }
     else
     {
-        [self addChildViewController:self.glViewController];
-        [self.view addSubview:[self.glViewController view]];
-        [self.glViewController didMoveToParentViewController:self];
+        [self addChildViewController:self.gvrViewController];
+        [self.view addSubview:[self.gvrViewController view]];
+        [self.gvrViewController didMoveToParentViewController:self];
     }
 
 	self.controllerViewController = [[PVEmulatorConfiguration sharedInstance] controllerViewControllerForSystemIdentifier:[self.game systemIdentifier]];
@@ -216,7 +217,7 @@ void uncaughtExceptionHandler(NSException *exception)
     if ([[PVSettingsModel sharedInstance] showFPSCount]) {
         _fpsLabel = [UILabel new];
         _fpsLabel.textColor = [UIColor yellowColor];
-        _fpsLabel.text = [NSNumber numberWithInteger:self.glViewController.framesPerSecond].stringValue;
+//        _fpsLabel.text = [NSNumber numberWithInteger:self.glViewController.framesPerSecond].stringValue;
         _fpsLabel.translatesAutoresizingMaskIntoConstraints = NO;
         _fpsLabel.textAlignment = NSTextAlignmentRight;
 #if TARGET_OS_TV
@@ -224,11 +225,11 @@ void uncaughtExceptionHandler(NSException *exception)
 #else
         _fpsLabel.font = [UIFont systemFontOfSize:22 weight:UIFontWeightBold];
 #endif
-        [self.glViewController.view addSubview:_fpsLabel];
+        [self.gvrViewController.view addSubview:_fpsLabel];
         
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_fpsLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.glViewController.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:30]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_fpsLabel attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.gvrViewController.view attribute:NSLayoutAttributeTop multiplier:1.0 constant:30]];
         
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_fpsLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.glViewController.view attribute:NSLayoutAttributeRight multiplier:1.0 constant:-40]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:_fpsLabel attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.gvrViewController.view attribute:NSLayoutAttributeRight multiplier:1.0 constant:-40]];
         
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
         if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10.0")) {
@@ -633,7 +634,7 @@ void uncaughtExceptionHandler(NSException *exception)
 - (void)updateFPSLabel
 {
 #if DEBUG
-    NSLog(@"FPS: %li", _glViewController.framesPerSecond);
+//    NSLog(@"FPS: %li", _glViewController.framesPerSecond);
 #endif
     self.fpsLabel.text = [NSString stringWithFormat:@"%2.02f", self.emulatorCore.emulationFPS];
 }
@@ -778,15 +779,15 @@ void uncaughtExceptionHandler(NSException *exception)
         _fpsLabel.alpha = 0;
     } completion:^(BOOL finished) {
         if (finished) {
-            CGFloat width = _glViewController.view.frame.size.width;
-            CGFloat height = _glViewController.view.frame.size.height;
+            CGFloat width = _gvrViewController.view.frame.size.width;
+            CGFloat height = _gvrViewController.view.frame.size.height;
             
             CGSize size = CGSizeMake(width, height);
             
             UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
             
             CGRect rec = CGRectMake(0, 0, width, height);
-            [_glViewController.view drawViewHierarchyInRect:rec afterScreenUpdates:YES];
+            [_gvrViewController.view drawViewHierarchyInRect:rec afterScreenUpdates:YES];
             
             UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
             UIGraphicsEndImageContext();
@@ -943,13 +944,13 @@ void uncaughtExceptionHandler(NSException *exception)
         self.secondaryScreen = [[UIScreen screens] objectAtIndex:1];
         self.secondaryWindow = [[UIWindow alloc] initWithFrame:[self.secondaryScreen bounds]];
         [self.secondaryWindow setScreen:self.secondaryScreen];
-        [[self.glViewController view] removeFromSuperview];
-        [self.glViewController removeFromParentViewController];
-        [self.secondaryWindow setRootViewController:self.glViewController];
-        [[self.glViewController view] setFrame:[self.secondaryWindow bounds]];
-        [self.secondaryWindow addSubview:[self.glViewController view]];
+        [[self.gvrViewController view] removeFromSuperview];
+        [self.gvrViewController removeFromParentViewController];
+        [self.secondaryWindow setRootViewController:self.gvrViewController];
+        [[self.gvrViewController view] setFrame:[self.secondaryWindow bounds]];
+        [self.secondaryWindow addSubview:[self.gvrViewController view]];
         [self.secondaryWindow setHidden:NO];
-        [[self.glViewController view] setNeedsLayout];
+        [[self.gvrViewController view] setNeedsLayout];
     }
 }
 
@@ -959,11 +960,11 @@ void uncaughtExceptionHandler(NSException *exception)
     UIScreen *screen = [note object];
     if (self.secondaryScreen == screen)
     {
-        [[self.glViewController view] removeFromSuperview];
-        [self.glViewController removeFromParentViewController];
-        [self addChildViewController:self.glViewController];
-        [self.view insertSubview:[self.glViewController view] belowSubview:[self.controllerViewController view]];
-        [[self.glViewController view] setNeedsLayout];
+        [[self.gvrViewController view] removeFromSuperview];
+        [self.gvrViewController removeFromParentViewController];
+        [self addChildViewController:self.gvrViewController];
+        [self.view insertSubview:[self.gvrViewController view] belowSubview:[self.controllerViewController view]];
+        [[self.gvrViewController view] setNeedsLayout];
         self.secondaryWindow = nil;
         self.secondaryScreen = nil;
     }

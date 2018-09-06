@@ -10,3 +10,4 @@
 #include "PVControllerManager.h"
 #include "PVGame.h"
 #include "PVEmulatorConfiguration.h"
+#include "PVGCVRViewController.h"
