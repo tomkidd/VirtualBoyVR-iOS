@@ -197,6 +197,7 @@ __attribute__((visibility("default")))
 // Virtual Boy
 - (oneway void)didPushVBButton:(OEVBButton)button forPlayer:(NSUInteger)player;
 - (oneway void)didReleaseVBButton:(OEVBButton)button forPlayer:(NSUInteger)player;
+- (oneway void)setSBSSeparation:(int)separation;
 
 // WonderSwan
 - (oneway void)didPushWSButton:(OEWSButton)button forPlayer:(NSUInteger)player;

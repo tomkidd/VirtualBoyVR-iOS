@@ -1505,6 +1505,11 @@ const int NeoMap[]  = { 0, 1, 2, 3, 4, 5, 6};
     inputBuffer[player][0] &= ~(1 << VBMap[button]);
 }
 
+- (oneway void)setSBSSeparation:(int)separation
+{
+    MDFNI_SetSettingUI("vb.sidebyside.separation", separation);
+}
+
 #pragma mark WonderSwan
 - (oneway void)didPushWSButton:(OEWSButton)button forPlayer:(NSUInteger)player;
 {
