@@ -81,6 +81,7 @@ namespace MDFN_IEN_VB
 {
     extern void VIP_SetParallaxDisable(bool disabled);
     extern void VIP_SetAnaglyphColors(uint32 lcolor, uint32 rcolor);
+//    extern void VIP_SetSBSSeparation(uint32 separation);
     int mednafenCurrentDisplayMode = 1;
 }
 
@@ -101,6 +102,7 @@ typedef enum MednaSystem {lynx, neogeo, pce, pcfx, psx, vb, wswan };
     NSTimeInterval mednafenCoreTiming;
     OEIntSize mednafenCoreAspect;
     NSUInteger maxDiscs;
+    int vb_sbs_offset;
 }
 
 @end
@@ -114,7 +116,8 @@ static __weak MednafenGameCore *_current;
     return inputBuffer[bufferId];
 }
 
-static void mednafen_init(MednafenGameCore* current)
+// passing in the sbs like this is lame but i'm very tired -tkidd
+static void mednafen_init(MednafenGameCore* current, int vb_sbs_offset)
 {
     //passing by parameter
     //GET_CURRENT_OR_RETURN();
@@ -148,7 +151,8 @@ static void mednafen_init(MednafenGameCore* current)
     MDFNI_SetSetting("vb.anaglyph.rcolor", "0x000000"); // Anaglyph r color
     //MDFNI_SetSetting("vb.allow_draw_skip", "1");      // Allow draw skipping
     //MDFNI_SetSetting("vb.instant_display_hack", "1"); // Display latency reduction hack
-
+    MDFNI_SetSetting("vb.sidebyside.separation", [[NSString stringWithFormat:@"%d",vb_sbs_offset] UTF8String]);       // sbs
+    
     MDFNI_SetSetting("pce.slstart", "0"); // PCE: First rendered scanline
     MDFNI_SetSetting("pce.slend", "239"); // PCE: Last rendered scanline
 
@@ -1008,6 +1012,8 @@ static void emulation_run() {
         mednafenCoreAspect = OEIntSizeMake(12, 7);
         //mednafenCoreAspect = OEIntSizeMake(game->nominal_width, game->nominal_height);
         sampleRate         = 48000;
+    
+        
     }
     else if([[self systemIdentifier] isEqualToString:@"com.provenance.ws"] || [[self systemIdentifier] isEqualToString:@"com.provenance.wsc"])
     {
@@ -1025,7 +1031,8 @@ static void emulation_run() {
     }
 
     assert(_current);
-    mednafen_init(_current);
+    mednafen_init(_current, vb_sbs_offset);
+//    MDFN_IEN_VB::VIP_SetSBSSeparation(100);
 
     game = MDFNI_LoadGame([mednafenCoreModule UTF8String], [path UTF8String]);
 
@@ -1507,7 +1514,7 @@ const int NeoMap[]  = { 0, 1, 2, 3, 4, 5, 6};
 
 - (oneway void)setSBSSeparation:(int)separation
 {
-    MDFNI_SetSettingUI("vb.sidebyside.separation", separation);
+    vb_sbs_offset = separation;
 }
 
 #pragma mark WonderSwan

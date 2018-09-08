@@ -332,6 +332,12 @@ void VIP_SetAllowDrawSkip(bool val)
  AllowDrawSkip = val;
 }
 
+//void VIP_SetSBSSeparation(uint32 sbs_separation)
+//{
+//    VBSBS_Separation = sbs_separation;
+//
+//    VidSettingsDirty = true;
+//}
 
 static uint16 FRMCYC;
 

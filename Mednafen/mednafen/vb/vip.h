@@ -14,6 +14,7 @@ void VIP_Set3DMode(uint32 mode, bool reverse, uint32 prescale, uint32 sbs_separa
 void VIP_SetParallaxDisable(bool disabled) MDFN_COLD;
 void VIP_SetDefaultColor(uint32 default_color) MDFN_COLD;
 void VIP_SetAnaglyphColors(uint32 lcolor, uint32 rcolor) MDFN_COLD;	// R << 16, G << 8, B << 0
+//void VIP_SetSBSSeparation(uint32 separation) MDFN_COLD;
 
 v810_timestamp_t MDFN_FASTCALL VIP_Update(const v810_timestamp_t timestamp);
 void VIP_ResetTS(void);

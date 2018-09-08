@@ -22,6 +22,7 @@
 #import "PVEmulatorConfiguration.h"
 #import "PVControllerManager.h"
 #import "PViCade8BitdoController.h"
+#import <PVMednafen/MednafenGameCore.h>
 
 @interface PVEmulatorViewController ()
 
@@ -172,6 +173,9 @@ void uncaughtExceptionHandler(NSException *exception)
     self.emulatorCore.romMD5 = md5Hash;
     
 	self.gvrViewController = [[PVGCVRViewController alloc] initWithEmulatorCore:self.emulatorCore];
+    
+    MednafenGameCore *vbCore = (MednafenGameCore *)self.emulatorCore;
+    [vbCore setSBSSeparation:102];
 
         // Load now. Moved here becauase Mednafen needed to know what kind of game it's working with in order
         // to provide the correct data for creating views.

@@ -665,7 +665,9 @@ static void Load(MDFNFILE *fp)
   VB3DMode = 2;
   //VB3DMode = MDFN_GetSettingUI("vb.3dmode");
   uint32 prescale = MDFN_GetSettingUI("vb.liprescale");
-  uint32 sbs_separation = MDFN_GetSettingUI("vb.sidebyside.separation");
+     std::string sbs_separation_s = MDFN_GetSettingS("vb.sidebyside.separation");
+     uint32 sbs_separation = MDFN_GetSettingUI("vb.sidebyside.separation");
+//  uint32 sbs_separation = 100;
 
   VIP_Set3DMode(VB3DMode, MDFN_GetSettingUI("vb.3dreverse"), prescale, sbs_separation);
 
