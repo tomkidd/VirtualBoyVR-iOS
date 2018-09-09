@@ -174,9 +174,6 @@ void uncaughtExceptionHandler(NSException *exception)
     
 	self.gvrViewController = [[PVGCVRViewController alloc] initWithEmulatorCore:self.emulatorCore];
     
-    MednafenGameCore *vbCore = (MednafenGameCore *)self.emulatorCore;
-    [vbCore setSBSSeparation:102];
-
         // Load now. Moved here becauase Mednafen needed to know what kind of game it's working with in order
         // to provide the correct data for creating views.
     BOOL loaded = [self.emulatorCore loadFileAtPath:romPath error:&error];

@@ -26,6 +26,9 @@
     GLenum videoBufferPixelFormat;
     GLenum videoBufferPixelType;
     CGSize videoBufferSize;
+    
+    CGFloat xOffset;
+    CGFloat yOffset;
 }
 
 @property (nonatomic, strong) EAGLContext *glContext;
@@ -105,11 +108,33 @@
 }
 
 - (void)cardboardView:(GVRCardboardView *)cardboardView willStartDrawing:(GVRHeadTransform *)headTransform {
-    
+
 }
 
 - (void)cardboardView:(GVRCardboardView *)cardboardView prepareDrawFrame:(GVRHeadTransform *)headTransform {
     
+    printf("viewport kGVRCenterEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRCenterEye].origin.x, [headTransform viewportForEye:kGVRCenterEye].origin.y, [headTransform viewportForEye:kGVRCenterEye].size.width, [headTransform viewportForEye:kGVRCenterEye].size.height);
+    printf("viewport kGVRLeftEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRLeftEye].origin.x, [headTransform viewportForEye:kGVRLeftEye].origin.y, [headTransform viewportForEye:kGVRLeftEye].size.width, [headTransform viewportForEye:kGVRLeftEye].size.height);
+    printf("viewport kGVRRightEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRRightEye].origin.x, [headTransform viewportForEye:kGVRRightEye].origin.y, [headTransform viewportForEye:kGVRRightEye].size.width, [headTransform viewportForEye:kGVRRightEye].size.height);
+
+    CGFloat Vw = [headTransform viewportForEye:kGVRLeftEye].size.width + [headTransform viewportForEye:kGVRRightEye].size.width;
+    CGFloat Vh = [headTransform viewportForEye:kGVRLeftEye].size.height;
+    
+    // ASSUMPTION: Each side of the Virtual Boy's screen (each eye) is 384 x 224
+    // https://en.wikipedia.org/wiki/Virtual_Boy_hardware#Specifications
+    CGFloat Fw = 384.0;// * UIScreen.mainScreen.scale;
+    CGFloat Fh = 224.0;// * UIScreen.mainScreen.scale;
+    
+    xOffset = (Vw - (Fw * 2)) / 4;
+    yOffset = (Vh - Fh) / 2;
+    
+    xOffset = 360;
+    yOffset = 300;
+
+    
+    MednafenGameCore *vbCore = (MednafenGameCore *)self.emulatorCore;
+//    [vbCore setSBSSeparation:(xOffset * 2)];
+
     if (self.emulatorCore.isSpeedModified)
     {
         [self fetchVideoBuffer];
@@ -207,33 +232,29 @@
     
     GLsizei gl_screenwidth = videoBufferSize.width * UIScreen.mainScreen.scale;
     GLsizei gl_screenheight = videoBufferSize.height * UIScreen.mainScreen.scale;
-
-    glViewport(300, 300, gl_screenwidth, gl_screenheight);
+    
+    glViewport(xOffset, yOffset, gl_screenwidth, gl_screenheight);
 
 //    glViewport(0, 0, 3500, 3000);
 
     glClearColor(0.0, 1.0, 0.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     
+    printf("*****\n");
     printf("screenRect.origin.x: %f\n", screenRect.origin.x);
     printf("screenRect.origin.y: %f\n", screenRect.origin.y);
     printf("screenRect.size.width: %f\n", screenRect.size.width);
     printf("screenRect.size.height: %f\n", screenRect.size.height);
     printf("videoBufferSize.width: %f\n", videoBufferSize.width);
     printf("videoBufferSize.height: %f\n", videoBufferSize.height);
-    
+
     printf("gl_screenwidth: %d\n", gl_screenwidth);
     printf("gl_screenheight: %d\n", gl_screenheight);
-
+    
     CGFloat texLeft = screenRect.origin.x / videoBufferSize.width;
     CGFloat texTop = screenRect.origin.y / videoBufferSize.height;
     CGFloat texRight = ( screenRect.origin.x + screenRect.size.width ) / videoBufferSize.width;
     CGFloat texBottom = ( screenRect.origin.y + screenRect.size.height ) / videoBufferSize.height;
-    
-//    printf("texLeft: %f\n", texLeft);
-//    printf("texTop: %f\n", texTop);
-//    printf("texRight: %f\n", texRight);
-//    printf("texBottom: %f\n", texBottom);
     
     vertices[0] = GLKVector3Make(-1.0, -1.0,  1.0); // Left  bottom
     vertices[1] = GLKVector3Make( 1.0, -1.0,  1.0); // Right bottom
@@ -245,12 +266,6 @@
     textureCoordinates[2] = GLKVector2Make(texRight, texTop); // Right top
     textureCoordinates[3] = GLKVector2Make(texLeft, texTop); // Left top
     
-//    printf("textureCoordinates[0] x: %f y: %f v: (%f,%f) s: %f t: %f Left bottom\n", textureCoordinates[0].x, textureCoordinates[0].y, textureCoordinates[0].v[0], textureCoordinates[0].v[1], textureCoordinates[0].s, textureCoordinates[0].t);
-//    printf("textureCoordinates[1] x: %f y: %f v: (%f,%f) s: %f t: %f Right bottom\n", textureCoordinates[1].x, textureCoordinates[1].y, textureCoordinates[1].v[0], textureCoordinates[1].v[1], textureCoordinates[1].s, textureCoordinates[1].t);
-//    printf("textureCoordinates[2] x: %f y: %f v: (%f,%f) s: %f t: %f Right top\n", textureCoordinates[2].x, textureCoordinates[2].y, textureCoordinates[2].v[0], textureCoordinates[2].v[1], textureCoordinates[2].s, textureCoordinates[2].t);
-//    printf("textureCoordinates[3] x: %f y: %f v: (%f,%f) s: %f t: %f Left top\n", textureCoordinates[3].x, textureCoordinates[3].y, textureCoordinates[3].v[0], textureCoordinates[3].v[1], textureCoordinates[3].s, textureCoordinates[3].t);
-//    printf("*****\n");
-
     int vertexIndices[6] = {
         // Front
         0, 1, 2,
@@ -260,16 +275,10 @@
     for (int i = 0; i < 6; i++) {
         triangleVertices[i]  = vertices[vertexIndices[i]];
         triangleTexCoords[i] = textureCoordinates[vertexIndices[i]];
-        
-//        printf("i: %d triangleVertices[i]: %f %f triangleTexCoords[i]: %f %f \n", i, triangleVertices[i].x, triangleVertices[i].y, triangleTexCoords[i].x, triangleTexCoords[i].y);
-
     }
     
     glBindTexture(GL_TEXTURE_2D, texture);
     glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, videoBufferSize.width, videoBufferSize.height, videoBufferPixelFormat, videoBufferPixelType, videoBuffer);
-    
-//    printf( "videoBufferSize.width: %f\n", videoBufferSize.width );
-//    printf( "videoBufferSize.height: %f\n", videoBufferSize.height );
     
     if (texture)
     {

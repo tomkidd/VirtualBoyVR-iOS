@@ -81,7 +81,7 @@ namespace MDFN_IEN_VB
 {
     extern void VIP_SetParallaxDisable(bool disabled);
     extern void VIP_SetAnaglyphColors(uint32 lcolor, uint32 rcolor);
-//    extern void VIP_SetSBSSeparation(uint32 separation);
+    extern void VIP_SetSBSSeparation(uint32 separation);
     int mednafenCurrentDisplayMode = 1;
 }
 
@@ -116,8 +116,7 @@ static __weak MednafenGameCore *_current;
     return inputBuffer[bufferId];
 }
 
-// passing in the sbs like this is lame but i'm very tired -tkidd
-static void mednafen_init(MednafenGameCore* current, int vb_sbs_offset)
+static void mednafen_init(MednafenGameCore* current)
 {
     //passing by parameter
     //GET_CURRENT_OR_RETURN();
@@ -151,7 +150,8 @@ static void mednafen_init(MednafenGameCore* current, int vb_sbs_offset)
     MDFNI_SetSetting("vb.anaglyph.rcolor", "0x000000"); // Anaglyph r color
     //MDFNI_SetSetting("vb.allow_draw_skip", "1");      // Allow draw skipping
     //MDFNI_SetSetting("vb.instant_display_hack", "1"); // Display latency reduction hack
-    MDFNI_SetSetting("vb.sidebyside.separation", [[NSString stringWithFormat:@"%d",vb_sbs_offset] UTF8String]);       // sbs
+    MDFNI_SetSetting("vb.sidebyside.separation", "0"); // Separation between viewports
+
     
     MDFNI_SetSetting("pce.slstart", "0"); // PCE: First rendered scanline
     MDFNI_SetSetting("pce.slend", "239"); // PCE: Last rendered scanline
@@ -1031,8 +1031,7 @@ static void emulation_run() {
     }
 
     assert(_current);
-    mednafen_init(_current, vb_sbs_offset);
-//    MDFN_IEN_VB::VIP_SetSBSSeparation(100);
+    mednafen_init(_current);
 
     game = MDFNI_LoadGame([mednafenCoreModule UTF8String], [path UTF8String]);
 
@@ -1514,7 +1513,7 @@ const int NeoMap[]  = { 0, 1, 2, 3, 4, 5, 6};
 
 - (oneway void)setSBSSeparation:(int)separation
 {
-    vb_sbs_offset = separation;
+    MDFN_IEN_VB::VIP_SetSBSSeparation(separation);
 }
 
 #pragma mark WonderSwan

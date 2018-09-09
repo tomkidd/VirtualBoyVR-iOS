@@ -32,7 +32,8 @@ class HomeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let game = PVGame()
-        game.romPath = Bundle.main.resourcePath! + "/roms/Virtual_Boy_Wario_Land_(JU)_[!].vb"
+                game.romPath = Bundle.main.resourcePath! + "/roms/Virtual_Boy_Wario_Land_(JU)_[!].vb"
+//        game.romPath = Bundle.main.resourcePath! + "/roms/Reality Boy Demo 1 (PD).vb"
         game.systemIdentifier = "com.provenance.vb"
         
         (segue.destination as! PVEmulatorViewController).game = game
