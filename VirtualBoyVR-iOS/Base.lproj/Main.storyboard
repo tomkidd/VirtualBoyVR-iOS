@@ -18,29 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E44-lD-0th">
-                                <rect key="frame" x="316.5" y="172.5" width="34" height="30"/>
-                                <state key="normal" title="Start"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jaa-GX-ErD">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="sw6-Mk-3Dx" kind="show" id="uwm-Cb-XWe"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hEq-Sx-hCz"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OY1-eF-Uw4"/>
                                 </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Boy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huL-1p-tog">
-                                <rect key="frame" x="292" y="112.5" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="huL-1p-tog" firstAttribute="centerX" secondItem="E44-lD-0th" secondAttribute="centerX" id="TWw-o7-Ua6"/>
-                            <constraint firstItem="E44-lD-0th" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iIv-3z-GaM"/>
-                            <constraint firstItem="E44-lD-0th" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xWy-oM-Ql8"/>
-                            <constraint firstItem="E44-lD-0th" firstAttribute="top" secondItem="huL-1p-tog" secondAttribute="bottom" constant="39" id="xfy-nf-9cn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jaa-GX-ErD" secondAttribute="bottom" id="HLC-zG-BYz"/>
+                            <constraint firstItem="Jaa-GX-ErD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RMC-Rq-v0O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jaa-GX-ErD" secondAttribute="trailing" id="Zrt-AZ-Img"/>
+                            <constraint firstItem="Jaa-GX-ErD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="saW-go-yN0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="sw6-Mk-3Dx" kind="show" identifier="StartGameSegue" id="M3k-HU-bCG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

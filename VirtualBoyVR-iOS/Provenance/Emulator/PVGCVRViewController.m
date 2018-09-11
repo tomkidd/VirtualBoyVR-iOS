@@ -237,7 +237,8 @@
 
 //    glViewport(0, 0, 3500, 3000);
 
-    glClearColor(0.0, 1.0, 0.0, 1.0);
+//    glClearColor(0.0, 1.0, 0.0, 1.0); // green
+    glClearColor(0.0, 0.0, 0.0, 1.0); // black
     glClear(GL_COLOR_BUFFER_BIT);
     
     printf("*****\n");
