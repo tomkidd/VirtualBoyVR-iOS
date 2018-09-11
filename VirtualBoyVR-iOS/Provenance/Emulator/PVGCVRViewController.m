@@ -122,14 +122,14 @@
     
     // ASSUMPTION: Each side of the Virtual Boy's screen (each eye) is 384 x 224
     // https://en.wikipedia.org/wiki/Virtual_Boy_hardware#Specifications
-    CGFloat Fw = 384.0;// * UIScreen.mainScreen.scale;
-    CGFloat Fh = 224.0;// * UIScreen.mainScreen.scale;
+    CGFloat Fw = 768.0 * UIScreen.mainScreen.scale;
+    CGFloat Fh = 224.0 * UIScreen.mainScreen.scale;
     
-    xOffset = (Vw - (Fw * 2)) / 4;
+    xOffset = (Vw - Fw) / 2;
     yOffset = (Vh - Fh) / 2;
     
-    xOffset = 360;
-    yOffset = 300;
+//    xOffset = 360;
+//    yOffset = 300;
 
     
     MednafenGameCore *vbCore = (MednafenGameCore *)self.emulatorCore;
@@ -237,8 +237,8 @@
 
 //    glViewport(0, 0, 3500, 3000);
 
-//    glClearColor(0.0, 1.0, 0.0, 1.0); // green
-    glClearColor(0.0, 0.0, 0.0, 1.0); // black
+    glClearColor(0.0, 1.0, 0.0, 1.0); // green
+//    glClearColor(0.0, 0.0, 0.0, 1.0); // black
     glClear(GL_COLOR_BUFFER_BIT);
     
     printf("*****\n");
@@ -251,6 +251,10 @@
 
     printf("gl_screenwidth: %d\n", gl_screenwidth);
     printf("gl_screenheight: %d\n", gl_screenheight);
+    
+    printf("xOffset: %f\n", xOffset);
+    printf("yOffset: %f\n", yOffset);
+
     
     CGFloat texLeft = screenRect.origin.x / videoBufferSize.width;
     CGFloat texTop = screenRect.origin.y / videoBufferSize.height;
