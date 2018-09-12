@@ -20,8 +20,21 @@ class HomeViewController: UIViewController {
         PVControllerManager.shared()
         PVSettingsModel.sharedInstance()
         
+        let defaults = UserDefaults()
+        let x = defaults.integer(forKey: "sbs")
+        
+        if x == 0 {
+            defaults.set(60, forKey: "sbs")
+        }
+        
+        // test
+        defaults.set(60, forKey: "sbs")
+        
+        print("sbs: \(x)")
+
         // todo: make this a plist or something
         games = []
+        games.append(pvGen(title: "Reality Boy demo", romPath: "Reality Boy Demo 1 (PD).vb", cover: "Reality Boy Demo 1 (PD)"))
         games.append(pvGen(title: "3D Tetris", romPath: "3D_Tetris_(U)_[!].vb", cover: "3D_Tetris_(U)"))
         games.append(pvGen(title: "Galactic Pinball", romPath: "Galactic_Pinball_(JU)_[!].vb", cover: "Galactic_Pinball_(JU)"))
         games.append(pvGen(title: "Golf", romPath: "Golf_(U)_[!].vb", cover: "Golf_(U)"))
