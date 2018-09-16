@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,21 +16,21 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vbsplash" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-cd-MOL">
-                                <rect key="frame" x="90.5" y="0.0" width="486" height="375"/>
+                                <rect key="frame" x="0.0" y="69" width="375" height="529"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="dPy-cd-MOL" secondAttribute="height" multiplier="157:121" id="dmC-C1-xQb"/>
+                                    <constraint firstAttribute="width" secondItem="dPy-cd-MOL" secondAttribute="height" multiplier="90:127" id="SKO-OI-9sk"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dPy-cd-MOL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="21B-Vd-LOT"/>
-                            <constraint firstItem="dPy-cd-MOL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VSb-Bv-J1Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPy-cd-MOL" secondAttribute="bottom" id="vie-yX-la8"/>
+                            <constraint firstItem="dPy-cd-MOL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1g2-0n-4Fz"/>
+                            <constraint firstAttribute="trailing" secondItem="dPy-cd-MOL" secondAttribute="trailing" id="IIq-AZ-9uA"/>
+                            <constraint firstItem="dPy-cd-MOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wbd-vO-JKc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="vbsplash" width="785" height="605"/>
+        <image name="vbsplash" width="450" height="635"/>
     </resources>
 </document>

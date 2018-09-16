@@ -113,9 +113,9 @@
 
 - (void)cardboardView:(GVRCardboardView *)cardboardView prepareDrawFrame:(GVRHeadTransform *)headTransform {
     
-    printf("viewport kGVRCenterEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRCenterEye].origin.x, [headTransform viewportForEye:kGVRCenterEye].origin.y, [headTransform viewportForEye:kGVRCenterEye].size.width, [headTransform viewportForEye:kGVRCenterEye].size.height);
-    printf("viewport kGVRLeftEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRLeftEye].origin.x, [headTransform viewportForEye:kGVRLeftEye].origin.y, [headTransform viewportForEye:kGVRLeftEye].size.width, [headTransform viewportForEye:kGVRLeftEye].size.height);
-    printf("viewport kGVRRightEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRRightEye].origin.x, [headTransform viewportForEye:kGVRRightEye].origin.y, [headTransform viewportForEye:kGVRRightEye].size.width, [headTransform viewportForEye:kGVRRightEye].size.height);
+//    printf("viewport kGVRCenterEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRCenterEye].origin.x, [headTransform viewportForEye:kGVRCenterEye].origin.y, [headTransform viewportForEye:kGVRCenterEye].size.width, [headTransform viewportForEye:kGVRCenterEye].size.height);
+//    printf("viewport kGVRLeftEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRLeftEye].origin.x, [headTransform viewportForEye:kGVRLeftEye].origin.y, [headTransform viewportForEye:kGVRLeftEye].size.width, [headTransform viewportForEye:kGVRLeftEye].size.height);
+//    printf("viewport kGVRRightEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRRightEye].origin.x, [headTransform viewportForEye:kGVRRightEye].origin.y, [headTransform viewportForEye:kGVRRightEye].size.width, [headTransform viewportForEye:kGVRRightEye].size.height);
     
     CGFloat sbs = (CGFloat)[[NSUserDefaults standardUserDefaults] integerForKey:@"sbs"];
     
@@ -161,7 +161,7 @@
 
 - (void)cardboardView:(GVRCardboardView *)cardboardView drawEye:(GVREye)eye withHeadTransform:(GVRHeadTransform *)headTransform {
 
-    printf("eye: %li viewport (%f, %f) %fx%f \n", (long)eye, [headTransform viewportForEye:eye].origin.x, [headTransform viewportForEye:eye].origin.y, [headTransform viewportForEye:eye].size.width, [headTransform viewportForEye:eye].size.height);
+//    printf("eye: %li viewport (%f, %f) %fx%f \n", (long)eye, [headTransform viewportForEye:eye].origin.x, [headTransform viewportForEye:eye].origin.y, [headTransform viewportForEye:eye].size.width, [headTransform viewportForEye:eye].size.height);
     
     // per-eye frame thing goes here
     
@@ -169,6 +169,17 @@
 
 - (void)encodeWithCoder:(nonnull NSCoder *)aCoder {
     
+}
+
+- (void)cardboardView:(GVRCardboardView *)cardboardView didFireEvent:(GVRUserEvent)event {
+    switch (event) {
+        case kGVRUserEventBackButton:
+            [[self navigationController] popToRootViewControllerAnimated:true];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)traitCollectionDidChange:(nullable UITraitCollection *)previousTraitCollection {
@@ -232,23 +243,23 @@
 
 //    glViewport(0, 0, 3500, 3000);
 
-    glClearColor(0.0, 1.0, 0.0, 1.0); // green
-//    glClearColor(0.0, 0.0, 0.0, 1.0); // black
+//    glClearColor(0.0, 1.0, 0.0, 1.0); // green
+    glClearColor(0.0, 0.0, 0.0, 1.0); // black
     glClear(GL_COLOR_BUFFER_BIT);
     
-    printf("*****\n");
-    printf("screenRect.origin.x: %f\n", screenRect.origin.x);
-    printf("screenRect.origin.y: %f\n", screenRect.origin.y);
-    printf("screenRect.size.width: %f\n", screenRect.size.width);
-    printf("screenRect.size.height: %f\n", screenRect.size.height);
-    printf("videoBufferSize.width: %f\n", videoBufferSize.width);
-    printf("videoBufferSize.height: %f\n", videoBufferSize.height);
-
-    printf("gl_screenwidth: %d\n", gl_screenwidth);
-    printf("gl_screenheight: %d\n", gl_screenheight);
-    
-    printf("xOffset: %f\n", xOffset);
-    printf("yOffset: %f\n", yOffset);
+//    printf("*****\n");
+//    printf("screenRect.origin.x: %f\n", screenRect.origin.x);
+//    printf("screenRect.origin.y: %f\n", screenRect.origin.y);
+//    printf("screenRect.size.width: %f\n", screenRect.size.width);
+//    printf("screenRect.size.height: %f\n", screenRect.size.height);
+//    printf("videoBufferSize.width: %f\n", videoBufferSize.width);
+//    printf("videoBufferSize.height: %f\n", videoBufferSize.height);
+//
+//    printf("gl_screenwidth: %d\n", gl_screenwidth);
+//    printf("gl_screenheight: %d\n", gl_screenheight);
+//
+//    printf("xOffset: %f\n", xOffset);
+//    printf("yOffset: %f\n", yOffset);
 
     
     CGFloat texLeft = screenRect.origin.x / videoBufferSize.width;

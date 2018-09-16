@@ -13,7 +13,8 @@ class HomeViewController: UIViewController {
     
     var games = [PVGame]()
     var selectedGame: PVGame!
-
+    @IBOutlet weak var gamesTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +26,9 @@ class HomeViewController: UIViewController {
                 print("== \(names)")
             }
         }
+        
+        gamesTable.backgroundColor = UIColor.black
+        gamesTable.separatorColor = hexStringToUIColor(hex: "#cc0000")
         
         PVControllerManager.shared()
         PVSettingsModel.sharedInstance()
@@ -89,12 +93,18 @@ class HomeViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.tintColor = UIColor.red
+//        self.navigationController?.navigationBar.tintColor = hexStringToUIColor(hex: "#cc0000")
         
-        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.red,
-                              NSAttributedStringKey.font: UIFont(name: "VirtualLogo", size: 26)!]
+        let textAttributes = [NSAttributedStringKey.foregroundColor:hexStringToUIColor(hex: "#cc0000"),
+                              NSAttributedStringKey.font: UIFont(name: "VirtualLogo", size: 23)!]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes;
         self.navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let indexPath = gamesTable.indexPathForSelectedRow {
+            gamesTable.deselectRow(at: indexPath, animated: true)
+        }
     }
 
     // MARK: - Navigation
@@ -113,6 +123,28 @@ class HomeViewController: UIViewController {
         (segue.destination as! PVEmulatorViewController).modalTransitionStyle = .crossDissolve
 
         
+    }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
 
 }
@@ -136,10 +168,16 @@ extension HomeViewController: UITableViewDataSource {
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         
+        cell?.textLabel?.highlightedTextColor = UIColor.black
+        
         cell?.textLabel?.text = games[indexPath.row].title
         cell?.textLabel?.textColor = UIColor.white
         cell?.backgroundColor = UIColor.black
         cell?.imageView?.image = UIImage(contentsOfFile: Bundle.main.resourcePath! + "/covers/" + games[indexPath.row].originalArtworkURL + ".jpg")
+        
+        let selectionColor = UIView(frame: CGRect.zero)
+        selectionColor.backgroundColor = hexStringToUIColor(hex: "#cc0000")
+        cell?.selectedBackgroundView = selectionColor
         
         return cell!
     }

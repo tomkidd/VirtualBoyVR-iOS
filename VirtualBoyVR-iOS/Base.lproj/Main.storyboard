@@ -38,6 +38,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Virtual Boy" id="uEx-B9-Fao"/>
                     <connections>
+                        <outlet property="gamesTable" destination="Jaa-GX-ErD" id="Cgz-kl-tSN"/>
                         <segue destination="sw6-Mk-3Dx" kind="show" identifier="StartGameSegue" id="M3k-HU-bCG"/>
                     </connections>
                 </viewController>
