@@ -17,6 +17,15 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for family: String in UIFont.familyNames
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+        
         PVControllerManager.shared()
         PVSettingsModel.sharedInstance()
         
@@ -26,11 +35,6 @@ class HomeViewController: UIViewController {
         if x == 0 {
             defaults.set(60, forKey: "sbs")
         }
-        
-        // test
-        defaults.set(60, forKey: "sbs")
-        
-        print("sbs: \(x)")
 
         // todo: make this a plist or something
         games = []
@@ -80,6 +84,18 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.red
+        
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.red,
+                              NSAttributedStringKey.font: UIFont(name: "VirtualLogo", size: 26)!]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes;
+        self.navigationController?.navigationBar.isTranslucent = false
+    }
 
     // MARK: - Navigation
 
@@ -121,6 +137,8 @@ extension HomeViewController: UITableViewDataSource {
         }
         
         cell?.textLabel?.text = games[indexPath.row].title
+        cell?.textLabel?.textColor = UIColor.white
+        cell?.backgroundColor = UIColor.black
         cell?.imageView?.image = UIImage(contentsOfFile: Bundle.main.resourcePath! + "/covers/" + games[indexPath.row].originalArtworkURL + ".jpg")
         
         return cell!

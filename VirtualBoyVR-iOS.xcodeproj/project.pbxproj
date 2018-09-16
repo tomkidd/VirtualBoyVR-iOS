@@ -227,6 +227,7 @@
 		A1B2EC2E213A00B300845ADB /* PVSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; };
 		A1B2EC2F213A00B300845ADB /* PVSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A144FB782135F2D70013CB65 /* PVSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1B2EC33213DAF8D00845ADB /* PVGCVRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */; };
+		A1B37EA1214E073900BD114A /* virtual_logo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1B37EA0214E073900BD114A /* virtual_logo.ttf */; };
 		A1B390EF21360AA7000E28C3 /* PVEmulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */; };
 		A1B390F021360AB1000E28C3 /* PVGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3F2135F6280013CB65 /* PVGLViewController.m */; };
 		DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */; };
@@ -737,6 +738,7 @@
 		A1B2EC282139F90F00845ADB /* shader_crt_vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shader_crt_vertex.glsl; sourceTree = "<group>"; };
 		A1B2EC31213DAF8C00845ADB /* PVGCVRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PVGCVRViewController.h; sourceTree = "<group>"; };
 		A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVGCVRViewController.m; sourceTree = "<group>"; };
+		A1B37EA0214E073900BD114A /* virtual_logo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = virtual_logo.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1458,6 +1460,7 @@
 		A16DA3EF2134A5F900CD9E21 /* VirtualBoyVR-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A1B37E9F214E072900BD114A /* Resources */,
 				A144FB7A2135F3980013CB65 /* Provenance */,
 				A16DA4082134ACEF00CD9E21 /* bridging.h */,
 				A16DA3F02134A5F900CD9E21 /* AppDelegate.swift */,
@@ -1470,6 +1473,14 @@
 				A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */,
 			);
 			path = "VirtualBoyVR-iOS";
+			sourceTree = "<group>";
+		};
+		A1B37E9F214E072900BD114A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1B37EA0214E073900BD114A /* virtual_logo.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1537,6 +1548,7 @@
 				A144FDA22135F6020013CB65 /* .travis.yml in Resources */,
 				A144FDA02135F6020013CB65 /* .gitignore in Resources */,
 				A16DA3FB2134A5FB00CD9E21 /* LaunchScreen.storyboard in Resources */,
+				A1B37EA1214E073900BD114A /* virtual_logo.ttf in Resources */,
 				A1B2EC292139F91000845ADB /* shader_crt_fragment.glsl in Resources */,
 				A16DA3F82134A5FB00CD9E21 /* Assets.xcassets in Resources */,
 				A16DA3F62134A5F900CD9E21 /* Main.storyboard in Resources */,

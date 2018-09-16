@@ -119,9 +119,6 @@
     
     CGFloat sbs = (CGFloat)[[NSUserDefaults standardUserDefaults] integerForKey:@"sbs"];
     
-    //test
-//    sbs = 170;
-
     CGFloat Vw = [headTransform viewportForEye:kGVRLeftEye].size.width + [headTransform viewportForEye:kGVRRightEye].size.width;
     CGFloat Vh = [headTransform viewportForEye:kGVRLeftEye].size.height;
     
@@ -130,43 +127,9 @@
     CGFloat Fw = (768.0 + sbs) * UIScreen.mainScreen.scale;
     CGFloat Fh = 224.0 * UIScreen.mainScreen.scale;
     
-    CGFloat vbEyeWidth = 384.0 * UIScreen.mainScreen.scale;
-    
-    CGFloat vbEyeScreenWidth = [headTransform viewportForEye:kGVRLeftEye].size.width;
-    
-    CGFloat vbEyeScreenDiff = vbEyeScreenWidth - vbEyeWidth;
-    
-    CGFloat vbEyeScreenOffset = vbEyeScreenDiff / 2;
-    
-    CGFloat vbSBSValue = vbEyeScreenDiff / UIScreen.mainScreen.scale;
-    
-    printf("UIScreen.mainScreen.scale: %f\n", UIScreen.mainScreen.scale);
-    printf("vbEyeWidth: %f\n", vbEyeWidth);
-    printf("vbEyeScreenWidth: %f\n", vbEyeScreenWidth);
-    printf("vbEyeScreenDiff: %f\n", vbEyeScreenDiff);
-    printf("vbEyeScreenOffset (xOffset): %f\n", vbEyeScreenOffset);
-    printf("vbSBSValue (sbs): %f\n", vbSBSValue);
-
-//    printf("Vw: %f\n", Vw);
-//    printf("Vh: %f\n", Vh);
-//    printf("Fw: %f\n", Fw);
-//    printf("Fh: %f\n", Fh);
-
     xOffset = (Vw - Fw) / 2;
     yOffset = (Vh - Fh) / 2;
     
-    //test
-//    xOffset = 270;
-
-    printf("xOffset: %f\n", xOffset);
-
-//    xOffset = 360;
-//    yOffset = 300;
-
-    
-//    MednafenGameCore *vbCore = (MednafenGameCore *)self.emulatorCore;
-//    [vbCore setSBSSeparation:(sbs * UIScreen.mainScreen.scale)];
-
     if (self.emulatorCore.isSpeedModified)
     {
         [self fetchVideoBuffer];

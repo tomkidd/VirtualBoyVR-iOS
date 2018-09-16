@@ -392,6 +392,8 @@ void uncaughtExceptionHandler(NSException *exception)
 - (void)viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
+    
+    [[self navigationController] setNavigationBarHidden:true animated:false];
 
 #if !TARGET_OS_TV
 	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
