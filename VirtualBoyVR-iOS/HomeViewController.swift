@@ -70,8 +70,18 @@ class HomeViewController: UIViewController {
         games.append(pvGen(title: "Virtual League Baseball", romPath: "Virtual_League_Baseball_(U).vb", cover: "Virtual_League_Baseball_(U)"))
         games.append(pvGen(title: "Virtual Pro Yakyuu '95", romPath: "Virtual_Pro_Yakyuu_'95_(J)_[!].vb", cover: "Virtual_Pro_Yakyuu_95_(J)"))
         games.append(pvGen(title: "Waterworld", romPath: "Waterworld_(U)_[!].vb", cover: "Waterworld_(U)"))
+        
+        //self.navigationItem.rightBarButtonItem =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"g122.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuClieckd:)];
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear"), style: .plain, target: self, action: #selector(settingsSegue))
+
+//        self.navigationController?.navigationBar.set
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func settingsSegue() {
+        self.performSegue(withIdentifier: "SettingsSegue", sender: self)
     }
     
     func pvGen(title: String, romPath: String, cover: String) -> PVGame {
@@ -93,7 +103,7 @@ class HomeViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-//        self.navigationController?.navigationBar.tintColor = hexStringToUIColor(hex: "#cc0000")
+        self.navigationController?.navigationBar.tintColor = hexStringToUIColor(hex: "#cc0000")
         
         let textAttributes = [NSAttributedStringKey.foregroundColor:hexStringToUIColor(hex: "#cc0000"),
                               NSAttributedStringKey.font: UIFont(name: "VirtualLogo", size: 23)!]
@@ -112,15 +122,21 @@ class HomeViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        (segue.destination as! PVEmulatorViewController).game = selectedGame
+        if segue.identifier == "StartGameSegue" {
+            (segue.destination as! PVEmulatorViewController).game = selectedGame
+            
+            let config = PVEmulatorConfiguration.sharedInstance()
+            
+            (segue.destination as! PVEmulatorViewController).batterySavesPath = config.batterySavesPath(forROM: selectedGame.romPath)
+            (segue.destination as! PVEmulatorViewController).biosPath = config.biosPath(forSystemID: selectedGame.systemIdentifier)
+            (segue.destination as! PVEmulatorViewController).saveStatePath = config.saveStatePath(forROM: selectedGame.romPath)
+            (segue.destination as! PVEmulatorViewController).systemID = selectedGame.systemIdentifier
+            (segue.destination as! PVEmulatorViewController).modalTransitionStyle = .crossDissolve
+        } else if segue.identifier == "SettingsSegue" {
+            // settings stuff
+        }
         
-        let config = PVEmulatorConfiguration.sharedInstance()
-        
-        (segue.destination as! PVEmulatorViewController).batterySavesPath = config.batterySavesPath(forROM: selectedGame.romPath)
-        (segue.destination as! PVEmulatorViewController).biosPath = config.biosPath(forSystemID: selectedGame.systemIdentifier)
-        (segue.destination as! PVEmulatorViewController).saveStatePath = config.saveStatePath(forROM: selectedGame.romPath)
-        (segue.destination as! PVEmulatorViewController).systemID = selectedGame.systemIdentifier
-        (segue.destination as! PVEmulatorViewController).modalTransitionStyle = .crossDissolve
+
 
         
     }

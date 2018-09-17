@@ -19,18 +19,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vbsplash" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-cd-MOL">
-                                <rect key="frame" x="0.0" y="69" width="375" height="529"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vblogo" translatesAutoresizingMaskIntoConstraints="NO" id="dPy-cd-MOL">
+                                <rect key="frame" x="0.0" y="228" width="375" height="211"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="dPy-cd-MOL" secondAttribute="height" multiplier="90:127" id="SKO-OI-9sk"/>
+                                    <constraint firstAttribute="width" secondItem="dPy-cd-MOL" secondAttribute="height" multiplier="16:9" id="WYz-rB-luj"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dPy-cd-MOL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1g2-0n-4Fz"/>
-                            <constraint firstAttribute="trailing" secondItem="dPy-cd-MOL" secondAttribute="trailing" id="IIq-AZ-9uA"/>
-                            <constraint firstItem="dPy-cd-MOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wbd-vO-JKc"/>
+                            <constraint firstItem="dPy-cd-MOL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AzQ-of-Syr"/>
+                            <constraint firstAttribute="trailing" secondItem="dPy-cd-MOL" secondAttribute="trailing" id="bTG-6o-raI"/>
+                            <constraint firstItem="dPy-cd-MOL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="w1B-NK-DVM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="vbsplash" width="450" height="635"/>
+        <image name="vblogo" width="864" height="486"/>
     </resources>
 </document>
