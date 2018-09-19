@@ -6,6 +6,9 @@
 //  Copyright © 2018 Tom Kidd. All rights reserved.
 //
 
+
+/// NOTE: This file is NOT IN USE. It is from my abandoned attempt to rewrite the emulator view controller in Swift. 
+
 import UIKit
 import GLKit
 import PVSupport

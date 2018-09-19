@@ -14,9 +14,14 @@ class HomeViewController: UIViewController {
     var games = [PVGame]()
     var selectedGame: PVGame!
     @IBOutlet weak var gamesTable: UITableView!
+    @IBOutlet weak var settingsGear: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        settingsGear.setImage(UIImage(named: "gear")!.withRenderingMode(.alwaysTemplate), for: .normal)
+        settingsGear.tintColor = UIColor.black
         
         for family: String in UIFont.familyNames
         {
@@ -28,7 +33,7 @@ class HomeViewController: UIViewController {
         }
         
         gamesTable.backgroundColor = UIColor.black
-        gamesTable.separatorColor = hexStringToUIColor(hex: "#cc0000")
+        gamesTable.separatorColor = Utilities.hexStringToUIColor(hex: "#cc0000")
         
         PVControllerManager.shared()
         PVSettingsModel.sharedInstance()
@@ -38,6 +43,12 @@ class HomeViewController: UIViewController {
         
         if x == 0 {
             defaults.set(60, forKey: "sbs")
+        }
+        
+        let y = defaults.float(forKey: "scale")
+        
+        if y == 0 {
+            defaults.set(Float(UIScreen.main.scale), forKey: "scale")
         }
 
         // todo: make this a plist or something
@@ -71,16 +82,10 @@ class HomeViewController: UIViewController {
         games.append(pvGen(title: "Virtual Pro Yakyuu '95", romPath: "Virtual_Pro_Yakyuu_'95_(J)_[!].vb", cover: "Virtual_Pro_Yakyuu_95_(J)"))
         games.append(pvGen(title: "Waterworld", romPath: "Waterworld_(U)_[!].vb", cover: "Waterworld_(U)"))
         
-        //self.navigationItem.rightBarButtonItem =  [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"g122.png"] style:UIBarButtonItemStylePlain target:self action:@selector(menuClieckd:)];
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "gear"), style: .plain, target: self, action: #selector(settingsSegue))
-
-//        self.navigationController?.navigationBar.set
-
         // Do any additional setup after loading the view.
     }
     
-    @objc func settingsSegue() {
+    @IBAction func settings(_ sender: Any) {
         self.performSegue(withIdentifier: "SettingsSegue", sender: self)
     }
     
@@ -100,12 +105,12 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.tintColor = hexStringToUIColor(hex: "#cc0000")
+        self.navigationController?.navigationBar.tintColor = Utilities.hexStringToUIColor(hex: "#cc0000")
         
-        let textAttributes = [NSAttributedStringKey.foregroundColor:hexStringToUIColor(hex: "#cc0000"),
+        let textAttributes = [NSAttributedStringKey.foregroundColor:Utilities.hexStringToUIColor(hex: "#cc0000"),
                               NSAttributedStringKey.font: UIFont(name: "VirtualLogo", size: 23)!]
         self.navigationController?.navigationBar.titleTextAttributes = textAttributes;
         self.navigationController?.navigationBar.isTranslucent = false
@@ -140,29 +145,6 @@ class HomeViewController: UIViewController {
 
         
     }
-    
-    func hexStringToUIColor (hex:String) -> UIColor {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-        
-        if (cString.hasPrefix("#")) {
-            cString.remove(at: cString.startIndex)
-        }
-        
-        if ((cString.count) != 6) {
-            return UIColor.gray
-        }
-        
-        var rgbValue:UInt32 = 0
-        Scanner(string: cString).scanHexInt32(&rgbValue)
-        
-        return UIColor(
-            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
-            alpha: CGFloat(1.0)
-        )
-    }
-
 }
 
 extension HomeViewController: UITableViewDelegate {
@@ -192,7 +174,7 @@ extension HomeViewController: UITableViewDataSource {
         cell?.imageView?.image = UIImage(contentsOfFile: Bundle.main.resourcePath! + "/covers/" + games[indexPath.row].originalArtworkURL + ".jpg")
         
         let selectionColor = UIView(frame: CGRect.zero)
-        selectionColor.backgroundColor = hexStringToUIColor(hex: "#cc0000")
+        selectionColor.backgroundColor = Utilities.hexStringToUIColor(hex: "#cc0000")
         cell?.selectedBackgroundView = selectionColor
         
         return cell!

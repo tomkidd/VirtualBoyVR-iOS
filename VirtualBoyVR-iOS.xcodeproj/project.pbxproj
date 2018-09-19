@@ -231,6 +231,7 @@
 		A1B37EA3214F410200BD114A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B37EA2214F410200BD114A /* SettingsViewController.swift */; };
 		A1B390EF21360AA7000E28C3 /* PVEmulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3D2135F6280013CB65 /* PVEmulatorViewController.m */; };
 		A1B390F021360AB1000E28C3 /* PVGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A144FE3F2135F6280013CB65 /* PVGLViewController.m */; };
+		A1DE39C02152E71D00045E52 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DE39BF2152E71D00045E52 /* Utilities.swift */; };
 		DB64FA6DD2C15B439F84443C /* libPods-VirtualBoyVR-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B43CB560740EBF8B3F87FF1 /* libPods-VirtualBoyVR-iOS.a */; };
 /* End PBXBuildFile section */
 
@@ -741,6 +742,7 @@
 		A1B2EC32213DAF8C00845ADB /* PVGCVRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PVGCVRViewController.m; sourceTree = "<group>"; };
 		A1B37EA0214E073900BD114A /* virtual_logo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = virtual_logo.ttf; sourceTree = "<group>"; };
 		A1B37EA2214F410200BD114A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A1DE39BF2152E71D00045E52 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1474,6 +1476,7 @@
 				A12615C42138A1C1007EC2A4 /* HomeViewController.swift */,
 				A16DA4022134AA0300CD9E21 /* EmulatorViewController.swift */,
 				A1B37EA2214F410200BD114A /* SettingsViewController.swift */,
+				A1DE39BF2152E71D00045E52 /* Utilities.swift */,
 			);
 			path = "VirtualBoyVR-iOS";
 			sourceTree = "<group>";
@@ -1633,6 +1636,7 @@
 				A144FDBB2135F6020013CB65 /* CodecExports.cpp in Sources */,
 				A144FDCA2135F6020013CB65 /* ByteSwap.cpp in Sources */,
 				A144FE382135F6020013CB65 /* LzmaSDKObjCExtractCallback.mm in Sources */,
+				A1DE39C02152E71D00045E52 /* Utilities.swift in Sources */,
 				A144FDBD2135F6020013CB65 /* Bcj2Register.cpp in Sources */,
 				A144FBF12135F46C0013CB65 /* PViCadeControllerViewController.m in Sources */,
 				A144FDC22135F6020013CB65 /* CopyCoder.cpp in Sources */,

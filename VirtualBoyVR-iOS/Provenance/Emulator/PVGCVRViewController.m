@@ -29,6 +29,9 @@
     
     CGFloat xOffset;
     CGFloat yOffset;
+    
+    CGFloat scale;
+    CGFloat sbs;
 }
 
 @property (nonatomic, strong) EAGLContext *glContext;
@@ -68,6 +71,9 @@
     [self.displayLink addToRunLoop: [NSRunLoop currentRunLoop] forMode: NSDefaultRunLoopMode];
 
     self.effect = [[GLKBaseEffect alloc] init];
+    
+    sbs = (CGFloat)[[NSUserDefaults standardUserDefaults] integerForKey:@"sbs"];
+    scale = (CGFloat)[[NSUserDefaults standardUserDefaults] floatForKey:@"scale"];
     
     [self setupTexture];
 }
@@ -117,15 +123,13 @@
 //    printf("viewport kGVRLeftEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRLeftEye].origin.x, [headTransform viewportForEye:kGVRLeftEye].origin.y, [headTransform viewportForEye:kGVRLeftEye].size.width, [headTransform viewportForEye:kGVRLeftEye].size.height);
 //    printf("viewport kGVRRightEye (%f, %f) %fx%f \n", [headTransform viewportForEye:kGVRRightEye].origin.x, [headTransform viewportForEye:kGVRRightEye].origin.y, [headTransform viewportForEye:kGVRRightEye].size.width, [headTransform viewportForEye:kGVRRightEye].size.height);
     
-    CGFloat sbs = (CGFloat)[[NSUserDefaults standardUserDefaults] integerForKey:@"sbs"];
-    
     CGFloat Vw = [headTransform viewportForEye:kGVRLeftEye].size.width + [headTransform viewportForEye:kGVRRightEye].size.width;
     CGFloat Vh = [headTransform viewportForEye:kGVRLeftEye].size.height;
     
     // ASSUMPTION: Each side of the Virtual Boy's screen (each eye) is 384 x 224
     // https://en.wikipedia.org/wiki/Virtual_Boy_hardware#Specifications
-    CGFloat Fw = (768.0 + sbs) * UIScreen.mainScreen.scale;
-    CGFloat Fh = 224.0 * UIScreen.mainScreen.scale;
+    CGFloat Fw = (768.0 + sbs) * scale;
+    CGFloat Fh = 224.0 * scale;
     
     xOffset = (Vw - Fw) / 2;
     yOffset = (Vh - Fh) / 2;
@@ -236,8 +240,8 @@
 
 - (void)renderBlock {
     
-    GLsizei gl_screenwidth = videoBufferSize.width * UIScreen.mainScreen.scale;
-    GLsizei gl_screenheight = videoBufferSize.height * UIScreen.mainScreen.scale;
+    GLsizei gl_screenwidth = videoBufferSize.width * scale;
+    GLsizei gl_screenheight = videoBufferSize.height * scale;
     
     glViewport(xOffset, yOffset, gl_screenwidth, gl_screenheight);
 
