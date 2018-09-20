@@ -60,7 +60,7 @@ class HomeViewController: UIViewController {
         games.append(pvGen(title: "Insane Mouse Mansion", romPath: "Insane_Mouse_Mansion_(J)_[!].vb", cover: "Insane_Mouse_Mansion_(J)"))
         games.append(pvGen(title: "Jack Bros (Japan)", romPath: "Jack_Bros_(J)_[!].vb", cover: "Jack_Bros_(J)"))
         games.append(pvGen(title: "Jack Bros (USA)", romPath: "Jack_Bros_(U)_[!].vb", cover: "Jack_Bros_(U)"))
-        games.append(pvGen(title: "Mario's Tennis", romPath: "Mario's_Tennis_(JU)_[!].vb", cover: "Marios_Tennis_(JU)"))
+        games.append(pvGen(title: "Mario's Tennis", romPath: "Mario's_Tennis_(JU)_[a1].vb", cover: "Marios_Tennis_(JU)"))
         games.append(pvGen(title: "Mario Clash", romPath: "Mario_Clash_(JU)_[!].vb", cover: "Mario_Clash_(JU)"))
         games.append(pvGen(title: "Nester's Funky Bowling", romPath: "Nester's_Funky_Bowling_(U).vb", cover: "Nesters_Funky_Bowling_(U)"))
         games.append(pvGen(title: "Panic Bomber (Japan)", romPath: "Panic_Bomber_(J)_[!].vb", cover: "Panic_Bomber_(J)"))
