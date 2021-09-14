@@ -1,8 +1,3 @@
-<hr>
-<img align="left" width="50" height="50" src="https://schnapple.com/wp-content/uploads/2021/05/m1_small.jpg">
-I'm trying to fund an M1 Mac to keep old games running on new Macs. If you'd like to help you can contribute here: https://ko-fi.com/schnapple
-<hr>
-
 #  Virtual Boy Emulator for iOS using Google Cardboard VR
 
 This is a Virtual Boy Emulator for use with the iPhone and a Google Cardboard compliant headset and MFi controller to recreate the 3D experience of playing old Virtual Boy games.
